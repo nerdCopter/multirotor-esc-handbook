@@ -96,15 +96,15 @@ This is a living document, not a finished spec: firmware behavior changes, commu
 
 ## 🚀 Quick Reference: Recommended Baseline Settings
 
-Demag is listed as "Low → High if desyncing" for every class: sourced creator guidance ([desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) is to start at default/Low and only step up if you're actually experiencing desyncs — not to default to High. PWM frequency for whoops depends on your ESC's dead time (higher dead time = 96kHz loses more resolution) — see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the real, GitHub-sourced history behind this.
+Demag is listed as "Step up if desyncing (Off→Low→High, one level at a time — not straight to High)" for every class: sourced creator guidance ([desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) is to start at default/Low and only step up if you're actually experiencing desyncs — not to default to High. PWM frequency for whoops depends on your ESC's dead time (higher dead time = 96kHz loses more resolution) — see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the real, GitHub-sourced history behind this.
 
 | Class | Prop / Stator | LiPo | Firmware | PWM Freq | Timing | Demag | Betaflight Idle |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **TinyWhoop** | 31–40mm / 0702–1002 | 1S–2S | [Bluejay](bluejay.md) / [AM32](am32.md) | 48kHz (safe default) or 96kHz (more flight time, less PWM resolution — check ESC dead time first) | 15°–22.5° | Low → High if desyncing | Use official [Bluejay Motor Idle table](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) (8%–16%) |
-| **Micro / 3.5"** | 2.5"–3.5" / 1404–1507 | 4S–6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz** / Variable | 20°–22.5° | Low → High if desyncing | 5.5%–7% (unverified community range, or 3500 RPM) |
-| **5" Freestyle** | 5"–5.1" / 2207–2306 | 6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority, sourced) or 24-48kHz Variable | 22°–23° (sourced) | Low → High if desyncing | 5.5%–6.5% (unverified community range, or 3200 RPM) |
+| **TinyWhoop** | 31–40mm / 0702–1002 | 1S–2S | [Bluejay](bluejay.md) / [AM32](am32.md) | 48kHz (safe default) or 96kHz (more flight time, less PWM resolution — check ESC dead time first) | 15°–22.5° | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | Use official [Bluejay Motor Idle table](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) (8%–16%) |
+| **Micro / 3.5"** | 2.5"–3.5" / 1404–1507 | 4S–6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz** / Variable | 20°–22.5° | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | 5.5%–7% (unverified community range, or 3500 RPM) |
+| **5" Freestyle** | 5"–5.1" / 2207–2306 | 6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz static or 24-48kHz Variable/By-RPM** (dominant real-world default) — static 24kHz is valid for max braking torque, but not the sourced default (see desyncs.md §3) | 22°–23° (sourced) | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | 5.5%–6.5% (unverified community range, or 3200 RPM) |
 | **5" Racing** | 5" / 2207–2208 High Kv | 6S | [BLHeli_32](blheli32.md) / [AM32](am32.md) | **24kHz** | 22°–23°+ | Low/Off *only if not desyncing* — see [desyncs.md, §4 "5-Inch Racing Optimization"](desyncs.md) for the `@FreedomDuck`-attributed RPM-gain claim and its caveats | 5.5%–6.5% (unverified community range, or 3500 RPM) |
-| **7"–10" Macro** | 7"–10" / 2806.5–3115 | 6S–12S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority) | 15°–18° | Low → High if desyncing | 6%–8% (unverified community range, or 2500 RPM) |
+| **7"–10" Macro** | 7"–10" / 2806.5–3115 | 6S–12S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority) | 15°–18° | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | 6%–8% (unverified community range, or 2500 RPM) |
 
 ---
 

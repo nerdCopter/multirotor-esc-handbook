@@ -11,7 +11,7 @@
       spins, and 0%–100% full-throttle punchouts.
   • Demag Compensation: **Start at default/Low. Only increase it if you're actually experiencing desyncs.**
       • **When to increase it:** if you get a punchout or snap-turn desync — one motor's commanded output pins near 100% while its measured RPM collapses or stutters — step Demag up one level at a
-      time (Low → High), not straight to High. This is the sourced fix for that exact symptom (Ryan Harrell, real-source video @19:58 — his #1 recommendation for a build actively desyncing at
+      time, Low then High if needed — don't jump straight to High. This is the sourced fix for that exact symptom (Ryan Harrell, real-source video @19:58 — his #1 recommendation for a build actively desyncing at
       high RPM, trading a bit of efficiency for stability). Don't default to High "just in case" — it costs efficiency for no benefit if you aren't actually desyncing.
   • PWM Frequency: 24kHz or 48kHz
       • 24kHz: sourced as the better choice for 5"+ builds (maximum active braking torque, best low-end grip) — this is a torque/efficiency tradeoff, not strictly a "desync risk" difference.
