@@ -13,15 +13,23 @@ Modern ESC firmwares incorporate specialized features beyond standard flight com
                     │
    [ Pilot Engages Turtle Mode Switch on Radio ]
                     │
-   [ FC Sends DShot Turtle Command (CMD 20 / 21) ]
+   [ FC mixer reverses selected motors via DSHOT_CMD_SPIN_DIRECTION,
+     then drives them at a fixed crashflip_motor_percent — throttle
+     stick is ignored, pitch/roll stick picks the flip direction ]
                     │
-   [ Front Motors Spin Reversed / Rear Forward ] ──► Frame Pivots & Flips Upright
+   [ Selected Motor Pair Spins Reversed ] ──► Frame Pivots & Flips Upright
 ```
+
+There is no single dedicated "turtle mode" DShot command. Betaflight's crash-flip logic
+lives in the mixer: it reverses the spin direction of the motors needed for the chosen flip
+direction (via the standard `DSHOT_CMD_SPIN_DIRECTION_*` commands — requires bidirectional
+DShot) and drives them at `crashflip_motor_percent` (default `25`), independent of the
+throttle channel. See [Protocols & Telemetry](protocols-telemetry.md) for the real command set.
 
 ### Technical & Electrical Considerations:
 * **Current Spikes:** Spinning props directly into grass or dirt creates near locked-rotor conditions. Peak current can exceed 40A–60A per motor instantly.
 * **Firmware Safety:** Modern firmwares (AM32, Bluejay, BLHeli_32) limit the maximum duty cycle and current during Turtle Mode to prevent burning MOSFETs.
-* **Tuning Tip:** If the quad struggles to flip on thick grass, slightly increase `Startup Power` or DShot Turtle Power limit in Betaflight.
+* **Tuning Tip:** If the quad struggles to flip on thick grass, raise `crashflip_motor_percent` in Betaflight (PID Tuning tab / CLI).
 
 ---
 

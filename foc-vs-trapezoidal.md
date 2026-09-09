@@ -21,7 +21,7 @@ FPV multirotors and electric drive systems utilize two primary brushless motor c
 | :--- | :--- | :--- |
 | **Phase Energization** | 2 Phases ON, 1 Phase Floating | **All 3 Phases Actively Driven** |
 | **Current Waveform** | Block / Trapezoidal | Pure Sinusoidal |
-| **Torque Ripple** | High (~14% theoretical ripple at transitions) | **Near Zero** |
+| **Torque Ripple** | High (commonly cited ~15% at commutation transitions) | **Low (commonly cited <5%, not literally zero)** |
 | **Acoustic Noise** | Distinct high-frequency whine & harmonics | **Virtually Silent** |
 | **Low-End Efficiency (<1000 RPM)** | Poor (High cogging, prone to stall) | **Extreme** (Smooth rotation down to 1 RPM) |
 | **Top-End RPM Limit & Acceleration** | **Maximum High-RPM Slew Rate & Punch** | Computationally heavy; slightly lower top-end on low-power MCUs |
@@ -41,9 +41,10 @@ FPV multirotors and electric drive systems utilize two primary brushless motor c
 ## 3. Hybrid Implementations in Modern Firmware
 
 ### 1. AM32 Sinusoidal Startup (FOC-Lite)
-* **How it works:** When starting from a dead stop (0 RPM), AM32 generates open-loop sinusoidal waveforms (Space Vector Modulation) to align the rotor magnets and smoothly accelerate the motor up to ~300–500 RPM.
-* Once Back-EMF amplitude reaches readable levels, the firmware seamlessly hands off control to high-performance 6-step trapezoidal commutation.
-* **Benefit:** Completely eliminates low-speed cogging and startup jitter while preserving full top-end throttle punch and active braking power.
+* **How it works:** When starting from a dead stop, AM32's Sine Start mode drives all three phases with open-loop sinusoidal waveforms; since BEMF sensing is unavailable in this mode, throttle directly controls rotation speed rather than duty cycle. There is no fixed universal RPM handoff figure — AM32 ramps the sine-mode speed to match the minimum speed required at changeover, and the `prot_stall` (stall-protection ERPM threshold) setting can be raised to give the motor a longer sinusoidal run-up before handing off to trapezoidal commutation. See the [AM32 ESC Settings Explained wiki](https://github.com/AlkaMotors/AM32-MultiRotor-ESC-firmware/wiki/ESC-Settings-Explained) for the authoritative behavior.
+* Once handed off, the firmware runs standard 6-step trapezoidal commutation using Back-EMF zero-crossing detection.
+* **Benefit:** Reduces low-speed cogging and startup jitter versus a pure open-loop trapezoidal start, while preserving full top-end throttle punch and active braking power once running in trap mode.
+* **Caveat:** Fixed-speed and fixed-duty-cycle throttle modes are not compatible with sinusoidal startup.
 
 ---
 

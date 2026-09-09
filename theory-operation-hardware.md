@@ -21,7 +21,7 @@ A typical 3-phase brushless inverter consists of **6 N-Channel MOSFETs** configu
 ```
 
 ### Key Subsystems:
-1. **Gate Drivers & Charge Pumps (Bootstrap Circuit):** Because high-side MOSFETs require a gate voltage ($V_{gs}$) higher than the battery rail ($V_{bat} + 10\text{V}$) to fully saturate, bootstrap capacitors and integrated gate drivers provide high-current switching pulses.
+1. **Gate Drivers & Charge Pumps (Bootstrap Circuit):** A high-side N-FET needs $V_{gs}$ (gate-to-source, not gate-to-ground) roughly $10\text{V}$–$15\text{V}$ above its source. Because the high-side source floats at $V_{bat}$ once that FET is on, its gate must be driven to roughly $V_{bat} + 10\text{V}$–$15\text{V}$ referenced to ground. A bootstrap capacitor charged during the low-side on-time supplies this floating rail; the integrated gate driver switches it onto the gate.
 2. **Current Sense Shunt Resistor:** Low-resistance precision shunt (typically $0.5\text{m}\Omega$ to $1\text{m}\Omega$) measuring total inverter return current for hardware overcurrent protection (OCP) and analog/DShot telemetry.
 3. **Low-Pass Filter & Voltage Dividers:** Attenuate phase voltages down to MCU ADC / comparator voltage ranges ($0\text{V}–3.3\text{V}$) for Back-EMF sensing.
 
@@ -78,7 +78,7 @@ Traditional legacy ESCs allowed un-driven motor phases to freewheel through MOSF
 Active braking and fast MOSFET switching generate sharp voltage ripple spikes ($V = L \cdot \frac{di}{dt}$) that can easily exceed the voltage breakdown rating of the MOSFETs (e.g. 35V spikes on a 6S 25.2V pack).
 
 ### Required Filtering Protection:
-1. **Low-ESR Electrolytic Capacitors (Panasonic FR / Rubycon ZLH):**
+1. **Low-ESR Electrolytic Capacitors (Panasonic FR / Rubycon ZLH):** Sizing follows the rule "voltage rating comfortably above pack max-charge voltage, capacitance sized to the build's peak current." These are commonly used FPV-community starting points, not a formal manufacturer spec — always size against your ESC's actual voltage rating and peak current draw:
    * *4S Builds:* $35\text{V}, 470\mu\text{F}–1000\mu\text{F}$
    * *6S Builds:* $35\text{V}–50\text{V}, 470\mu\text{F}–1000\mu\text{F}$
    * *8S–12S Heavy Lifters:* $50\text{V}–63\text{V}, 1000\mu\text{F}–2200\mu\text{F}$
@@ -87,8 +87,17 @@ Active braking and fast MOSFET switching generate sharp voltage ripple spikes ($
 
 ---
 
+## 5. Dead Time / Shoot-Through Protection
+
+Distinct from Demag Compensation (§ above) but often confused with it. **Dead time** is the brief interval where both the high-side and low-side MOSFET on the same phase half-bridge are held off during a switching transition, preventing them from ever conducting simultaneously — a direct short across the battery rail ("shoot-through") that would otherwise instantly destroy both FETs. Sourced (Ryan Harrell, [oKcyXR7Yx64](https://youtu.be/oKcyXR7Yx64) @05:14).
+
+On BLHeli_S/Bluejay hardware this is a **fixed, firmware/target-level parameter**, not a user-adjustable setting on most modern firmware — it's baked into the ESC's target layout definition (visible in the layout name format `x_y_nn`, where `nn` is the deadtime value, e.g. `O_H_5`). See [bluejay.md](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) — a higher deadtime value on a given target generally requires higher Startup Power and Motor Idle settings to start reliably.
+
+---
+
 *Related Documentation:*
 * [Protocols & Telemetry](protocols-telemetry.md)
 * [PWM Frequency & Switching Guide](pwm-frequency-heat.md)
-* [Desync Troubleshooting Guide](desync-troubleshooting.md)
+* [Desyncs & Commutation Troubleshooting](desyncs.md)
+* [Bluejay Technical Guide](bluejay.md)
 * [Back to Knowledge Base Index](README.md)

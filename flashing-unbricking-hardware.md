@@ -31,24 +31,32 @@ When flashing locked BLHeli_32 boards or recovering corrupted microcontrollers, 
 Locked BLHeli_32 ESCs have RDP Level 1 enabled to prevent firmware dumping. To flash open-source firmware:
 
 ```bash
-# Using STM32_Programmer_CLI (Official ST Tool)
-STM32_Programmer_CLI -c port=SWD mode=UR -rdu
-# -rdu: Readout Unprotect (Mass erases flash memory and unlocks chip)
+# Using STM32_Programmer_CLI (Official ST Tool) — verified against ST's own CLI syntax
+STM32_Programmer_CLI -c port=SWD -rdu
+# -rdu: Readout Unprotect (Mass erases flash memory and drops RDP from Level 1 to Level 0)
 
 # Flashing the AM32 Bootloader & Firmware
 STM32_Programmer_CLI -c port=SWD -w AM32_TARGET_NAME.hex -v -rst
 ```
 
+> An earlier version of this command included a `mode=UR` parameter — that's not a real option for `-c port=SWD`; it has been removed above.
+
 ```bash
-# Using OpenOCD
+# Using OpenOCD — RDP is an OPTION BYTE, not the same thing as flash write-protection.
+# The generic "<driver> lock / unlock" commands only touch FLASH_CR write-protection and
+# will NOT remove RDP — this was a real error in an earlier version of this guide, corrected below.
+# Command pattern sourced from ST's own community thread on this exact STM32G0x + OpenOCD problem
+# (community.st.com "OpenOCD and RDP protection [STM32g0x]"); the stm32l4x driver also covers G0/G4.
 openocd -f interface/stlink.cfg -f target/stm32g0x.cfg \
   -c "init" \
   -c "reset halt" \
-  -c "stm32g0x unlock 0" \
-  -c "flash write_image erase AM32_TARGET_NAME.hex" \
-  -c "reset run" \
+  -c "stm32l4x option_write 0 0x20 0xaa 0xaa" \
+  -c "stm32l4x option_load 0" \
+  -c "reset" \
   -c "shutdown"
 ```
+
+> **Caution:** the register offset (`0x20`) and value (`0xaa` = RDP Level 0) above matched the specific STM32G0x case discussed in the sourced thread — confirm the correct option-byte offset for your exact target/OpenOCD version before running this, since it mass-erases flash. When in doubt, prefer `STM32_Programmer_CLI` above — it's the officially documented tool for this operation and doesn't require guessing a register offset.
 
 ---
 

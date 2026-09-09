@@ -10,10 +10,10 @@ To accurately diagnose ESC behavior and desyncs, configure Betaflight Blackbox w
 
 ```bash
 # In Betaflight CLI
-set blackbox_sample_rate = 1/1    # 1:1 logging rate (e.g. 2kHz or 4kHz)
-set blackbox_mode = NORMAL
+set blackbox_sample_rate = 1/1    # full-rate logging (halve to 1/2, 1/4... on limited storage)
+set blackbox_mode = ARMED         # start logging automatically on arm (or ALWAYS / SWITCH)
 set blackbox_device = SDCARD      # or FLASH
-set debug_mode = DSHOT_RPM_ERRORS # Logs packet error rate and lost telemetry frames
+set debug_mode = DSHOT_RPM_ERRORS # per-motor invalid-telemetry-packet percentage (DEBUG_DSHOT_RPM_ERRORS)
 save
 ```
 
@@ -51,16 +51,25 @@ Measured DShot RPM
 3. **Step 3 (PID Windup):** The Flight Controller PID loop detects that the quad is losing attitude and commands that motor (`motor[n]`) to **100% maximum throttle**.
 4. **Step 4 (Death Roll):** Because the desynced motor cannot deliver torque, the remaining three motors spin up asymmetrically, sending the quadcopter into an uncontrolled spiral.
 
+### Real Example
+A real Betaflight blackbox render matching this exact signature (community-shared, not from any of the videos or wikis): at the trigger point, Gyro traces spike sharply on all three axes; the **Motors** pane shows one motor's commanded trace climb and hold near-flat at a high plateau while the others settle back down after the transient; the **RPM** pane shows that same motor's measured RPM collapse and flatline low while the others recover to a steady cruise RPM — the "commanded high, measured RPM low" divergence described in Step 2/3 above. The pilot in this example disarmed via switch shortly after the event rather than riding out a full death roll.
+
 ---
 
 ## 3. Blackbox Diagnosis: Mechanical vs Electrical vs Tuning Issues
 
 | Blackbox Symptom | Root Cause | Solution |
 | :--- | :--- | :--- |
-| Single motor trace at 100% while its DShot RPM collapses to 0 during punchout. | **Motor Desync** (Commutation slip). | Increase Demag to `High`, set static Motor Timing to `23°`, lower Rampup Power. |
+| Single motor trace at 100% while its DShot RPM collapses to 0 during punchout. | **Motor Desync** (Commutation slip). | Step Demag up one level (Off→Low→High — don't jump straight to High), set static Motor Timing to `22°–23°`, check Rampup Power against the sourced per-size figures in [desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares). |
 | All 4 motors show high-frequency sinusoidal ripple (150Hz–300Hz) correlated with gyro noise. | **D-Term Resonance / Noisy Gyro**. | Lower D-gain, verify dynamic RPM notch filters are tracking motor harmonics. |
 | `dshot_err` climbs above 0.1%–1.0% in flight. | **Electrical Signal Noise / Inductive Ground Bounce**. | Add Low-ESR capacitor across battery pads, ensure signal ground wire is twisted with signal wire. |
-| Motor RPM drops to zero during inverted zero-throttle freefall. | **Idle RPM Dropped Below Commutation Threshold**. | Raise `idle_min_rpm` in Betaflight Dynamic Idle. |
+| Motor RPM drops to zero during inverted zero-throttle freefall. | **Idle RPM Dropped Below Commutation Threshold**. | Raise `dyn_idle_min_rpm` in Betaflight Dynamic Idle. |
+
+---
+
+## 4. Not Actually a Desync: Differential Diagnosis
+
+> **Unverified community report** (Discord, not independently confirmed — flagged here as a real diagnostic possibility to rule out, not a validated mechanism): a GPS module that disconnects or initializes improperly can reportedly cause Betaflight to freeze the entire flight controller mid-flight. The crash this produces can look identical to a desync death-spiral from the outside, but the **key differentiator is total FC lockup** — the beeper does not sound and Turtle Mode does not respond, because the FC itself is frozen, not just one ESC. A genuine desync leaves the FC alive: beeper and turtle mode still work after the crash. If a "desync" doesn't respond to a beeper or turtle command, check GPS wiring/connection before re-tuning ESC settings.
 
 ---
 

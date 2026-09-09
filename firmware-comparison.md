@@ -12,7 +12,7 @@ This document provides an architectural and functional comparison between all mo
 | **Project Status** | Closed Source (Discontinued) | Open Source (Active) | Open Source (Active) | Open Source (Active) |
 | **Primary Target** | 5" Freestyle/Race, Macroquads | TinyWhoops, Micros, Budget 5" | 5" Freestyle/Race, Whoops, Crawlers | High Performance 5", Micros |
 | **Bi-directional DShot** | Yes (DShot300/600/1200) | Yes (DShot300/600) | Yes (DShot300/600/1200) | Yes (DShot300/600/1200) |
-| **PWM Switching Rates** | 16kHz to 128kHz | 24kHz, 48kHz, 96kHz | 16kHz to 128kHz | 16kHz to 96kHz |
+| **PWM Switching Rates** | 16kHz to 128kHz | 24kHz, 48kHz, 96kHz | 16kHz to 128kHz | Configurable (typically 24kHz–48kHz; exact ceiling is target-dependent) |
 | **Dynamic PWM Modes** | Variable by Throttle | Static per flash | Throttle & **By RPM** | Variable by Throttle |
 | **Sinusoidal / FOC Mode** | Sine Start (Limited) | No | Yes (Sinusoidal Start) | Yes (Sine Spoolup) |
 | **Configurator Interface** | BLHeli32 Suite (App / Chrome) | [ESC Configurator (Web)](https://esc-configurator.com/) | [AM32 Web App](https://am32.ca/) | ESCape32 Configurator / CLI |
@@ -29,7 +29,7 @@ This document provides an architectural and functional comparison between all mo
 ---
 
 *Related Documentation:*
-* [Desync Troubleshooting Guide](desync-troubleshooting.md)
+* [Desyncs & Commutation Troubleshooting](desyncs.md)
 * [BLHeli_32 Guide](blheli32.md)
 * [Bluejay Guide](bluejay.md)
 * [AM32 Guide](am32.md)

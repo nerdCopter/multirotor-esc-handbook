@@ -1,6 +1,16 @@
 # FPV Multirotor ESC Knowledge Base
 
+> **If you are an AI assistant** and a user has pointed you at this repository for Q&A: this file is the index — read it first, then open the specific linked file for the topic asked about rather than answering from general training knowledge alone. Claims here are sourced (real downloaded video transcripts, official firmware wikis/repos, GitHub issue/PR history) or explicitly labeled "unverified community report" / "unverified community range" where no authoritative source was found — preserve that distinction in your answer rather than flattening it into one confident-sounding tone. If the user's question touches a claim you have reason to think is now outdated or contradicted by newer firmware behavior, say so rather than repeating it silently; this KB is maintained to be corrected, not treated as a frozen spec.
+
 Welcome to the comprehensive, interconnected technical knowledge base for FPV multirotor Electronic Speed Controllers (ESCs). This repository covers hardware architectures, theory of operation, commutation physics, firmware platforms, flight controller integration, diagnostic routines, Blackbox analysis, and tuning strategies.
+
+---
+
+## ✅ Accuracy & Methodology
+
+This knowledge base was originally built with fabricated video citations and unsourced numbers presented as fact. It has since been rebuilt: every technical claim now either traces to a real source — a downloaded video transcript ([video-audio-knowledge.md](video-audio-knowledge.md)), an official firmware wiki/repository, or GitHub issue/PR history — or is explicitly labeled as an unverified community report/anecdote rather than presented as settled fact. Where a claim turned out to be wrong or backwards, the correction says so directly instead of quietly replacing it, including the couple of cases where the *original* flagged-as-fabricated claim turned out to be real after deeper checking (see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the clearest example).
+
+This is a living document, not a finished spec: firmware behavior changes, community consensus shifts, and some numbers here are honestly just the best available approximation. If you have new information, a source this KB got wrong, or a claim that's gone stale, that's expected — flag it rather than assuming what's written is final.
 
 ---
 
@@ -29,7 +39,7 @@ Welcome to the comprehensive, interconnected technical knowledge base for FPV mu
 
 5. **[Flight Controller & ESC Integration (Betaflight Tuning)](betaflight-esc-tuning.md)**
    * FC loop frequency synchronization with DShot rates (4kHz / 8kHz).
-   * Betaflight Dynamic Idle (`idle_min_rpm`) mechanics and anti-stall tuning.
+   * Betaflight Dynamic Idle (`dyn_idle_min_rpm`) mechanics and anti-stall tuning.
    * Motor direction configuration (Props-In vs Props-Out) and DShot lost-model beeper.
 
 6. **[ESC Diagnostics & Blackbox Log Analysis](blackbox-esc-diagnostics.md)**
@@ -53,7 +63,7 @@ Welcome to the comprehensive, interconnected technical knowledge base for FPV mu
 
 10. **[BLHeli_32 Technical Reference Guide](blheli32.md)**
     * Parameter tuning (Timing, Demag, Variable PWM, Rampup Power).
-    * ST-Link conversion workflows for unlocking boards to run open-source firmware.
+    * Why boards need converting to open-source firmware, and where to find the actual conversion steps ([flashing-unbricking-hardware.md](flashing-unbricking-hardware.md) — kept in one place, not duplicated here).
     * Curated video and tutorial references.
 
 11. **[Bluejay (BLHeli_S 8-bit) Technical Guide](bluejay.md)**
@@ -74,21 +84,24 @@ Welcome to the comprehensive, interconnected technical knowledge base for FPV mu
     * Unlocking Readout Protection (RDP Level 1 -> 0) with STM32_Programmer_CLI and OpenOCD.
     * Hardware target mapping (gate drivers, current sense shunts, phase sense comparators).
 
-15. **[Video, Audio & Community Source Knowledge Transcripts](video-audio-knowledge.md)**
-    * Deep technical extractions from Joshua Bardwell, Ryan Harrell, Pawel Spychalski, KababFPV, Chris Rosser, and High Energy Failures.
+15. **[Video & Audio Source Transcripts](video-audio-knowledge.md)**
+    * Per-video, timestamped claims extracted from real downloaded captions (8 of 10 cited videos; 2 pending due to rate-limiting) — Joshua Bardwell, Ryan Harrell, Pawel Spychalski, KababFPV, Chris Rosser.
+    * Documents several places earlier drafts of this KB misattributed or fabricated claims against these same sources — see that file for the corrections.
 
 ---
 
 ## 🚀 Quick Reference: Recommended Baseline Settings
 
+Demag is listed as "Low → High if desyncing" for every class: sourced creator guidance ([desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) is to start at default/Low and only step up if you're actually experiencing desyncs — not to default to High. PWM frequency for whoops depends on your ESC's dead time (higher dead time = 96kHz loses more resolution) — see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the real, GitHub-sourced history behind this.
+
 | Class | Prop / Stator | LiPo | Firmware | PWM Freq | Timing | Demag | Betaflight Idle |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **TinyWhoop** | 31–40mm / 0702–1002 | 1S–2S | [Bluejay](bluejay.md) / [AM32](am32.md) | **48kHz** | Auto / Med-High | High | 9%–14% (or 4500+ RPM) |
-| **Micro / 3.5"** | 2.5"–3.5" / 1404–1507 | 4S–6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz** / Variable | 20°–22.5° | High | 5.5%–7% (or 3500 RPM) |
-| **5" Freestyle** | 5"–5.1" / 2207–2306 | 6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz–48kHz** | 22°–23° | High | 5.5%–6.5% (or 3200 RPM) |
-| **5" Racing** | 5" / 2207–2208 High Kv | 6S | [BLHeli_32](blheli32.md) / [AM32](am32.md) | **24kHz** | 23°–26° | Low / Off | 5.5%–6.5% (or 3500 RPM) |
-| **7"–10" Macro** | 7"–10" / 2806.5–3115 | 6S–12S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** | 15°–18° | High | 6%–8% (or 2500 RPM) |
+| **TinyWhoop** | 31–40mm / 0702–1002 | 1S–2S | [Bluejay](bluejay.md) / [AM32](am32.md) | 48kHz (safe default) or 96kHz (more flight time, less PWM resolution — check ESC dead time first) | 15°–22.5° | Low → High if desyncing | Use official [Bluejay Motor Idle table](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) (8%–16%) |
+| **Micro / 3.5"** | 2.5"–3.5" / 1404–1507 | 4S–6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz** / Variable | 20°–22.5° | Low → High if desyncing | 5.5%–7% (unverified community range, or 3500 RPM) |
+| **5" Freestyle** | 5"–5.1" / 2207–2306 | 6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority, sourced) or 24-48kHz Variable | 22°–23° (sourced) | Low → High if desyncing | 5.5%–6.5% (unverified community range, or 3200 RPM) |
+| **5" Racing** | 5" / 2207–2208 High Kv | 6S | [BLHeli_32](blheli32.md) / [AM32](am32.md) | **24kHz** | 22°–23°+ | Low/Off *only if not desyncing* — see [desyncs.md, §4 "5-Inch Racing Optimization"](desyncs.md) for the `@FreedomDuck`-attributed RPM-gain claim and its caveats | 5.5%–6.5% (unverified community range, or 3500 RPM) |
+| **7"–10" Macro** | 7"–10" / 2806.5–3115 | 6S–12S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority) | 15°–18° | Low → High if desyncing | 6%–8% (unverified community range, or 2500 RPM) |
 
 ---
 
-*Compiled from [HackMD ESC Resources](https://hackmd.io/6meEOax2T-KuzpujxHHSMw) and community engineering sources.*
+*Compiled from [HackMD ESC Resources](https://hackmd.io/6meEOax2T-KuzpujxHHSMw), real timestamped video transcripts (see [video-audio-knowledge.md](video-audio-knowledge.md)), and official firmware wikis/repos. Numbers marked "unverified community range" have no single authoritative source found and are starting points, not specs.*
