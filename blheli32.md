@@ -42,7 +42,7 @@ BLHeli_32 is a third-generation, 32-bit closed-source ESC firmware designed for 
 
 ## 3. Converting & Unlocking BLHeli_32 Boards to Open-Source (AM32 / ESCape32)
 
-BLHeli AS wound down BLHeli_32 licensing and development in mid-2024, citing illegal use of the firmware in sanctioned countries. Existing ESCs keep working, but no new licenses or updates are issued. Locked boards can be converted to open-source [AM32](am32.md) or [ESCape32](escape32.md) firmware via SWD flashing and a Readout Protection unlock — **the actual commands, tool syntax, and hardware pin details live in [ESC Flashing & Unbricking Guide](flashing-unbricking-hardware.md) only**, to avoid the two copies drifting out of sync.
+BLHeli AS wound down BLHeli_32 licensing and development in mid-2024, citing illegal use of the firmware in sanctioned countries during the war in Ukraine ([QuadMeUp: "BLHeli_32 is dead, killed by the war in Ukraine"](https://blog.quadmeup.com/2024/05/31/blheli_32-is-dead-killed-by-the-war-in-ukraine/); also reported by [Oscar Liang](https://oscarliang.com/end-of-blheli_32/) and [Hackaday](https://hackaday.com/2024/06/07/the-end-of-blheli_32-long-live-am32/)). Existing ESCs keep working, but no new licenses or updates are issued. Locked boards can be converted to open-source [AM32](am32.md) or [ESCape32](escape32.md) firmware via SWD flashing and a Readout Protection unlock — **the actual commands, tool syntax, and hardware pin details live in [ESC Flashing & Unbricking Guide](flashing-unbricking-hardware.md) only**, to avoid the two copies drifting out of sync.
 
 ---
 

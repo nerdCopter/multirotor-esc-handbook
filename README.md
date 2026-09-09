@@ -8,7 +8,7 @@ Welcome to the comprehensive, interconnected technical knowledge base for FPV mu
 
 ## ✅ Accuracy & Methodology
 
-This knowledge base was originally built with fabricated video citations and unsourced numbers presented as fact. It has since been rebuilt: every technical claim now either traces to a real source — a downloaded video transcript ([video-audio-knowledge.md](video-audio-knowledge.md)), an official firmware wiki/repository, or GitHub issue/PR history — or is explicitly labeled as an unverified community report/anecdote rather than presented as settled fact. Where a claim turned out to be wrong or backwards, the correction says so directly instead of quietly replacing it, including the couple of cases where the *original* flagged-as-fabricated claim turned out to be real after deeper checking (see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the clearest example).
+This knowledge base was originally built with fabricated video citations and unsourced numbers presented as fact. It has since been rebuilt: every technical claim now either traces to a real source — a downloaded video transcript ([video-audio-knowledge.md](video-audio-knowledge.md)), an official firmware wiki/repository, or GitHub issue/PR history — or is explicitly labeled as an unverified community report/anecdote rather than presented as settled fact. Where a claim turned out to be wrong or backwards, the correction says so directly instead of quietly replacing it, including the couple of cases where the *original* flagged-as-fabricated claim turned out to be real after deeper checking (see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the clearest example). Every real URL behind these claims — not just the HackMD page this project started from — is listed in **[SOURCES.md](SOURCES.md)**.
 
 This is a living document, not a finished spec: firmware behavior changes, community consensus shifts, and some numbers here are honestly just the best available approximation. If you have new information, a source this KB got wrong, or a claim that's gone stale, that's expected — flag it rather than assuming what's written is final.
 
@@ -88,6 +88,10 @@ This is a living document, not a finished spec: firmware behavior changes, commu
     * Per-video, timestamped claims extracted from real downloaded captions (8 of 10 cited videos; 2 pending due to rate-limiting) — Joshua Bardwell, Ryan Harrell, Pawel Spychalski, KababFPV, Chris Rosser.
     * Documents several places earlier drafts of this KB misattributed or fabricated claims against these same sources — see that file for the corrections.
 
+16. **[Sources](SOURCES.md)**
+    * Every real URL behind this KB's claims: videos, official firmware repos/wikis, specific GitHub issues/PRs, editorial sources, and Discord servers — organized by category, with what's cited where.
+    * Also lists sources found during research that aren't cited in-text yet, flagged for review rather than silently worked in.
+
 ---
 
 ## 🚀 Quick Reference: Recommended Baseline Settings
@@ -104,4 +108,4 @@ Demag is listed as "Low → High if desyncing" for every class: sourced creator 
 
 ---
 
-*Compiled from [HackMD ESC Resources](https://hackmd.io/6meEOax2T-KuzpujxHHSMw), real timestamped video transcripts (see [video-audio-knowledge.md](video-audio-knowledge.md)), and official firmware wikis/repos. Numbers marked "unverified community range" have no single authoritative source found and are starting points, not specs.*
+*Compiled from real timestamped video transcripts, official firmware wikis/repos, and GitHub issue/PR history — full list in [SOURCES.md](SOURCES.md). Numbers marked "unverified community range" have no single authoritative source found and are starting points, not specs.*

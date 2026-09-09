@@ -34,7 +34,7 @@ In traditional flight controllers, `motor_idle_throttle` was set as a static per
 Betaflight's own guidance gives **30–40 (3,000–4,000 RPM)** as a starting point for a typical 5" quad. The per-class numbers below are community-tuned starting points, not an official spec — verify per motor/prop/cell combo with Blackbox RPM traces before trusting them:
 * **TinyWhoops (1S/2S, 0702–1002):** for Bluejay ESCs, use the official [per-motor Motor Idle table](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) (`8%`–`16%` static idle depending on deadtime) rather than a flat range.
 * **3"–3.5" Micros (1404–1507):** `~35–42` (3,500–4,200 RPM, unverified community range).
-* **5" Freestyle / Racing (2207/2306):** `30–40` (3,000–4,000 RPM) — matches official guidance.
+* **5" Freestyle / Racing (2207/2306):** `30–40` (3,000–4,000 RPM) — matches [official Betaflight Dynamic Idle guidance](https://betaflight.com/docs/wiki/guides/current/Dynamic-Idle).
 * **7"–10" Macroquads:** `~20–26` (2,000–2,600 RPM, unverified community range).
 
 > [!WARNING]
