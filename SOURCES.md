@@ -6,7 +6,7 @@ Every URL that backs a claim anywhere in this knowledge base, plus additional so
 
 ## 1. Video Sources (YouTube)
 
-Real captions were downloaded and read in full for all 10 of these.
+Real captions were downloaded and read in full for all 10 of these. Raw transcripts are tracked under [research/transcripts/](research/transcripts/) — see [TAKEDOWN.md](TAKEDOWN.md) for the removal policy.
 
 | Video | Creator | Status | Cited in |
 | :--- | :--- | :--- | :--- |

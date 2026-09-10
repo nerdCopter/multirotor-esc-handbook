@@ -1,0 +1,455 @@
+[00:00:00.080] hi there everyone and welcome back to
+[00:00:01.520] the channel today's video is a super
+[00:00:03.480] special video because we are kicking off
+[00:00:05.400] a whole new video series looking at
+[00:00:07.680] optimizing the snot out of one of these
+[00:00:10.160] little guys this is a tiny whoop and in
+[00:00:12.440] this video series we are going to be
+[00:00:13.799] looking at every part of the drivetrain
+[00:00:15.920] of this little guy we're going to be
+[00:00:17.439] testing props Motors and esc's to get
+[00:00:20.760] the maximum possible performance whether
+[00:00:22.840] you're looking to fly for the longest
+[00:00:24.320] time or just just go as fast as possible
+[00:00:26.880] and beat everyone else around the track
+[00:00:29.599] in the next video I'm going to be
+[00:00:31.400] testing just a few tiny whoop Motors so
+[00:00:34.920] make sure you like And subscribe to the
+[00:00:36.399] channel so you don't miss that video
+[00:00:37.840] when it comes out but today we are going
+[00:00:40.039] to be starting with the easiest thing
+[00:00:41.879] that you can do to get way more
+[00:00:43.640] performance out of your tiny whoop you
+[00:00:45.480] don't have to change any parts don't
+[00:00:47.000] have to change Motors don't have to
+[00:00:48.440] change props all you have to do is
+[00:00:50.879] optimize your ESC settings you can do
+[00:00:53.640] this today you can do this right now and
+[00:00:55.640] you're going to get a whole heap more
+[00:00:57.359] performance for almost no effort so
+[00:00:59.760] let's not waste any more time let's dive
+[00:01:01.840] right into it and get those ESC settings
+[00:01:03.960] perfectly dialed in if you've been
+[00:01:05.519] following the channel recently you might
+[00:01:07.159] have seen that I'm wearing some awesome
+[00:01:09.000] new drone themed t-shirts I've been
+[00:01:12.080] working with an amazing designer to
+[00:01:14.119] create some bold bright Graphics
+[00:01:16.200] capturing my favorite moments in fpv
+[00:01:19.400] right now we're launching four designs
+[00:01:21.600] the drift Chase midair Motocross one
+[00:01:25.600] pack Bando rip and the mountain dive you
+[00:01:29.320] can get these Graphics as a high quality
+[00:01:31.560] print on a t-shirt or jumper like I'm
+[00:01:33.880] wearing or you can get them as a tote
+[00:01:36.240] bag notebook sticker or a face mask
+[00:01:39.399] check out the links down in the video
+[00:01:41.159] description before we dive into the test
+[00:01:43.200] results let me take you through the test
+[00:01:44.840] setup which is slightly different from
+[00:01:46.439] that that I've used for larger Motors
+[00:01:48.119] and props here we have the tiny little
+[00:01:50.880] 0802 motor and prop connected to the
+[00:01:54.079] test stand obviously the motor is far
+[00:01:55.960] too small to mount directly so I've 3D
+[00:01:58.039] printed this adapter which stands the
+[00:02:00.119] motor off a bit and gives the prop clean
+[00:02:02.399] air to work with the motor is connected
+[00:02:05.039] to this piece of race wire and all the
+[00:02:07.479] motors have the same length wires for
+[00:02:09.800] this uh section here and that's
+[00:02:11.680] important because these wires are very
+[00:02:13.160] thin the race wire is for a 5-in drone
+[00:02:16.080] so it's got massive current carrying
+[00:02:18.000] capability and I've connected to it with
+[00:02:20.360] these thick 20 AWG motor wires and
+[00:02:23.560] that's running back to the ESC the ESC
+[00:02:26.280] is a BL heli s ESC with a 7 amp rating
+[00:02:30.000] and it's flashed to the blue J firmware
+[00:02:32.599] so that we have all the data from
+[00:02:34.120] bidirectional dshot that we need to
+[00:02:35.840] record the performance of the motor the
+[00:02:38.160] ESC is connected to another piece of
+[00:02:40.400] race wire which adapts it to these thick
+[00:02:42.360] wires which go to the test stand and
+[00:02:44.560] that's so that we can measure the
+[00:02:45.760] voltage and the current that we're
+[00:02:47.000] supplying to the ESC during the test the
+[00:02:49.640] test stand has this massive 50vt 10,000
+[00:02:52.280] microfarad capacitor and there's another
+[00:02:53.959] smaller capacitor on the ESC but in
+[00:02:56.519] parallel with all of that I've also
+[00:02:58.200] connected this newb drone nitron NR gold
+[00:03:00.560] battery to help keep the supply voltage
+[00:03:02.680] to the ESC very constant at 4 volts all
+[00:03:06.400] of this setup is kept topped up to 4
+[00:03:08.840] volts by a power supply with a 5 amp
+[00:03:10.840] rating which is plenty to hold
+[00:03:13.040] everything constant during the test the
+[00:03:15.560] ESC is connected to this flight
+[00:03:17.239] controller and that flight controller is
+[00:03:19.040] going to log all of the data over
+[00:03:20.879] bidirectional dshot from the ESC so that
+[00:03:23.319] we can measure the responsiveness of the
+[00:03:24.840] motor and the RPM that the motor
+[00:03:26.599] achieves under all of the different test
+[00:03:28.760] conditions now that we've looked at the
+[00:03:30.640] test equipment I want to run you quickly
+[00:03:32.239] through the methodology starting with
+[00:03:33.879] the KV test here we ramp the motor from
+[00:03:36.599] 0 to 100% throttle at 3 volts with no
+[00:03:39.680] prop and we measure the Full Throttle
+[00:03:42.040] RPM of the motor at 3 volts dividing
+[00:03:44.599] that by three gives us a measure of the
+[00:03:46.599] motor KV and this might be slightly
+[00:03:48.720] different to the manufacturer's KV but
+[00:03:50.519] it is still comparable between different
+[00:03:53.079] tests the second test is a throttle ramp
+[00:03:56.200] here we put a prop on the motor and ramp
+[00:03:58.840] the motor to Full Throttle over 5
+[00:04:01.239] seconds and then back down again here we
+[00:04:03.640] can see the shape of the thrust curve
+[00:04:05.360] and we can also see the Full Throttle
+[00:04:07.439] RPM which is a measure of the Full
+[00:04:09.200] Throttle thrust that the motor is able
+[00:04:11.079] to achieve the next test is a response
+[00:04:14.280] test here we're stepping the motor from
+[00:04:16.000] 10 to 50% throttle and Back Again
+[00:04:18.359] multiple times and we're measuring how
+[00:04:20.400] fast the motor is able to accelerate and
+[00:04:22.720] decelerate the prop the final test is an
+[00:04:25.720] efficiency test here we drive the motor
+[00:04:28.400] at 1 amp of current giving it exactly 4
+[00:04:31.440] wats and we measure the RPM that the
+[00:04:33.800] motor is able to achieve a higher RPM
+[00:04:36.360] means more thrust for the same power and
+[00:04:38.520] that means better efficiency all right
+[00:04:40.479] then let's dive into some data and we're
+[00:04:42.080] going to start by talking about motor
+[00:04:43.720] timing motor timing is how the ESC
+[00:04:46.000] controls when it drives a coil relative
+[00:04:48.680] to the position of the magnet in the
+[00:04:50.360] rotor if you've got a coil here and a
+[00:04:52.680] magnet in the rotor that is spinning and
+[00:04:54.639] passing by the coil motor timing
+[00:04:56.919] controls when the ESC will turn on this
+[00:04:59.360] coil to push the magnet round if you
+[00:05:01.960] have a timing of 0° the ESC will drive
+[00:05:04.440] the coil when the magnet is directly
+[00:05:06.479] opposite the end of the coil if you have
+[00:05:08.800] positive timing let's say 15° that means
+[00:05:11.840] that the ESC will drive the coil
+[00:05:14.639] slightly before the magnet arrives
+[00:05:17.160] directly opposite it and that gives time
+[00:05:19.600] for current and therefore magnetic field
+[00:05:21.759] to build up in the in the windings in
+[00:05:24.360] the coil and that allows the coil to
+[00:05:26.800] push the magnet past if you have too
+[00:05:29.199] little time timing you run the risk of
+[00:05:30.720] desyncs and too much timing you actually
+[00:05:33.400] have the coil pushing back against the
+[00:05:35.520] magnet trying to stop the motor spinning
+[00:05:38.800] before um the magnet passes the end of
+[00:05:41.039] the coil and pushes on so too much or
+[00:05:43.520] too little timing can be a problem let's
+[00:05:45.479] start by looking at timing versus motor
+[00:05:47.560] KV and motor KV is incredibly important
+[00:05:50.120] for tiny booop Motors the higher the
+[00:05:51.759] motor KV the more topend power you're
+[00:05:53.720] going to have and the effective motor KV
+[00:05:56.199] is affected by the ESC timing setting
+[00:05:59.039] what we can see is that increasing the
+[00:06:00.759] motor timing gives an improvement in
+[00:06:03.039] terms of KV it raises the KV that's
+[00:06:05.160] going to give you more top end power but
+[00:06:07.120] we don't see any Improvement Beyond 15°
+[00:06:09.759] of timing so going to 22 A2 or even 30°
+[00:06:13.520] doesn't give you any benefit over 15 but
+[00:06:15.919] you do see a big loss a big deficit in
+[00:06:19.039] lower timings 7 and a half and 0 degrees
+[00:06:21.440] giving you significantly less top end
+[00:06:23.400] power if we look at a 10-second ramp
+[00:06:26.400] from zero to Full Throttle and back
+[00:06:28.759] again we can see that the low timings
+[00:06:31.160] really have significant reduction in the
+[00:06:33.720] top end motor RPM and therefore the top
+[00:06:35.800] end thrust that you're getting from the
+[00:06:37.160] motor but 15 22 and A2 and 30° of timing
+[00:06:41.800] all give you the same maximum rpm and
+[00:06:44.560] therefore the same maximum thrust and
+[00:06:46.680] there's no benefit to increasing timing
+[00:06:48.960] Beyond 15° looking at efficiency now we
+[00:06:52.240] can measure efficiency by driving the
+[00:06:54.039] motor at 1 amp of current and 4 volts so
+[00:06:57.240] we're giving the motor exactly 4 w
+[00:07:00.280] and then we can look at the RPM that
+[00:07:01.919] it's able to achieve if the motor is
+[00:07:03.840] achieving a higher RPM and therefore
+[00:07:05.919] delivering more thrust at the same power
+[00:07:08.280] level we know that it's being more
+[00:07:10.120] efficient again we see a benefit of
+[00:07:12.800] increasing timing up to 15° increasing
+[00:07:16.080] the timing is increasing the motor RPM
+[00:07:19.280] that's able to be achieved at that 1 amp
+[00:07:21.680] of current that 4 watts of power and so
+[00:07:23.919] you're getting more thrust for the same
+[00:07:25.560] power and the motor is being more
+[00:07:27.599] efficient however once you get Beyond
+[00:07:30.120] 15° the um the Improvement starts to go
+[00:07:33.680] back the other way we see there's
+[00:07:35.280] actually less efficiency at 22 and a
+[00:07:37.360] half and 30° of timing compared to what
+[00:07:39.840] we get at 15° so the efficiency is
+[00:07:42.759] reducing and we're not getting any more
+[00:07:44.240] topend power so there's no benefit to
+[00:07:47.080] going Beyond 15° and there is a clear
+[00:07:49.720] peak in efficiency at 15° of timing
+[00:07:52.960] looking at ESC timing versus
+[00:07:54.840] responsiveness we can see clearly that
+[00:07:56.639] there's no effect here the motor
+[00:07:58.400] accelerates and decelerates just as fast
+[00:08:00.720] regardless of the ESC timing setting
+[00:08:03.159] this data gives us a clear
+[00:08:04.599] recommendation on motor timing 15° of
+[00:08:07.319] timing is ideal for blue J esc's running
+[00:08:11.080] these very small motors a timing setting
+[00:08:13.680] lower or higher than 15° reduces both
+[00:08:16.759] the performance of the motor and its
+[00:08:18.639] efficiency now let's move on and look at
+[00:08:21.120] ramp up power I tested a whole range of
+[00:08:23.879] different ramp up powers and overall I
+[00:08:26.080] saw very little effect from this setting
+[00:08:28.720] there was no difference in motor
+[00:08:30.280] deceleration for any of the ramp up
+[00:08:32.279] power settings that I tried whether it
+[00:08:34.279] was one times all the way up to 13 times
+[00:08:36.760] or even turning ramp up power off
+[00:08:38.560] completely when we look at motor
+[00:08:40.440] acceleration there was a small effect if
+[00:08:42.680] I set ramp up power all the way down at
+[00:08:44.920] one times then that did slow the
+[00:08:47.959] acceleration of the motor but all of the
+[00:08:49.959] other settings the motor achieved its
+[00:08:52.000] maximum acceleration so in general
+[00:08:54.440] provided that you aren't setting ramp up
+[00:08:56.040] power at one times um you can pretty
+[00:08:58.680] much just leave this setting alone and
+[00:09:00.279] the default is probably absolutely fine
+[00:09:02.360] for these tiny Motors if you're looking
+[00:09:04.079] to make the most of your tiny whoop you
+[00:09:05.800] won't want to miss out on my PDF tuning
+[00:09:08.040] guides for betaflight 4.5 and blue J
+[00:09:10.440] esc's that are now available on my
+[00:09:12.360] patreon these guides will take you step
+[00:09:14.640] by step through everything you need to
+[00:09:16.240] know to get your tiny whoop tuned to
+[00:09:17.959] Perfection and flying better than it
+[00:09:19.600] ever has before you can't get these
+[00:09:21.720] resources anywhere else and not only
+[00:09:23.800] that you'll be supporting me to make
+[00:09:25.680] more videos like this for everyone in
+[00:09:27.320] the fpv community I'd really appreciate
+[00:09:29.720] it if you check out those links down in
+[00:09:31.399] the video description now let's talk
+[00:09:33.279] about pwm frequency because this has a
+[00:09:35.959] huge effect on the tiny Motors we use on
+[00:09:38.200] our whoops pwm frequency controls how
+[00:09:41.360] fast the ESC switches power on and off
+[00:09:44.600] to the coil whenever you're at less than
+[00:09:46.480] Full Throttle so if you're at 50%
+[00:09:48.839] throttle the ESC is very quickly
+[00:09:51.040] switching the coil on and off and it's
+[00:09:53.360] spending half the time on and half the
+[00:09:55.480] time off to give you 50% throttle PDM
+[00:09:58.640] frequency contr controls how fast that
+[00:10:00.760] switching occurs and there are three
+[00:10:02.320] settings 24 khz so 24,000 times a second
+[00:10:06.200] 48k and 96 khz let's start by looking at
+[00:10:09.959] the effect on motor KV and pwm frequency
+[00:10:13.160] doesn't have any effect on motor KV
+[00:10:15.480] because motor KV is measured at Full
+[00:10:17.480] Throttle which means that the ESC isn't
+[00:10:20.040] switching when you have U the motor at
+[00:10:22.760] Full Throttle each coil is just driven
+[00:10:25.560] 100% of the time and so the ESC never
+[00:10:27.760] switches and as we would would expect
+[00:10:29.920] that means that we get exactly the same
+[00:10:31.240] motor KV within the margin of error
+[00:10:33.320] regardless of the pwm frequency setting
+[00:10:36.040] the moment you start to look at less
+[00:10:37.600] than Full Throttle Everything Changes
+[00:10:39.720] because now we are switching power to
+[00:10:41.560] the coil and so the pwm frequency
+[00:10:43.560] setting is in effect and increasing the
+[00:10:46.000] pwm frequency actually decreases the
+[00:10:48.639] thrust at low and mid throttle but once
+[00:10:51.920] you get up to Full Throttle obviously
+[00:10:53.839] that thrust is the same across all the
+[00:10:55.480] pwm frequency settings because we're no
+[00:10:57.399] longer switching this giv a different
+[00:10:59.920] shape to the throttle curve for the
+[00:11:02.079] higher pwm frequencies with a sort of a
+[00:11:04.920] lower throttle curve initially that then
+[00:11:07.120] ramps up more quickly as you get closer
+[00:11:09.200] to Full Throttle now this shape of the
+[00:11:11.720] throttle curve could be a little bit
+[00:11:13.120] different to what you're used to but
+[00:11:14.600] don't worry because we can compensate
+[00:11:16.440] for it using throttle Expo I've crunched
+[00:11:18.920] the numbers on this and I found that if
+[00:11:20.480] you're moving from 24 or 48k pwm up to
+[00:11:24.000] 96k pwm and you want to have the same
+[00:11:27.720] shape of the throttle curve so you want
+[00:11:29.440] to best match a linear throttle curve at
+[00:11:32.160] 24 or 48 kpwm if you set throttle mid to
+[00:11:35.680] 1.0 and throttle Expo to
+[00:11:37.720] 0.25 that will effectively correct the
+[00:11:40.440] shape of the throttle curve for you and
+[00:11:42.600] match what you had before when you were
+[00:11:44.880] at 24 or 48 kpwm and this might be
+[00:11:47.920] really useful because I think you're
+[00:11:50.399] going to want to consider changing to
+[00:11:52.279] 96k pwm it turns out that pwm frequency
+[00:11:55.760] has a huge effect on the efficiency of
+[00:11:58.079] these tiny Motors that we use on our
+[00:12:00.000] whoops if you move from 24K pwm up to
+[00:12:03.800] 48k pwm then you can get an increase of
+[00:12:07.200] nearly
+[00:12:08.399] 25% in terms of RPM at the prop when
+[00:12:11.279] you're driving the motor at a constant
+[00:12:13.000] current of 1 amp and a voltage of 4
+[00:12:15.800] volts that increase of 25% RPM is more
+[00:12:19.560] like 55% increase in thrust because
+[00:12:22.920] thrust is proportional to the square of
+[00:12:25.560] motor RPM moving from 48k to 96 K the
+[00:12:29.839] difference is a bit smaller we get an
+[00:12:31.760] increase of about 8% in terms of RPM and
+[00:12:34.639] that's maybe 177% increase in terms of
+[00:12:37.480] thrust but that is still very very much
+[00:12:39.800] worth having it's it's going to allow
+[00:12:41.800] you to fly for longer and if you're a
+[00:12:43.839] racer it's going to allow you to be at
+[00:12:45.800] higher throttle for more of the time and
+[00:12:48.320] that's going to allow you to race faster
+[00:12:50.760] to fly faster for longer I should be
+[00:12:53.639] clear though that this efficiency
+[00:12:55.040] Improvement is only seen at partial
+[00:12:57.440] throttle if you are always close to or
+[00:13:00.279] at Full Throttle you won't see any
+[00:13:02.320] efficiency difference between the
+[00:13:03.680] different pwm settings but if you're
+[00:13:05.680] cruising around with an average of 30 to
+[00:13:08.240] 50% throttle you are going to see a huge
+[00:13:10.800] improvement from these higher pwm
+[00:13:12.440] frequencies unfortunately it's not all
+[00:13:14.720] good news with higher pwm frequencies
+[00:13:17.839] higher pwm doesn't really have an effect
+[00:13:19.560] on motor acceleration once you take into
+[00:13:22.160] account the fact that obviously you're
+[00:13:24.000] accelerating to a slightly different RPM
+[00:13:26.680] at higher pwm frequencies the the actual
+[00:13:29.600] acceleration rate of the motor is pretty
+[00:13:31.839] similar whether you're running at 24K or
+[00:13:34.000] 96k pwm but when we're looking at motor
+[00:13:37.560] deceleration that higher pwm frequency
+[00:13:40.199] does significantly slow how fast the
+[00:13:42.959] motor is able to be decelerated by the
+[00:13:45.240] ESC so motor braking is less effective
+[00:13:47.959] at that higher pwm frequency but you
+[00:13:50.920] know we're only talking about maybe 10
+[00:13:53.880] 20 milliseconds from a 50% to 10%
+[00:13:57.240] throttle deceleration and overall I
+[00:13:59.920] think the massive gains in efficiency
+[00:14:01.639] that you get from those higher pwm
+[00:14:03.199] frequencies are probably worthwhile even
+[00:14:06.000] if you do lose a lid of a little bit of
+[00:14:07.959] motor braking performance all right so
+[00:14:10.160] now that we've found the best settings
+[00:14:11.560] I'm going to take you step by step
+[00:14:13.360] through applying these to your ESC so
+[00:14:16.560] I've got my tiny whoop here and I'm
+[00:14:18.040] going to plug it into my computer over
+[00:14:19.560] USB and I'm also going to plug in a
+[00:14:22.000] battery to power up the ESC as well
+[00:14:24.839] there we go we powered up once I've done
+[00:14:27.279] that I'm going to go to ESC configurator
+[00:14:29.920] open the port selection select the
+[00:14:31.800] betaflight stm32 comport hit connect and
+[00:14:35.279] then hit the Big Green connect button
+[00:14:37.320] that will connect to the flight
+[00:14:38.800] controller and if we hit read settings
+[00:14:40.839] we can get all the settings for the
+[00:14:42.519] esc's on our tiny so we can see that
+[00:14:45.639] we've got the settings coming up here
+[00:14:47.800] the first thing we're going to want to
+[00:14:48.839] do is we're going to want to flash all
+[00:14:51.000] the esc's with the latest version of
+[00:14:52.880] bluej and select the 96 khz pwm option
+[00:14:57.440] so jump into flash all esc's then we've
+[00:15:01.120] got the firmware is going to be blue J
+[00:15:03.120] we're going to leave the ESC selection
+[00:15:04.759] as it is because that's going to autop
+[00:15:06.240] populate we don't want to change it and
+[00:15:07.880] we're going to select the latest version
+[00:15:09.920] version 21 and 96 kpwm once we've done
+[00:15:13.360] all that just hit Flash and then over a
+[00:15:16.120] few seconds all of the esc's on your
+[00:15:18.399] tiny whoop are going to be flashed to
+[00:15:20.199] the latest version of Blue J with 96 khz
+[00:15:23.160] pwm once all of the esc's have flashed
+[00:15:26.320] we can apply the recommended settings so
+[00:15:28.600] first off we are going to be turning up
+[00:15:30.560] this minimum startup power that needs to
+[00:15:32.680] be set to the maximum value for these
+[00:15:35.040] tiny little Motors to make sure they
+[00:15:36.600] start reliably similarly the maximum
+[00:15:38.959] startup power we can increase that up to
+[00:15:41.560] the maximum value as well that's going
+[00:15:43.079] to be absolutely fine for motor timing
+[00:15:45.959] we found that 15° was the optimum so
+[00:15:48.199] we're going to set that and leave dmag
+[00:15:50.040] compensation at low for RPM Power
+[00:15:52.600] Protection I mean you can leave this at
+[00:15:54.040] default but I always like to have it at
+[00:15:56.720] the lowest value where it doesn't limit
+[00:15:59.040] motor acceleration to minimize the
+[00:16:00.680] chance of power spikes so for me I'm
+[00:16:02.920] going to set that down to three times
+[00:16:06.120] and that should give me a fast ramp up
+[00:16:08.959] so fast acceleration of the motor but
+[00:16:11.000] avoid large power large power spikes
+[00:16:13.880] which might reduce my efficiency
+[00:16:16.160] everything else can pretty much be left
+[00:16:18.279] exactly as it's set the only difference
+[00:16:20.560] being uh the ESC power rating if you
+[00:16:23.600] have a board that's only for 1s then you
+[00:16:26.519] can set this to 1s if you have a board
+[00:16:28.920] board that's for 1 to 2s then you're
+[00:16:31.000] going to set this to 2s plus the board I
+[00:16:33.800] have is a 1 to 2s board so I'm just
+[00:16:36.120] going to leave it at that once you've
+[00:16:38.440] done all of those changes just hit right
+[00:16:40.399] settings and that is going to overwrite
+[00:16:43.360] all the settings on your ESC and now
+[00:16:45.040] you're good to go just changing those
+[00:16:46.920] few ESC settings is going to greatly
+[00:16:49.079] improve the flight performance of your
+[00:16:50.560] tiny whoop but it's not the only thing
+[00:16:52.560] we need to adjust we also need to look
+[00:16:54.600] at the motors and props that are
+[00:16:56.399] available for these tiny drones in order
+[00:16:58.480] to get the ultimate setup for the best
+[00:17:00.720] possible flight performance and that's
+[00:17:02.480] what we're going to be doing in future
+[00:17:03.959] videos so make sure you like this video
+[00:17:06.199] subscribe to the channel and hit that
+[00:17:07.959] notification Bell so you see my motor
+[00:17:10.199] testing and prop testing videos for tiny
+[00:17:12.520] whoops as soon as they come out and
+[00:17:14.520] follow along with me as we find the
+[00:17:16.600] ultimate combination of components for
+[00:17:18.559] your next tiny build I really hope
+[00:17:20.679] you enjoyed this video thanks for taking
+[00:17:22.640] the time to watch it and I'll see you in
+[00:17:24.199] the next one happy flying
+[00:17:30.720] [Music]

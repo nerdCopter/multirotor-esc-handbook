@@ -1,0 +1,1001 @@
+[00:00:00.480] about two years ago a guy named pete
+[00:00:02.639] smits
+[00:00:03.199] wanted a custom feature from a blheli32
+[00:00:06.000] esc
+[00:00:06.960] and here's the problem blheli32 is
+[00:00:09.519] closed source
+[00:00:10.800] only the blheli32 developers can modify
+[00:00:14.000] the firmware on a blh-32e
+[00:00:17.359] bls blheli s is open source and lots of
+[00:00:20.800] people are working on modifying and
+[00:00:22.240] improving it
+[00:00:23.119] open source is awesome but the problem
+[00:00:25.039] is blheli sescs
+[00:00:27.359] are slower they have less processing
+[00:00:29.279] power they have less memory
+[00:00:30.560] and they just can't do as much as bla-32
+[00:00:33.120] esc's
+[00:00:34.160] so pete schmitz gave up and went on
+[00:00:36.320] about his life
+[00:00:37.200] no pete spitz sat down
+[00:00:40.559] and started working on a whole new
+[00:00:43.120] firmware for
+[00:00:44.680] blheli32escs and as you'll see in this
+[00:00:47.680] interview which that's what today's
+[00:00:49.760] video is an interview with pete
+[00:00:51.680] he thought oh i'm gonna just write an
+[00:00:53.039] esc firmware how hard could it be
+[00:00:55.440] and two years later here he is and it's
+[00:00:58.399] basically done
+[00:00:59.359] and in fact right now if you want to use
+[00:01:02.239] this firmware
+[00:01:03.359] flashing it onto the esc is a little bit
+[00:01:05.680] cumbersome
+[00:01:06.960] but diatone is working on esc's with
+[00:01:09.520] this firmware already
+[00:01:10.720] on them and i'll make a video about that
+[00:01:12.400] when they finally come out but today
+[00:01:14.640] i would like you to sit down with me and
+[00:01:18.080] meet pete smits the guy who just one day
+[00:01:21.520] wrote his own firmware for esc's from
+[00:01:24.000] scratch
+[00:01:25.040] because he thought it would be cool
+[00:01:29.360] and i'm really excited i'm excited i
+[00:01:32.079] don't know if you can tell
+[00:01:32.960] i'm excited about this because some of
+[00:01:34.880] the work that's going on
+[00:01:36.720] in this am 32 esc
+[00:01:40.240] open source it's they're making esc's do
+[00:01:42.960] things
+[00:01:43.680] really cool that like people don't think
+[00:01:45.759] why would you do that
+[00:01:46.720] but you can now that there's an open
+[00:01:48.240] anyway on with the interview
+[00:01:50.720] well i guess i guess i would ask like
+[00:01:53.040] what is so what motivated you
+[00:01:55.520] tell me the story of how you came to do
+[00:01:57.200] this like
+[00:01:58.640] was it just like a passion project did
+[00:02:00.479] you see a deficit
+[00:02:01.680] that you wanted to solve uh well i've
+[00:02:04.560] been doing hardware for
+[00:02:06.079] longer than i've ever written a line of
+[00:02:09.520] code
+[00:02:10.239] i've been and now i was making hardware
+[00:02:12.400] for simon k
+[00:02:13.920] firmware back in the day and then when
+[00:02:15.840] bl heli became a thing
+[00:02:17.840] i was making hardware with uh and coming
+[00:02:20.720] up with uh
+[00:02:23.040] anything that pops into my head if
+[00:02:24.640] there's a new part on the market i've
+[00:02:26.400] got a truck
+[00:02:27.120] and if it's a new mosfet that comes out
+[00:02:29.200] from a manufacturer or a new driver
+[00:02:31.360] or a new mcu i gotta try so it's uh
+[00:02:35.280] and then i actually started making some
+[00:02:38.319] 32-bit
+[00:02:39.760] controllers on this uh mcu called the
+[00:02:43.360] st spin 32 which is a little all-in-one
+[00:02:47.840] microcontroller and gate driver and it
+[00:02:49.760] was pretty cool
+[00:02:51.360] and i i'd asked uh
+[00:02:55.840] stefan um if he would license
+[00:02:58.959] a version of blheli32
+[00:03:02.560] to because i want to just buy it and i
+[00:03:04.560] didn't want it i knew it was closed
+[00:03:06.080] source and said hey can you
+[00:03:07.840] can you license i can register the
+[00:03:11.040] uid of the chip and you know we could
+[00:03:13.040] just license a copy
+[00:03:14.480] and he wouldn't do that so and i've
+[00:03:16.800] already made the boards at that point in
+[00:03:18.319] time so i thought okay well that's kind
+[00:03:19.840] of
+[00:03:20.800] yeah i didn't really want to start
+[00:03:23.040] writing firmware at that point in time
+[00:03:24.480] but
+[00:03:24.879] unless i do that so you had weights
+[00:03:27.920] back up back up you had a custom
+[00:03:30.400] hardware that you'd build a custom esc
+[00:03:32.959] because you were interested in trying
+[00:03:34.640] out these different whatever
+[00:03:36.799] fet drivers and processors and so forth
+[00:03:39.280] to see if you could get better
+[00:03:40.239] performance or just out of curiosity
+[00:03:42.319] but you needed software to run on it
+[00:03:44.159] yeah blheli32 being closed source
+[00:03:47.360] you couldn't just flash it and he
+[00:03:48.799] wouldn't license it to you so you were
+[00:03:50.159] just like
+[00:03:50.640] okay i guess i'll just write my own well
+[00:03:52.799] and there was a bit of time in between
+[00:03:54.400] where
+[00:03:54.720] i thought i was going to be able to
+[00:03:56.239] which i probably wouldn't even started a
+[00:03:58.560] hardware project but
+[00:04:00.640] um way back in the bles days i said
+[00:04:03.760] when he announced blhelia32 i said well
+[00:04:07.040] can i buy a license for a hobbyist when
+[00:04:09.680] you've got
+[00:04:10.720] the lle 32 out and he said i'm sure we
+[00:04:13.040] can arrange something
+[00:04:14.400] but that's great well i made some
+[00:04:17.040] hardware and then when it came to it
+[00:04:19.840] it was just and he was very polite about
+[00:04:21.919] it and i under you know he said it's
+[00:04:23.520] only for manufacturers and i'm only
+[00:04:25.520] going to deal with
+[00:04:26.800] with harbor manufacturers and not
+[00:04:28.560] individual hobbyists
+[00:04:30.880] well i'm sure that was disappointing i
+[00:04:34.080] do
+[00:04:34.400] i do i don't want to like sound like
+[00:04:35.919] we're piling on stefan who does a ton of
+[00:04:38.320] work
+[00:04:40.720] like i mean i wanted to use his firmware
+[00:04:43.440] in the first place i think bl helly is
+[00:04:45.120] great
+[00:04:45.919] and i i i probably wouldn't have started
+[00:04:48.479] this project
+[00:04:49.280] if i had known how much work it was
+[00:04:50.880] going to be you know that was
+[00:04:52.479] that was two years ago now and i thought
+[00:04:56.080] how hard would it be to get a motor to
+[00:04:58.080] spin you know it's just
+[00:04:59.840] like you just need to make something go
+[00:05:01.520] in a circle right like
+[00:05:04.160] but you know it was it was a lot of work
+[00:05:07.520] involved
+[00:05:08.479] famous last words now let me ask you why
+[00:05:11.360] why
+[00:05:11.840] didn't you use blheli s because
+[00:05:13.600] blheli s is open source
+[00:05:15.520] um i'm sure there's a good answer for
+[00:05:18.160] that
+[00:05:19.120] yeah well i mean the the big thing was i
+[00:05:21.680] mean some of the
+[00:05:23.120] bl helis was getting to the end of its
+[00:05:25.120] days when it comes to
+[00:05:26.639] new capabilities and well i was trying
+[00:05:29.199] to make a
+[00:05:30.240] sensorless speed controller at the time
+[00:05:32.160] that used spi
+[00:05:33.440] as an input and that just wasn't
+[00:05:35.280] something that was even unless i
+[00:05:37.600] asked stefan to code me some spi
+[00:05:41.120] input for bl helles which wouldn't be on
+[00:05:44.320] his radar i mean i
+[00:05:46.080] i couldn't understand um assembly
+[00:05:50.160] um no i see right because bl hilly s was
+[00:05:53.680] written completely in
+[00:05:55.440] this crazy obscure assembly code that
+[00:05:58.160] like
+[00:05:59.120] five people in the world i'm
+[00:06:00.800] exaggerating but not by much
+[00:06:02.960] no so even though it was it was funny to
+[00:06:05.039] me because although it was open source
+[00:06:07.759] almost no one else in the world could
+[00:06:09.680] actually work with it
+[00:06:11.440] because it was successful yeah yeah i
+[00:06:13.280] know i mean it's and i i could actually
+[00:06:15.039] written an arduino-based
+[00:06:17.440] sort of esc program before so i wasn't
+[00:06:20.720] completely new to it but
+[00:06:22.960] i couldn't understand a single bit i
+[00:06:25.120] just got so lost every single time i
+[00:06:27.120] stared at bl
+[00:06:28.000] ali i couldn't understand it at all and
+[00:06:29.919] yeah and i still can't to this day
+[00:06:33.520] now now why did you want an spi based
+[00:06:36.720] interface for your esc
+[00:06:38.240] what's the advantage of that compared to
+[00:06:39.680] how we do it now well that was actually
+[00:06:41.759] for a sensor
+[00:06:42.960] um there is a sensor called the uh ma701
+[00:06:47.720] ma704 and it's a position sensor
+[00:06:51.759] that uses uh it's a magnetic position
+[00:06:54.080] sensor so it's just like an encoder
+[00:06:56.240] but a very high resolution one and
+[00:06:59.199] unlike an encoder it can go up to about
+[00:07:00.880] 60 000 rpm or something ridiculously
+[00:07:04.400] so it's um you could essentially make a
+[00:07:06.880] sense
+[00:07:07.840] it was for ground vehicles
+[00:07:11.280] they get a nice uh end of shaft sensor
+[00:07:14.720] that can go on to in-runner motors and
+[00:07:17.360] give me
+[00:07:18.479] zero to whatever rpm and ice control
+[00:07:22.400] i think um it was one of those ideas
+[00:07:26.080] that uh
+[00:07:29.120] this sort of fell to the wayside like so
+[00:07:31.360] many
+[00:07:32.720] yeah but that was one of the reasons for
+[00:07:35.120] wanting a 32-bit controller
+[00:07:37.120] um also the uh there's there's more
+[00:07:40.240] things you can do with the timers the
+[00:07:41.919] resolution of the timers
+[00:07:43.360] especially in the 8-bit processors once
+[00:07:45.440] you get if you can see it in the detail
+[00:07:47.680] resolution as you get higher too it's
+[00:07:50.319] they're really pushing the limits of
+[00:07:51.919] what they can do with them and it's
+[00:07:53.440] uh and i'm working on some
+[00:07:56.639] field-oriented control
+[00:07:58.240] and i have been from there's esc's and
+[00:08:02.400] that's all 32-bit based because you
+[00:08:05.520] really need
+[00:08:06.000] uh or heavy math functions um
+[00:08:09.280] and so it's uh i think for me that
+[00:08:12.720] you know i i program in c and i don't uh
+[00:08:17.520] you know i could rather not try to
+[00:08:21.759] learn assembly and go through all the
+[00:08:23.280] bits and bytes i just want to
+[00:08:25.280] work on the higher logic given the
+[00:08:28.160] choice between
+[00:08:29.039] decoding bl helis's assembly and
+[00:08:32.240] just writing it all from scratch i can
+[00:08:34.479] totally understand why you wrote it all
+[00:08:36.080] from scratch
+[00:08:40.000] that's actually the rational decision
+[00:08:42.159] now that i understand it
+[00:08:43.519] yeah and i mean to get it spinning was
+[00:08:46.160] actually really i
+[00:08:47.120] i thought i was gonna do amazing it's
+[00:08:49.519] the first week
+[00:08:50.480] i had this motor spinning i was like
+[00:08:51.920] this is no problem at all
+[00:08:53.680] and then d shot holy crap and then
+[00:08:56.320] bi-directional d-shot and the amount of
+[00:08:58.240] coding that you have to go through that
+[00:08:59.920] was just
+[00:09:01.839] yeah but i mean i wanted to keep all the
+[00:09:04.080] code um
+[00:09:06.880] original and i wanted to try to even if
+[00:09:09.360] it's not the best
+[00:09:10.640] way to do it i mean it's it's all open
+[00:09:12.880] source and it's all
+[00:09:14.240] uh fairly legible so you know somebody
+[00:09:16.480] can maybe read my code and
+[00:09:19.120] and write it out in assembly or put it
+[00:09:21.120] in you know do it better i'm sure
+[00:09:24.080] people are doing it better already but
+[00:09:26.560] it sounds like there's a potential here
+[00:09:28.399] for the am 32 project to be an
+[00:09:31.760] open source alternative to blheli32
+[00:09:36.320] for because other other people who maybe
+[00:09:38.720] want like there are people right now
+[00:09:40.560] like um joe lucid and jesus c or jazz
+[00:09:43.360] maverick
+[00:09:44.240] uh who are extending vl heli s
+[00:09:47.279] far past what anyone thought was
+[00:09:48.640] possible but like you said they're
+[00:09:50.240] hitting the limits of what that hardware
+[00:09:52.000] is even capable of
+[00:09:54.000] and they can't really where are they
+[00:09:55.440] going to go from there
+[00:09:57.040] and now it sounds like maybe am32 is a
+[00:09:59.680] place to
+[00:10:00.480] have a code base that runs on more
+[00:10:03.519] sophisticated
+[00:10:04.160] hardware i don't know you know it works
+[00:10:06.640] and i mean uh
+[00:10:07.519] i know joe is or thorstein is his name
+[00:10:11.200] i bet it better yes i'm not sure but
+[00:10:13.360] thirsty
+[00:10:14.240] i think is his name yeah he took my code
+[00:10:18.160] he could do some amazing stuff with it
+[00:10:20.560] and
+[00:10:21.279] probably i mean it's it's a lot easier
+[00:10:23.040] to understand and had to
+[00:10:25.120] uh but uh everybody seems to want to do
+[00:10:28.560] their own thing
+[00:10:30.240] you know and he sees online with us at
+[00:10:33.200] the
+[00:10:33.839] this sort of started off in the uh in
+[00:10:36.480] the chat
+[00:10:37.040] spaces of the beta fight flight
+[00:10:40.240] open esc firmware group where we sort of
+[00:10:43.760] uh i mean i had a little bit of working
+[00:10:45.839] firmware that wasn't very well written a
+[00:10:47.760] few years ago
+[00:10:50.000] never had any sort of commercial intent
+[00:10:52.160] to
+[00:10:55.440] make it work on other hardware past my
+[00:10:57.680] own
+[00:10:58.959] and uh i mean and
+[00:11:02.800] uh joe lucid was always there working on
+[00:11:05.120] his own
+[00:11:06.079] you know working just flogging the bb2
+[00:11:08.640] to death i mean
+[00:11:09.519] he just tried to get every last little
+[00:11:11.600] bit of performance out of it as you can
+[00:11:13.360] and we were just saying like why don't
+[00:11:14.560] you
+[00:11:15.279] why don't you help us with this why
+[00:11:16.800] don't you use this and help us
+[00:11:18.959] it's a process it works it flies it
+[00:11:21.200] works great
+[00:11:22.000] but it just you know he liked to do his
+[00:11:24.240] own thing and
+[00:11:25.680] and then jazz maverick was on there too
+[00:11:27.920] but he
+[00:11:29.120] didn't listen to anybody um yeah i've
+[00:11:32.320] heard that
+[00:11:33.040] so uh yeah i mean so
+[00:11:37.120] it just became something that i picked
+[00:11:39.120] away at until eventually reached a point
+[00:11:41.200] where it sort of was a tipping point
+[00:11:42.640] where
+[00:11:43.760] i think it was the configurator i think
+[00:11:45.360] once i got um
+[00:11:47.120] the pass-through working with theo helix
+[00:11:49.760] so
+[00:11:50.240] you no longer have to take your your
+[00:11:53.920] esc's out of your quadcopter and solder
+[00:11:56.720] onto them and
+[00:11:57.920] so now you can just plug in a usb
+[00:11:59.600] controller or usb
+[00:12:01.360] port in the way you go that was really
+[00:12:04.240] the point where
+[00:12:05.120] people started using it and it's uh well
+[00:12:08.560] let me ask you so right now there are no
+[00:12:11.360] commercially available esc's
+[00:12:13.519] that come with your firmware on him is
+[00:12:15.839] that right
+[00:12:16.959] so how do people if they want to try
+[00:12:18.800] this how do they
+[00:12:20.639] because you sent me some esc's that you
+[00:12:22.320] had already flashed if somebody wants to
+[00:12:24.240] try this what do they need to do
+[00:12:25.839] well you know it's really this
+[00:12:28.880] my design for it was for hobbyists to
+[00:12:30.959] put on their own
+[00:12:32.800] hardware right so it's uh that's really
+[00:12:35.440] who i
+[00:12:36.079] i support people who make their own
+[00:12:38.320] hardware
+[00:12:39.360] i do have a set of firmware instructions
+[00:12:42.320] and flashing instructions to re
+[00:12:44.320] remove bl heli from an esc and put am 32
+[00:12:48.240] on but i don't know if i would do that
+[00:12:50.880] i mean it's like well listen to
+[00:12:52.480] somebody's perfectly good working
+[00:12:54.160] engine out of something and replacing
+[00:12:55.600] with something else you say that but the
+[00:12:57.839] same thing that motivated you to do this
+[00:13:00.000] project in the first place
+[00:13:01.360] is going to motivate somebody else to
+[00:13:02.959] try out am32
+[00:13:04.839] yeah does it require a special
+[00:13:08.399] programming adapter or is it just done
+[00:13:10.240] through usb at the first one it would
+[00:13:12.560] require an st link yeah and it's because
+[00:13:14.720] the
+[00:13:15.440] bootloader that for bl heli32 is
+[00:13:19.360] locked and the pscs are
+[00:13:22.560] read out protected and right protected
+[00:13:25.040] you have to unlock
+[00:13:26.399] some option bits through an st link to
+[00:13:28.639] even make the
+[00:13:29.600] chip writable and so that's
+[00:13:32.800] that's the unfortunate thing and then
+[00:13:34.800] once you've done that
+[00:13:35.839] you can upload uh a bootloader that i
+[00:13:39.519] have
+[00:13:40.480] um that is on my
+[00:13:43.519] repo on github and then from there
+[00:13:46.000] everything is done with just through
+[00:13:47.600] pass through and bl heli suite
+[00:13:50.000] a ble configurator or am32 configurator
+[00:13:53.199] they both work
+[00:13:54.079] very well got you now i'm looking on
+[00:13:56.079] amazon and i'm just seeing st link
+[00:13:58.000] programmers for like 10 bucks is that
+[00:13:59.920] what you're
+[00:14:00.639] this and do they have to solder it onto
+[00:14:03.760] pads or does it how does it connect to
+[00:14:05.440] the
+[00:14:05.760] to this chip yeah pretty much all of
+[00:14:07.839] them have
+[00:14:09.360] every four and one has those little pads
+[00:14:11.920] on it
+[00:14:12.560] um i see and you just have to uh what i
+[00:14:15.440] made is a little set of like
+[00:14:17.680] they're almost like little pins so just
+[00:14:19.920] two little
+[00:14:20.959] needles and i just sort of stab them
+[00:14:23.440] onto the
+[00:14:24.480] pads on the board close together and
+[00:14:26.240] then while i'm holding them there i
+[00:14:28.320] i press the buttons to gotcha so it's
+[00:14:31.199] it's kind of a
+[00:14:32.240] you know but there are some uh for
+[00:14:35.600] some commercial esc's coming out i
+[00:14:38.720] suppose
+[00:14:39.600] i i've been paid some royalties for them
+[00:14:42.560] so
+[00:14:44.800] yeah so i don't care if they come out
+[00:14:46.959] now but
+[00:14:47.920] you know they're they're they're gonna
+[00:14:49.199] be out there i think and the diets own
+[00:14:51.199] uh so that's why they've got we've got
+[00:14:52.880] three diaton targets that are on
+[00:14:55.279] uh that are actually properly named
+[00:14:57.040] targets and they have proper
+[00:14:59.680] dead times matched for their hardware
+[00:15:02.079] and
+[00:15:03.040] those ones are because they gave us a
+[00:15:05.199] little bit of money and they
+[00:15:07.120] they have so many controllers that they
+[00:15:09.600] want to put out with this on it
+[00:15:11.440] and they would rather actually they said
+[00:15:13.279] they wanted to do something instead of
+[00:15:14.720] doing it for free
+[00:15:15.760] they'd rather pay us a little bit i hope
+[00:15:18.160] that they're compensating you fairly for
+[00:15:19.839] the amount of benefit that they're
+[00:15:21.120] getting
+[00:15:21.920] in terms of not having to pay however
+[00:15:23.680] much the royalty is for billy 32
+[00:15:26.480] yeah well and that's that's the tricky
+[00:15:28.320] thing i mean it's uh
+[00:15:30.560] it's nice that i'm getting anything at
+[00:15:32.800] all
+[00:15:34.000] because it is open source and they can
+[00:15:36.000] just
+[00:15:37.120] oh that's true and release it
+[00:15:41.360] um and that's what we're it's where it's
+[00:15:43.920] hard to
+[00:15:44.560] keep tabs on that really who's going to
+[00:15:47.360] use it what they're going to use it for
+[00:15:48.800] how many people are going to use it um
+[00:15:50.720] and really if we start getting a lot of
+[00:15:53.759] support requests
+[00:15:55.519] yeah then we'll say look who sold you
+[00:15:57.759] the se who made it
+[00:15:59.360] go to them ask well you're going to end
+[00:16:01.920] up in the exact same position that
+[00:16:03.759] that stefan did when they shifted from
+[00:16:05.839] blle as to bla32 i mean
+[00:16:08.480] they started charging money for bloody
+[00:16:10.399] 30. that i was so
+[00:16:11.920] impressed and i'm not that i'm not
+[00:16:13.680] impressed now but
+[00:16:14.959] when blheli s was out i would see people
+[00:16:18.720] almost literally begging stefan to take
+[00:16:21.680] they're like please will you take a
+[00:16:22.959] donation can i send you can i contribute
+[00:16:25.120] and they said no they just refused all
+[00:16:28.000] donations from people they just wanted
+[00:16:29.680] to make this
+[00:16:30.800] and only when the support requests got
+[00:16:33.279] to the point where they were like we
+[00:16:34.480] can't do this anymore did they switch
+[00:16:36.000] to billy 32 which was a licensed model
+[00:16:39.120] and they were like well i guess if this
+[00:16:40.160] is our job we may as well get paid so
+[00:16:42.240] here's your github repo
+[00:16:43.920] and am 32 multi-rotor esc firmware in
+[00:16:47.519] the right-hand side here
+[00:16:48.959] okay got it and then under release
+[00:16:52.320] release there for now and then i'm going
+[00:16:55.040] to
+[00:16:55.759] uh plug in usb
+[00:16:58.800] controller plug in the battery
+[00:17:02.480] right then connector exe it's at the
+[00:17:06.480] very bottom there
+[00:17:08.079] ah great okay
+[00:17:11.120] and then you should be able to find your
+[00:17:13.360] serial port bottom left
+[00:17:15.039] will it connect automatically no just
+[00:17:16.959] hit connect okay
+[00:17:18.480] hit connect there you go okay
+[00:17:22.640] and now what and now you should be able
+[00:17:24.400] to click on a motor
+[00:17:26.559] one at a time or all four at once click
+[00:17:28.480] it once one there okay
+[00:17:30.000] connecting esc number one there you go
+[00:17:32.960] huh
+[00:17:33.520] so that means i just read all these the
+[00:17:36.080] settings from that esc
+[00:17:37.760] i'm looking at these options um the
+[00:17:40.559] options look pretty standard reverse
+[00:17:42.400] rotation
+[00:17:43.440] now variable pwm that's something that
+[00:17:45.640] blheli32
+[00:17:47.039] has in their nightlys but have not
+[00:17:49.919] released yet hang on let me take let me
+[00:17:51.679] make you full screen again
+[00:17:53.200] yeah he actually gave me credit on his
+[00:17:55.039] uh and his
+[00:17:56.880] his forum there about about coming up
+[00:17:59.520] with that one
+[00:18:00.720] but variable pwm it's pretty cool it's
+[00:18:03.200] uh it solves a lot of problems
+[00:18:05.200] um and i mean the the
+[00:18:08.320] i i do it a little differently than he
+[00:18:10.720] does it right now too
+[00:18:11.840] and i think that my option well
+[00:18:15.200] i'll explain it a bit first but
+[00:18:18.240] the uh first of all the problem
+[00:18:21.440] with a fixed pwm rate and a motor
+[00:18:24.720] spinning is once you get to
+[00:18:26.160] motor frequencies uh commutation
+[00:18:28.960] frequencies that are approaching the
+[00:18:30.400] harmonics
+[00:18:31.360] of the pwm rate the motor actually wants
+[00:18:34.320] to sort of stick to those frequencies
+[00:18:36.160] and you see
+[00:18:37.600] bumps in rpm and you see that the rpm
+[00:18:40.720] will sort of stick to those commutation
+[00:18:42.480] rates
+[00:18:43.919] so variable pwm frequency first of all
+[00:18:48.080] always changes the pwm frequency based
+[00:18:51.440] on the rotation speed so
+[00:18:55.200] the that is just
+[00:18:58.240] hold on hold on you just blew my mind a
+[00:19:00.640] tiny bit
+[00:19:01.600] it's pretty cool that is so i've always
+[00:19:04.640] thought about it variable pwm
+[00:19:06.559] from the perspective of the torque that
+[00:19:09.360] that at higher frequencies
+[00:19:11.039] you have less torque and so when i
+[00:19:12.960] thought about variable pwm
+[00:19:14.799] i thought about low pwm frequency
+[00:19:18.400] at low rpm high pwn frequency at high
+[00:19:20.559] rpm that's kind of a
+[00:19:22.080] small side effect benefit of it too
+[00:19:25.120] you just blew my mind you're
+[00:19:26.400] specifically avoiding
+[00:19:28.400] the harmonics of the motor rpm and
+[00:19:30.720] that's insane
+[00:19:31.840] that's where mine starts so right before
+[00:19:34.720] mine stays at 24 kilohertz
+[00:19:36.799] until the motor is at around 11
+[00:19:40.160] and a half kilohertz commutation speed
+[00:19:43.520] at that point i start stepping up the
+[00:19:46.080] pwm frequency proportionally
+[00:19:49.039] with the speed of the motor so it never
+[00:19:51.440] reaches
+[00:19:52.080] that point and that works for ninety
+[00:19:54.559] percent of the motors
+[00:19:56.000] in their range that you don't see any
+[00:19:58.880] rpm discrepancies and you don't see any
+[00:20:00.960] stiction
+[00:20:01.760] and it makes it so smooth you get this
+[00:20:03.679] nice very smooth feeling from start to
+[00:20:06.240] finish
+[00:20:06.960] and it starts off at 24 kilohertz and
+[00:20:09.039] ends up at 48 kilohertz
+[00:20:11.360] if your motor goes faster than a certain
+[00:20:14.240] you will find a
+[00:20:15.600] a sticking point but generally when
+[00:20:17.200] you're when you're at full throttle
+[00:20:19.440] you're not you don't care so much it's
+[00:20:21.200] it's
+[00:20:21.520] the mid throttles right notice right
+[00:20:23.360] like
+[00:20:24.960] yes at low rpm
+[00:20:28.320] you're concerned mostly about torque
+[00:20:30.720] because you
+[00:20:31.520] you don't have you need to stabilize
+[00:20:33.440] yourself at low rpm
+[00:20:34.880] and at mid rpm you're very concerned
+[00:20:37.679] about those harmonics
+[00:20:39.120] because during cruise you'll just get
+[00:20:41.039] these little jitters and shutters
+[00:20:43.280] right but at high rpm you have plenty of
+[00:20:46.000] torque because the motor is just going
+[00:20:47.919] hog wild yeah and smoothness i mean
+[00:20:51.679] you're just at such high rpm
+[00:20:53.440] that you're usually not concerned so
+[00:20:54.720] much about smoothness when you're at
+[00:20:55.919] full throttle
+[00:20:56.960] yeah exactly and it doesn't really seem
+[00:20:58.960] to i mean
+[00:21:00.640] they the the torque difference i i don't
+[00:21:03.919] know i'm not gonna
+[00:21:05.120] i'm talking on my ass so i don't know
+[00:21:06.480] anything about it so
+[00:21:08.159] um but when it comes to pwm frequency
+[00:21:11.360] it really does um like
+[00:21:15.520] as you get higher in pwm frequency you
+[00:21:17.520] do lose a little bit of torque in the
+[00:21:18.880] high end
+[00:21:19.520] i mean it's uh your dead time gets
+[00:21:21.600] longer proportionally
+[00:21:23.360] um as a proportion of time in total so
+[00:21:26.559] you lose a little bit of your driving
+[00:21:29.280] power you lose a little bit of your
+[00:21:30.400] braking power
+[00:21:31.760] um but you do avoid those pwm harmonics
+[00:21:35.120] and you make the
+[00:21:36.960] um even just staying at a higher fixed
+[00:21:40.000] pwm frequency you make the pw harmonics
+[00:21:43.039] lesser but doing a variable frequency
+[00:21:47.200] that stays with
+[00:21:48.320] the pwm frequency and just keeps it
+[00:21:50.000] fairly out of range
+[00:21:51.440] it does have a nice effect and you can
+[00:21:52.960] see it when you do sort of do a
+[00:21:55.200] zero to full rpm curve and it just it's
+[00:21:58.960] a dead straight line all the way up
+[00:22:00.799] which is interesting pretty cool that's
+[00:22:03.679] really fascinating i'm um that's that's
+[00:22:05.919] interesting and i'll be interesting to
+[00:22:07.440] compare that to how
+[00:22:09.200] so how does ble32 doing it do you know
+[00:22:12.080] well
+[00:22:12.480] so i think he's going to do it like i do
+[00:22:14.480] once he okay
+[00:22:16.080] once he sees the advantage he just
+[00:22:18.000] picked a 0 to 100 and starts off at 24
+[00:22:21.440] and at full throttle is at 48 kilohertz
+[00:22:25.120] or
+[00:22:25.440] 96 kilohertz uh it's not based on
+[00:22:28.720] commutation frequency like minus so it's
+[00:22:31.280] gotcha
+[00:22:32.000] so i think the difference is the pl
+[00:22:33.600] heli1 is based on throttle mines based
+[00:22:35.600] on the speed of the mode
+[00:22:37.280] because i saw that you have motor poles
+[00:22:38.960] in the configurator and i was like well
+[00:22:40.640] why
+[00:22:41.200] the reason you need motor poles is
+[00:22:42.640] because you want to know the motor rpm
+[00:22:44.159] the actual rpm
+[00:22:45.679] which betaflight uses that for the rpm
+[00:22:48.400] filter but i couldn't figure out why the
+[00:22:49.840] esc needed that
+[00:22:51.200] but now i see your vl heli option that
+[00:22:54.159] you've probably
+[00:22:55.039] seen which is low rpm throttle protect
+[00:22:59.200] that's in the configurator um and what
+[00:23:02.480] is low rpm
+[00:23:04.799] for beta for bl heli i mean it's uh
+[00:23:08.400] it's a fixed number um and so that's the
+[00:23:10.720] thing and that's why there's some
+[00:23:11.679] problem with people who run big motors
+[00:23:13.280] with it because
+[00:23:14.799] you either have to turn it off and on
+[00:23:16.640] it's a fixed
+[00:23:17.840] fixed amount there's not a so my our i
+[00:23:20.799] have the same thing you have to
+[00:23:22.559] restrict throttle at very low rpms
+[00:23:25.360] otherwise
+[00:23:25.840] you'll just blow motors left right so
+[00:23:28.640] mine is based
+[00:23:30.000] on the actual rpm on the motor poles and
+[00:23:33.919] the kv
+[00:23:34.799] rather than a fixed number so it's not
+[00:23:36.799] something that below a certain rpm
+[00:23:38.720] it's restricted it depends on the mode
+[00:23:41.600] the flip side of this is that anybody
+[00:23:43.440] using this
+[00:23:44.240] feature is going to have to go into the
+[00:23:47.360] bl heli or into the configurator and put
+[00:23:50.159] their motor poles in the esc
+[00:23:51.760] which yeah it would be super cool if
+[00:23:54.080] there was a d-shot command that could
+[00:23:55.679] communicate that information
+[00:23:57.279] because people are not going to be able
+[00:23:59.760] not going to be thinking to do that
+[00:24:01.279] it would be yeah no and i i i set my
+[00:24:04.240] default to
+[00:24:05.200] the same rpm as the l heli one
+[00:24:08.480] so it's um if you don't select anything
+[00:24:10.880] you don't ever go into the configurator
+[00:24:12.480] it'll work just like you expect
+[00:24:14.960] you'll have to turn the option off if
+[00:24:16.640] you're going to use it with like
+[00:24:19.120] 6000 kv motors i was going to say i mean
+[00:24:22.320] you go up to 48k but if you're if you're
+[00:24:24.960] going to use this on like a
+[00:24:27.279] let's say you've got a 25 4 000
+[00:24:30.320] i'm just thinking the highest kv motor i
+[00:24:31.760] can like a mobile six
+[00:24:33.520] yeah a little uh 24 000 kv
+[00:24:36.640] 1s like is there a point where the rpm
+[00:24:39.440] gets high enough that you have to go
+[00:24:40.640] above 48k or do you just
+[00:24:42.320] say screw it we're not going to worry
+[00:24:43.840] about it because the high throttle rpm
+[00:24:46.000] yeah in terms of pwm frequency um
+[00:24:50.000] we see right now i don't really most of
+[00:24:52.400] my firmware is for pretty generic
+[00:24:53.840] hardware
+[00:24:54.559] and i don't think most of it can support
+[00:24:56.960] 96 kilohertz so once we start
+[00:24:59.120] supporting more specific wear then we
+[00:25:02.240] will start pushing pwm frequency up on
+[00:25:04.559] those ones but
+[00:25:05.440] right now i think that it's uh 48
+[00:25:08.159] kilohertz is really
+[00:25:10.559] it does pretty well for for the most
+[00:25:12.720] part and it's uh
+[00:25:14.000] even for little motors it's pretty good
+[00:25:16.720] yeah
+[00:25:17.520] you can sort of make up for the
+[00:25:18.880] efficiency
+[00:25:20.559] difference by just increasing the
+[00:25:22.000] bedtime well that's what i was going to
+[00:25:24.159] say the
+[00:25:24.640] other the other argument for 48k er
+[00:25:27.919] is that especially on small quads like
+[00:25:30.720] tiny whoops
+[00:25:31.600] you get significant increase in flight
+[00:25:33.440] time and people have suggested that's
+[00:25:34.960] related to the dead time
+[00:25:36.400] although i don't know the details but it
+[00:25:38.320] sounds like what you're saying is you
+[00:25:39.600] could just manipulate the dead time
+[00:25:41.440] and leave the pwm alone and still reap
+[00:25:43.679] those advantages
+[00:25:44.880] i i have a feeling you can and i've done
+[00:25:46.880] a you know i haven't really done too
+[00:25:48.240] many tests on little motors
+[00:25:50.559] but uh i mean if you reduce the braking
+[00:25:52.799] cycle
+[00:25:54.240] considerably that uh i mean it'll make a
+[00:25:56.880] big difference for little motors
+[00:25:58.640] i mean it the there is some loss in the
+[00:26:02.480] motors
+[00:26:03.200] uh and a higher pwm frequency does
+[00:26:06.799] reduce the inductive loss of the motor
+[00:26:08.960] because as those tiny little motors are
+[00:26:10.559] just like a dent short of wires
+[00:26:13.600] well too low of pwm frequency and you
+[00:26:15.600] just see this massive torque ripple
+[00:26:19.760] the i think that the one of the biggest
+[00:26:22.000] differences and one of the things that
+[00:26:23.919] happens with our drivers is that
+[00:26:26.799] as we go up in pwm frequency we get uh
+[00:26:30.240] like disproportionately longer dead time
+[00:26:33.279] because we're taking
+[00:26:35.440] um we're taking our dead time out of the
+[00:26:38.000] breaking time only
+[00:26:39.679] do so we're doubling our dead time each
+[00:26:41.840] time we double our pwm frequency
+[00:26:44.240] if we keep our driving time the same so
+[00:26:47.440] if we still go from zero to a hundred
+[00:26:50.000] when it comes to our on time
+[00:26:52.159] when we double the pwm frequency each
+[00:26:54.080] time the only thing we can be doing is
+[00:26:55.520] doubling our dead time because
+[00:26:57.679] we still have to go from zero to 100 you
+[00:27:00.720] know on time
+[00:27:03.200] we've talked about this at quite a bit
+[00:27:06.080] too and we uh we've never really been
+[00:27:07.679] able to come up with any conclusive
+[00:27:09.760] answers yet because a lot of us just
+[00:27:12.559] haven't done the tests and we uh i
+[00:27:14.480] really should
+[00:27:15.200] i mean yeah but
+[00:27:18.480] i think that with a bl heli
+[00:27:21.679] uh esc you can probably test it out
+[00:27:24.000] because i think you can change the dead
+[00:27:25.520] time
+[00:27:25.919] i think there's adjustable braking which
+[00:27:28.559] is an option so you can probably just
+[00:27:30.880] set it to 48 kilohertz and reduce the
+[00:27:33.360] braking
+[00:27:34.000] and see if that gives you more flight
+[00:27:35.840] time and i think that it probably will
+[00:27:38.080] i think that it's uh you'll see you'll
+[00:27:39.520] probably see about the same difference
+[00:27:41.039] in
+[00:27:41.760] flight time um
+[00:27:45.279] i'm just talking on my ass again yeah
+[00:27:47.360] well that's what it all started
+[00:27:49.919] you start with talking at your ass then
+[00:27:51.760] you do some tests and you find out if
+[00:27:53.120] you were right but
+[00:27:54.159] that's right that's called we call that
+[00:27:55.760] a hypothesis right
+[00:27:57.279] yeah it's talking about your ass yeah
+[00:28:03.679] when you when you say things you end up
+[00:28:05.360] saying a lot of things wrong and i i say
+[00:28:07.200] a lot of things in forums and they have
+[00:28:08.720] to go back
+[00:28:09.279] by what i say but that's how i learn a
+[00:28:10.880] lot of the things too
+[00:28:12.320] yes i i say it and then i research it
+[00:28:15.039] myself after i say it and like
+[00:28:17.120] i shouldn't have said that
+[00:28:20.159] that's really silly but yeah well yeah
+[00:28:23.360] i'm gonna uh now that we've got the
+[00:28:25.120] latest firmware and the updated settings
+[00:28:26.960] on this i'm gonna go give it another try
+[00:28:30.159] and uh you know it's uh and just uh
+[00:28:33.279] have fun with it and if people ask you a
+[00:28:35.200] question about it you know just tell
+[00:28:36.480] them not to be scared about it
+[00:28:37.840] we're supporting it you know it's uh i'm
+[00:28:40.799] gonna keep on working on it forever and
+[00:28:42.399] i'm not gonna stop until it's
+[00:28:44.559] i mean this this works for uh
+[00:28:47.760] flying you know quadcopters and
+[00:28:50.799] and ground vehicles it does uh brushed
+[00:28:53.679] motors as well
+[00:28:55.039] it also works for induction motors so i
+[00:28:57.440] mean you could use this for just about
+[00:28:59.120] anything and it's what my intention is
+[00:29:01.520] is you have one firmware that can
+[00:29:02.960] control
+[00:29:04.240] any motor out there and uh i'm i'm
+[00:29:06.640] hopefully hopefully lots of people come
+[00:29:08.480] and
+[00:29:08.880] join the project yeah
+[00:29:12.480] it's especially exciting i think because
+[00:29:14.799] i i know there are going to be people
+[00:29:16.559] out there
+[00:29:17.679] who are interested in an open source
+[00:29:21.120] uh esc firmware that runs on modern
+[00:29:24.240] hardware
+[00:29:24.960] as opposed to trying to shoehorn stuff
+[00:29:26.720] into bl heli s i'm sure those
+[00:29:28.799] probably not a lot of people because how
+[00:29:30.320] many people are coding esc's but
+[00:29:32.000] i'm sure that you're going to see some
+[00:29:33.440] traction especially once the diatone
+[00:29:35.520] hardware
+[00:29:36.320] becomes available and people no longer
+[00:29:38.240] have to use the st link
+[00:29:39.440] programmer although the kind of person
+[00:29:41.279] who's writing esc firmware isn't scared
+[00:29:42.960] of an st link programmer to be honest
+[00:29:45.679] that's the thing yeah so i mean it's uh
+[00:29:47.840] most of my
+[00:29:49.279] my user base i probably got like 25
+[00:29:51.840] people
+[00:29:53.279] use it right now they're the handful of
+[00:29:54.960] people i sent off yes
+[00:29:56.399] these two but most of them are people
+[00:29:58.480] making their own
+[00:30:00.240] hardware and there is absolutely no
+[00:30:03.760] option apart from this when it comes to
+[00:30:06.640] an open source
+[00:30:07.679] 32. if you want to make your own
+[00:30:09.039] hardware and a new microcontroller
+[00:30:11.600] this is it i mean so that's really um
+[00:30:15.120] so it has to exist for that reason
+[00:30:17.039] anyway okay
+[00:30:19.200] well do you know when diaton is going to
+[00:30:21.120] be releasing the csc
+[00:30:22.960] i don't know i mean the the latest
+[00:30:24.799] version is uh
+[00:30:26.080] it's stable we haven't uh we haven't
+[00:30:29.279] blown up a motor in a very long time
+[00:30:31.279] which is good and uh good
+[00:30:32.799] seems to be seems to be flying quite
+[00:30:35.360] nicely so
+[00:30:36.799] really i i do it for the fun of it so
+[00:30:38.640] i'm trying not to get too
+[00:30:40.240] involved into in the business part of
+[00:30:42.640] things but
+[00:30:44.159] you know well i'm gonna uh i'll ping
+[00:30:46.720] them and see what their plans are
+[00:30:47.840] because i'm sure there will be people
+[00:30:48.799] who are interested yeah
+[00:30:50.000] no there's a company called neutron em
+[00:30:53.520] neutron rc which is going to be
+[00:30:55.039] releasing some new hardware soon which
+[00:30:57.600] is a brand new sort of startup that i'm
+[00:30:59.440] working with
+[00:31:00.480] okay and they will have some hardware
+[00:31:03.039] that
+[00:31:03.519] we've we've sort of designed the
+[00:31:05.039] hardware and software from the ground up
+[00:31:07.360] so the speed controller is based on the
+[00:31:09.120] g
+[00:31:09.600] the g071 mcu
+[00:31:12.640] which are is the same as kiss is using
+[00:31:14.720] for their new fetech
+[00:31:16.080] four and one esc um a really nice little
+[00:31:19.120] mcu it's a big step up over the uh
+[00:31:21.519] the previous generation fo51s and we're
+[00:31:24.880] using the g
+[00:31:26.399] uh g four three ones g four four seven
+[00:31:29.039] fours for the flight controller so we're
+[00:31:30.720] moving from the f
+[00:31:31.919] series to the g series and uh there
+[00:31:34.880] seems to be some
+[00:31:35.840] big advantages to them so we're focusing
+[00:31:38.559] our new development anyway on
+[00:31:40.799] on the g series and their latest series
+[00:31:43.840] of
+[00:31:44.240] sd yeah everybody seems to be going to
+[00:31:47.039] the h7 but other people have pointed out
+[00:31:49.039] that the h7
+[00:31:50.480] has like it has less memory than the and
+[00:31:53.039] even the f7
+[00:31:54.640] um it may not be like the best choice to
+[00:31:57.440] go to
+[00:31:58.559] yeah it's uh i don't know i've got this
+[00:32:00.159] little like this uh
+[00:32:02.159] this one's a g474 on this flight
+[00:32:05.120] controller here
+[00:32:06.480] and that one is right now it seems to
+[00:32:09.440] run faster than the f4s at a much
+[00:32:12.000] lower um much lower power consumption
+[00:32:16.080] um and it's uh i think those are just
+[00:32:18.799] about the best
+[00:32:20.159] flight controller processors that i've
+[00:32:22.080] seen all kinds of inputs and outputs
+[00:32:24.399] they're running 170 megahertz too which
+[00:32:26.640] is quite quite good math
+[00:32:28.960] acceleration um and i mean it's it's the
+[00:32:31.840] logical
+[00:32:32.799] successor to the f series so it's
+[00:32:36.799] um this one runs at 60
+[00:32:40.120] 66 or 666 kilohertz gyro frequency or
+[00:32:44.880] 333 because it uses a
+[00:32:47.200] new gyro2 or something i don't know
+[00:32:50.720] uh it's running really stable and i've
+[00:32:53.760] been pretty impressed with it so far
+[00:32:56.799] well i think that we're going to see
+[00:32:57.840] more of those in the market too
+[00:33:00.000] some new stuff is going to be coming out
+[00:33:01.600] yeah it sounds like it sounds like you
+[00:33:03.200] that you
+[00:33:03.679] you got your really your finger on the
+[00:33:05.200] pulse of the market at least what's
+[00:33:06.960] coming
+[00:33:08.000] here's some cool little ones so we're
+[00:33:09.200] going to see some really small little
+[00:33:10.799] foreign ones
+[00:33:11.600] there's a this is this is it for that
+[00:33:14.559] speed control there's actually no
+[00:33:15.840] mosfets on the back
+[00:33:17.600] each of these devices there's three of
+[00:33:19.519] them on the front is
+[00:33:20.880] a driver and dual mosfet
+[00:33:24.720] wow so that saves the place of three
+[00:33:27.120] components each which is you know the
+[00:33:29.200] driver is normally the uh four by four
+[00:33:31.519] size
+[00:33:32.240] chip on its own and then the mosfets
+[00:33:34.640] would be six of those after the drivers
+[00:33:37.039] so it's
+[00:33:38.240] combines it down to three four by four
+[00:33:40.880] millimeter chips which is pretty cool
+[00:33:43.360] yeah what's the current capacity of that
+[00:33:46.720] what's the current capacity of it not
+[00:33:48.720] very much oh i was gonna say okay
+[00:33:52.399] yeah i think that's meant for more like
+[00:33:54.240] the i and
+[00:33:55.919] um there's a bit of uh
+[00:33:59.679] when the boards were sent to me the
+[00:34:01.679] company that sent them out
+[00:34:02.960] they said these things are rated for 30
+[00:34:05.760] amps to 60 amps because that's what it
+[00:34:07.679] says in the data sheet
+[00:34:08.879] and you know it's you know mosfets how
+[00:34:10.399] they say you know up to 160 amps or 100
+[00:34:14.000] and you know 400 amps package limited
+[00:34:17.359] so they thought that they were you know
+[00:34:19.839] making some 60 amp
+[00:34:21.679] speed controller with it but they they
+[00:34:23.520] do well for like the
+[00:34:25.280] you know a small whoop size board which
+[00:34:27.280] would be the kind of thing that because
+[00:34:28.800] they go onto a 20 by 20 yeah
+[00:34:36.240] we're playing with new toys that's right
+[00:34:39.440] it's all just for playing with toys
+[00:34:40.879] isn't it
+[00:34:41.599] i think that's what i do you say that
+[00:34:44.240] that's
+[00:34:44.720] what it ought to be right yeah we
+[00:34:46.639] can't get to
+[00:34:48.000] you know it's all right pete i'm gonna
+[00:34:50.800] let you go
+[00:34:51.440] thank you so much uh for sending this
+[00:34:53.280] stuff to me um
+[00:34:54.560] and uh we can talk again um
+[00:34:59.040] do you see this baby isn't he cute
+[00:35:03.839] hit the subscribe button join my patreon
+[00:35:07.760] use my affiliate links or just keep
+[00:35:10.240] watching videos
+[00:35:11.200] that's better than nothing
+[00:35:16.079] subscribe to my daddy

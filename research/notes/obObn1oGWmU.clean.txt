@@ -1,0 +1,454 @@
+[00:00:22] [Music]
+[00:00:22] camera we'll pick it up
+[00:00:31] i can't really see it but if i keep oh
+[00:00:31] my god i'm gonna burn him
+[00:00:37] [Music]
+[00:00:37] very very stiff
+[00:00:45] arms no wiggle
+[00:00:45] [Music]
+[00:00:49] and the motors are very hot
+[00:01:11] coming to you guys from
+[00:01:12] sunday afternoon hike because uh so i i
+[00:01:15] owe
+[00:01:15] kind of everybody a uh reason why
+[00:01:19] i haven't really been available making
+[00:01:20] much videos lately
+[00:01:22] and that's really because covid is an
+[00:01:24] incredibly incredibly popular time
+[00:01:27] to have any dental work done
+[00:01:30] not just crowns and fillings and whatnot
+[00:01:33] but
+[00:01:34] lots of surgery lots of missing teeth
+[00:01:36] full mouth rehabs
+[00:01:38] lots of stuff so uh i don't really get
+[00:01:41] paid much
+[00:01:41] by youtube like it's basically a dinner
+[00:01:44] once a month
+[00:01:45] and um the store the fpv cycle store
+[00:01:49] me and my partner josh don't take a dime
+[00:01:51] out of it yet
+[00:01:52] i mean we're not planning on it anytime
+[00:01:54] soon because we're 100 focused on
+[00:01:56] developing
+[00:01:57] also i have a very long list of things
+[00:02:00] on my desk
+[00:02:01] that i have not had a chance to review
+[00:02:03] that dji review and the emacs review
+[00:02:06] as you could tell i barely knew what the
+[00:02:08] name of that emacs thing was
+[00:02:10] because i just haven't had much time to
+[00:02:13] mess around with this stuff
+[00:02:14] because it just isn't worth my time at
+[00:02:16] the moment when i have
+[00:02:18] so much work to do at actual work that
+[00:02:21] pays me
+[00:02:21] so uh this so one thing i do want to
+[00:02:24] point out is that this
+[00:02:25] is a one axis gimbal made by maker boys
+[00:02:28] these guys have made a couple of
+[00:02:29] products in the past that have been
+[00:02:31] pretty interesting
+[00:02:32] and hold on while i pass these other
+[00:02:34] people and so i pointed out because i
+[00:02:37] really like these guys
+[00:02:38] and i'm really sorry that i've had this
+[00:02:39] thing for like i think like eight months
+[00:02:41] now and i haven't
+[00:02:43] had a chance to even put it on a quad
+[00:02:45] anyways this video
+[00:02:46] is about ramp-up power specifically
+[00:02:49] i felt like rampa power was a
+[00:02:52] very costly finding to find but also a
+[00:02:55] very valuable finding to
+[00:02:57] learn what it does and how it works at
+[00:02:59] least in part
+[00:03:00] and i feel like it is a significant
+[00:03:02] enough finding to
+[00:03:04] make a video roughly about tuning
+[00:03:07] with ramp up power in mind so if you
+[00:03:10] guys know me you know that
+[00:03:12] number one i hate tuning and number two
+[00:03:14] i suck at tuning i'm the kind of person
+[00:03:16] that will spend
+[00:03:17] a couple hours tuning a quad going
+[00:03:19] through 10 15 batteries
+[00:03:21] just to end up with something that is
+[00:03:23] significantly worse than it was when i
+[00:03:25] started
+[00:03:26] i don't think that my experience is
+[00:03:28] unique i think it's an experience that
+[00:03:30] a lot of people can um relate to because
+[00:03:34] tuning has just gotten so complicated
+[00:03:36] over the years
+[00:03:37] and it's it's for good reason and for
+[00:03:40] annoying reasons
+[00:03:41] but it has gotten complicated and the
+[00:03:43] emphasis has moved off of pid tuning
+[00:03:46] because we now understand more about
+[00:03:49] what's going on and
+[00:03:51] the information coming out of the gyro
+[00:03:52] not like we didn't understand it before
+[00:03:54] i don't even write the code so i don't
+[00:03:55] understand anything i just
+[00:03:56] kind of work with it and i'm just giving
+[00:03:58] you a view from outside in and a huge
+[00:03:59] disclaimer before i talk about anything
+[00:04:01] uh this may or may not work for your
+[00:04:03] quad may or may not work for whatever
+[00:04:04] you're trying to do
+[00:04:06] i found it working really well for a
+[00:04:08] number of quads that i've been
+[00:04:10] trying to deal with and so let's just
+[00:04:12] jump right into it so
+[00:04:14] rampa power is known as startup power
+[00:04:18] in bl heli s it's known as ramp up power
+[00:04:20] mbl heli32
+[00:04:22] i believe the two do exactly the same
+[00:04:24] thing in the recent bluej firmware ese
+[00:04:27] firmware
+[00:04:28] it has been broken out into three
+[00:04:30] settings
+[00:04:31] startup power ramp up max and ramp up
+[00:04:34] min
+[00:04:35] startup power is the power it uses to
+[00:04:37] actually start the motor spinning if it
+[00:04:39] gets stuck
+[00:04:40] on grass or if it's just just from
+[00:04:43] from zero or if it's got like something
+[00:04:46] stuck in the motor like gravel or dust
+[00:04:48] or something
+[00:04:49] and then minimum ramp up power as far as
+[00:04:52] i understand it
+[00:04:53] is the minimum power that the esc will
+[00:04:56] drive to the motor
+[00:04:57] in order to ramp it up from low rpm
+[00:05:01] to higher rpm and it's very specific low
+[00:05:04] rpm to high rpm
+[00:05:06] and maximum ramp up power is the maximum
+[00:05:08] power it'll use to ramp it up from low
+[00:05:09] rpm
+[00:05:10] to max rpm so the esc has kind of a beat
+[00:05:13] on
+[00:05:14] what the bell is doing and where the
+[00:05:15] magnets are spinning and where they are
+[00:05:17] in their rotation
+[00:05:18] rotational axis and
+[00:05:21] it can decide how much power might be
+[00:05:23] needed to
+[00:05:25] spin the motor up from low rpm to higher
+[00:05:27] rpm
+[00:05:28] based on the amount of electromagnetic
+[00:05:30] force that's being
+[00:05:31] fed back to the esc from
+[00:05:34] from the actual motor bell spinning and
+[00:05:36] passing by the stator poles which is
+[00:05:38] generating
+[00:05:39] a backwards electromagnetic force and so
+[00:05:44] here is the very basic finding this is
+[00:05:47] not correct
+[00:05:48] in any technical sense this is a very
+[00:05:50] layman's
+[00:05:51] understanding of of how it may or may
+[00:05:54] not work
+[00:05:55] again i don't know if this will work for
+[00:05:57] your quad it definitely won't work for
+[00:05:59] all quads but i'll
+[00:06:00] discuss more of the implications about
+[00:06:02] it after i try to convey what i
+[00:06:04] i think maybe the easiest way to
+[00:06:06] understand this so
+[00:06:08] ramp up power is how much power
+[00:06:11] the esc uses to drive the motor bell
+[00:06:14] up from low rpm to high rpm
+[00:06:17] if the ramp up power is reduced
+[00:06:21] it somewhat loosens the the
+[00:06:24] response to pid inputs not stick inputs
+[00:06:27] or anything pid inputs
+[00:06:29] if the ramp up power is increased it
+[00:06:32] kind of tightens up the response
+[00:06:34] to pid inputs if the ramp up power is
+[00:06:38] too high
+[00:06:39] you could get an not an over response
+[00:06:42] from the pid
+[00:06:43] inputs but it'll respond so quickly that
+[00:06:46] it'll overshoot and then you'll get this
+[00:06:49] feedback loop where the quad will kind
+[00:06:50] of flutter up to the sky
+[00:06:52] an early sign of this is when you do
+[00:06:54] rolls and flips
+[00:06:56] you might hear this kind of robotic
+[00:06:58] sound from the motors
+[00:07:00] which if you've built a lot of quads you
+[00:07:03] may
+[00:07:03] relate to noise in the system or
+[00:07:05] vibrations in the system which
+[00:07:07] you are going to try and figure out how
+[00:07:08] to resolve oftentimes you'll look at the
+[00:07:10] black box
+[00:07:11] and you'll see that the lines are all
+[00:07:13] over the place and you can't even begin
+[00:07:15] to figure out what on earth is going on
+[00:07:17] let alone what to do to try and resolve
+[00:07:19] the issue and if you drop the pids to
+[00:07:21] almost zero you can pretty much solve
+[00:07:24] this issue
+[00:07:25] this fluttering issue or this this motor
+[00:07:28] whiny noise issue and uh the quad will
+[00:07:31] fall like crap because the pids are at
+[00:07:33] zero
+[00:07:33] if the ramp up power is too low the quad
+[00:07:36] will generally just feel
+[00:07:38] loose it will feel like it doesn't
+[00:07:40] really have
+[00:07:41] great prop wash handling and you cannot
+[00:07:44] tune the pids
+[00:07:45] to get them anywhere close to what you
+[00:07:47] might want them to be
+[00:07:48] if you had a nicely tuned quad that
+[00:07:50] performed as you wished
+[00:07:52] so i will call this the response to the
+[00:07:56] pid
+[00:07:56] loop however i would say that
+[00:08:00] i think that this setting along with
+[00:08:02] dmag and
+[00:08:04] motor timing need to be set before you
+[00:08:07] even begin to consider your filters
+[00:08:10] before you even begin to consider adding
+[00:08:12] a capacitor or a bigger capacitor to
+[00:08:14] your esc board
+[00:08:15] to kind of manage the electro the the
+[00:08:17] noise feedback electronic noise feedback
+[00:08:18] coming from the motors
+[00:08:20] because you can actually forego the need
+[00:08:22] of a capacitor
+[00:08:23] in some minor sense by reducing a ramp
+[00:08:26] up power because it also reduces the
+[00:08:28] backwards electromagnetic force coming
+[00:08:30] into the system and it reduces the whole
+[00:08:32] the noise in the whole system
+[00:08:34] so the quad that you saw flying at the
+[00:08:37] beginning
+[00:08:38] was a 300 gram 5.25 inch
+[00:08:43] 2204 2800 kv quad on
+[00:08:46] 3s which these numbers don't really
+[00:08:51] add up to a quad that beta flight or any
+[00:08:53] flight code really wants it wants a quad
+[00:08:56] that's around 500 to 600 grams it's got
+[00:08:58] a 2207 2306
+[00:09:00] with five inch props and it's going to
+[00:09:01] perform great on stock whatever you put
+[00:09:03] it on and
+[00:09:04] any frame you put it on all those quads
+[00:09:06] will perform great the problem comes
+[00:09:08] into play
+[00:09:09] when you start running setups that are
+[00:09:12] kind of a little bit outside the
+[00:09:15] performance window
+[00:09:16] that betaflight or any flight code
+[00:09:18] typically wants
+[00:09:19] now this is not a foolproof way to
+[00:09:22] improve things
+[00:09:23] but i have found that it can improve
+[00:09:25] things significantly
+[00:09:26] on quads that i even thought were flying
+[00:09:28] well so what this
+[00:09:30] could do or what i found that it seems
+[00:09:32] to do is that it kind of
+[00:09:34] slides the quad's performance up and
+[00:09:36] down a scale
+[00:09:37] where you could reach a zone where
+[00:09:41] beta flight or any flight code will be
+[00:09:43] more comfortable and then
+[00:09:45] the default pids will work better and
+[00:09:48] it'll be
+[00:09:48] way easier to tune your filters and
+[00:09:50] you'll get lines in your
+[00:09:52] black box that makes sense and you'll
+[00:09:54] know what to do with because they
+[00:09:56] actually make sense and they're not all
+[00:09:57] over the place with no explanation
+[00:10:00] so if you've ever flown a quad
+[00:10:03] or tried to build a quad that's like
+[00:10:06] super tiny like a three inch
+[00:10:07] on 6s that's super light you may have
+[00:10:10] noticed that it flutters to the sky or
+[00:10:12] has just extreme noise or it's
+[00:10:13] impossible to tune
+[00:10:14] or the quad just generally has no power
+[00:10:17] because the escs are just
+[00:10:18] super reducing the power output because
+[00:10:20] it doesn't know what to do because
+[00:10:21] there's so much noise in the system
+[00:10:24] it's as simple as just reducing the
+[00:10:25] power up timing and that's what i found
+[00:10:28] fixed the issues with the most recent
+[00:10:29] setups that i've been trying on three
+[00:10:30] inch
+[00:10:31] if you're flying a quad that's seven
+[00:10:33] inch or above and
+[00:10:34] it doesn't have the power output of a
+[00:10:37] typical five inch which
+[00:10:39] kind of almost anything larger than a
+[00:10:42] five inch quad will have a
+[00:10:43] lower disc loading ratio or power output
+[00:10:46] ratio or kind of like all the ratios of
+[00:10:49] performance
+[00:10:49] are worse when you kind of go up beyond
+[00:10:52] five inch
+[00:10:54] in most cases unless you do something
+[00:10:56] very special or specific to get the quad
+[00:10:58] to have better performance than
+[00:11:00] than would be typical if you just ran a
+[00:11:02] typical setup i'm trying to mitigate
+[00:11:03] those people they're going to say oh but
+[00:11:05] my seven inch fly's incredible on
+[00:11:06] whatever default
+[00:11:07] okay i'm glad that your quad fly is
+[00:11:09] great but in reality
+[00:11:11] most of the time you'll build the
+[00:11:13] typical 7-inch and it'll fly worse than
+[00:11:15] a 5-inch quad no matter what you try and
+[00:11:17] get it to
+[00:11:18] do with your tuning or filters or
+[00:11:19] whatnot and this is a way to actually
+[00:11:23] drastically improve the performance on
+[00:11:24] my own 7-inch quads
+[00:11:26] i just ramped i increased the ramp up
+[00:11:28] power and the overall
+[00:11:30] response to the pid loop and the
+[00:11:31] response to
+[00:11:33] everything that was happening on the
+[00:11:34] quad improved drastically even the
+[00:11:36] throttle pump issue
+[00:11:38] is drastically improved on betaflight
+[00:11:41] and emu flight no matter what you're
+[00:11:42] running so
+[00:11:43] if you're running like a centilifter rig
+[00:11:46] and you're dealing with
+[00:11:47] this hefty quad that is lifting
+[00:11:49] something that
+[00:11:50] it really doesn't want to lift you could
+[00:11:54] find some pretty significant
+[00:11:55] improvements now a pretty
+[00:11:57] big warning here if ramp up timing is
+[00:12:00] a ramp up power is too high or too low
+[00:12:03] or if it's outside of what
+[00:12:05] the system might want it to be you could
+[00:12:07] run into desync problems
+[00:12:08] you could run into uh motors that don't
+[00:12:11] even spin
+[00:12:12] or you could run into uh slipping
+[00:12:14] problems where the quad just starts
+[00:12:15] yawing out of control
+[00:12:17] this is true of default ramp up power as
+[00:12:20] well and this is where
+[00:12:22] there's a giant wrench thrown into the
+[00:12:23] equation because
+[00:12:25] depending on which esc you use the ramp
+[00:12:28] up power performance
+[00:12:31] varies so on some eses primarily hdl rcr
+[00:12:35] eses
+[00:12:36] so far that i found from talking to like
+[00:12:39] 100 people about this issue
+[00:12:40] uh their ramp up power performance is
+[00:12:43] actually
+[00:12:44] lower on the say six or seven esc's that
+[00:12:48] have had these issues
+[00:12:49] is lower than most other eses
+[00:12:52] but on some of the t-motor eses
+[00:12:56] we found that the ramp-up power
+[00:12:57] performance is actually
+[00:12:59] higher than the defaults on most esc's
+[00:13:02] all of them are set to the same default
+[00:13:03] all of them are going to be set to 0.5
+[00:13:05] default
+[00:13:06] but the overall performance output is
+[00:13:08] going to be
+[00:13:09] less than the 0.5 or greater than the
+[00:13:12] 0.5 and now it's really windy
+[00:13:13] this video has already gone on longer
+[00:13:15] than it should have gone
+[00:13:17] but i'll point out one other advantage
+[00:13:19] here
+[00:13:20] if you're running a quad that has low kv
+[00:13:23] and you want to run it on lower voltage
+[00:13:27] consistently like a 6s quad that's that
+[00:13:29] you're going to be running on 4s
+[00:13:31] almost exclusively or most of the time
+[00:13:34] you could actually turn
+[00:13:35] up the ramp up power and by doing so
+[00:13:38] the quad will fit the pit loop better
+[00:13:41] and it'll be like you're flying a quad
+[00:13:43] that is appropriately
+[00:13:45] tuned for the voltage that you're
+[00:13:47] running or vice versa
+[00:13:50] if you're flying a quad that's like 2500
+[00:13:52] kv and you're gonna run 6s on it
+[00:13:55] you can actually reduce the ramp of
+[00:13:57] power and it can
+[00:13:58] it's not going to have the same effect
+[00:14:00] but it'll be if you have
+[00:14:02] issues running it at 6s it can help with
+[00:14:05] managing the tune of a quad that is over
+[00:14:08] kv for the uh
+[00:14:12] setup that you're running for the
+[00:14:12] voltages you're going to be running and
+[00:14:14] the the lower that that
+[00:14:16] actual variation is a little bit
+[00:14:17] different because uh it really depends
+[00:14:19] on a lot of factors because when you
+[00:14:21] have too much kv
+[00:14:22] the overall torque in the system is a
+[00:14:24] little bit different uh but when you
+[00:14:25] have too little kv
+[00:14:26] the torque in the system can can vary as
+[00:14:29] well but it's much more manageable if
+[00:14:31] you go down in voltage it's much harder
+[00:14:32] to run higher voltages with
+[00:14:34] higher everything because of all the
+[00:14:36] noise in the environment that you're
+[00:14:37] running it in
+[00:14:38] so basically i hope that the fact that i
+[00:14:42] wanted to spend the time even though i'm
+[00:14:44] just trying to pile up my time and
+[00:14:46] triple booking myself
+[00:14:47] to make this video about essentially
+[00:14:49] tuning i still don't really tune my pids
+[00:14:51] i have tried here and there
+[00:14:52] and i will adjust them you know a couple
+[00:14:54] notches i'll try to use the sliders here
+[00:14:56] and there
+[00:14:57] sometimes i get improvements sometimes i
+[00:14:58] don't i'm pretty sure that's typically
+[00:15:00] what everybody runs into as well
+[00:15:03] give this a shot i think that rampant
+[00:15:05] power is an incredibly important
+[00:15:08] setting to adjust before you do anything
+[00:15:10] else
+[00:15:11] and i'm really surprised that
+[00:15:14] the kiss esc's don't even have this
+[00:15:16] setting in them and i suspect that
+[00:15:18] they'll be adding them soon because if
+[00:15:19] we're all going to be running these 250
+[00:15:20] gram
+[00:15:21] 6s or whatever quads on whatever motors
+[00:15:25] uh we're gonna have issues which i can
+[00:15:28] run into issues
+[00:15:29] no no doubt we're gonna be running into
+[00:15:30] issues like i've been building these
+[00:15:32] sorts of things for
+[00:15:33] years and a lot of the quads just
+[00:15:35] haven't worked at all and i haven't
+[00:15:36] known how to get them to work
+[00:15:37] so i just gave up and threw the quads
+[00:15:39] literally just threw the quads away
+[00:15:40] because i was so frustrated by them
+[00:15:42] so yeah brush your teeth floss them
+[00:15:45] have good oral hygiene because um if
+[00:15:48] kova taught me anything
+[00:15:49] it's that um people have really
+[00:15:53] have a really difficult time keeping
+[00:15:55] their teeth in good shape
+[00:15:56] so please heed these words and floss
+[00:15:59] your teeth thanks very much for watching
+[00:16:01] bye

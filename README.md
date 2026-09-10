@@ -91,6 +91,7 @@ This is a living document, not a finished spec: firmware behavior changes, commu
 16. **[Sources](SOURCES.md)**
     * Every real URL behind this KB's claims: videos, official firmware repos/wikis, specific GitHub issues/PRs, editorial sources, and Discord servers — organized by category, with what's cited where.
     * Also lists sources found during research that aren't cited in-text yet, flagged for review rather than silently worked in.
+    * The underlying evidence — raw video transcripts, wiki page copies, per-video extraction notes — is in [research/](research/README.md). See [TAKEDOWN.md](TAKEDOWN.md) for the removal policy covering the video transcripts specifically.
 
 ---
 

@@ -1,0 +1,968 @@
+[00:00:01.120] hi there everyone in this video i'm
+[00:00:03.280] going to take you through everything you
+[00:00:04.880] need to know
+[00:00:05.680] to tune your bl heli 32 esc
+[00:00:09.200] to get the maximum performance out of
+[00:00:11.280] the motors on your quadcopter
+[00:00:13.840] now i know that there are lots of
+[00:00:15.200] different esc firmwares available
+[00:00:17.279] and that not all of you are going to be
+[00:00:18.640] flying blheli32
+[00:00:21.279] i would ask that anyone who's familiar
+[00:00:23.279] with other esc firmwares
+[00:00:25.439] if you could leave a suggestion in the
+[00:00:27.199] comments as to how to translate what i'm
+[00:00:29.760] talking about in this video
+[00:00:31.519] to other firmwares i'd really appreciate
+[00:00:34.079] it
+[00:00:35.760] now without any further ado let's get
+[00:00:37.920] into it
+[00:00:40.640] okay so to start with i'm going to take
+[00:00:42.559] you through the process
+[00:00:43.680] of connecting to your blheli 32 esc
+[00:00:47.920] so the first thing you're going to want
+[00:00:48.960] to do is go to this web address
+[00:00:51.120] i'll put a link down in the video
+[00:00:52.320] description and this is where you can
+[00:00:54.160] download
+[00:00:54.800] bl heli suite 32 now
+[00:00:58.160] don't be confused by this bl heli suite
+[00:01:00.320] that's for bl heli
+[00:01:01.760] s esc's and we're talking about bl heli
+[00:01:04.559] 32 esc's in this video
+[00:01:06.960] so pick one of these three mac linux or
+[00:01:10.320] windows
+[00:01:11.119] and go ahead and download it the
+[00:01:14.240] download buttons up here
+[00:01:16.880] once you've downloaded it go to the
+[00:01:19.439] folder where you've downloaded the file
+[00:01:21.920] and extract the zip folder then go
+[00:01:25.280] into that folder and you should see this
+[00:01:27.040] list of files
+[00:01:28.560] you want the exe file so just double
+[00:01:31.600] click on that
+[00:01:32.320] and run it and you'll it'll bring up
+[00:01:34.400] this window
+[00:01:36.560] now this is the point where you're going
+[00:01:37.680] to want to connect your quad to your
+[00:01:40.240] computer
+[00:01:40.960] so plug the flight controller into the
+[00:01:43.360] computer by usb
+[00:01:45.439] and then plug in a battery
+[00:01:48.720] it's best to make sure your props are
+[00:01:50.399] off for this
+[00:01:52.399] once you've got the battery plugged in
+[00:01:54.720] go back to this window blhe suite 32
+[00:01:57.600] and look down at the bottom you'll see a
+[00:01:59.680] port and a baud rate
+[00:02:01.360] leave the board rate at default go to
+[00:02:04.479] the port and select
+[00:02:06.560] the com port that is your flight
+[00:02:08.239] controller and click
+[00:02:09.920] connect
+[00:02:14.959] then once that's worked click read setup
+[00:02:20.640] you should see four escs detected if
+[00:02:23.599] you've got
+[00:02:24.080] a quadcopter so
+[00:02:27.440] if that's all working and you click ok
+[00:02:29.920] you should see
+[00:02:30.800] all of these options and we're going to
+[00:02:33.599] be going through some of the most
+[00:02:35.200] important of these options that you
+[00:02:36.560] might want to
+[00:02:37.280] tune for your particular build in the
+[00:02:39.440] rest of this video
+[00:02:42.480] you'll want to check that you're on the
+[00:02:44.239] latest version of blheli32 and you can
+[00:02:47.360] see that revision number here
+[00:02:49.040] 32.8 if you're on 32.7 or an earlier
+[00:02:53.040] version
+[00:02:53.680] you might want to update your esc and
+[00:02:56.080] the way you do that is by going to this
+[00:02:57.920] button
+[00:02:58.400] flash blheli
+[00:03:01.760] selecting the latest revision for your
+[00:03:04.800] esc
+[00:03:05.840] and then clicking ok
+[00:03:09.680] once you have the settings set the way
+[00:03:12.000] you want them
+[00:03:13.440] click this right setup button to write
+[00:03:16.480] the settings
+[00:03:17.440] to your escs
+[00:03:21.599] and you should see an information window
+[00:03:23.519] here i've got nothing to update here
+[00:03:25.519] because i haven't changed any settings
+[00:03:27.760] but it should update for you
+[00:03:32.080] now before i jump into how to tune your
+[00:03:35.480] blheli32 esc
+[00:03:37.440] i wanted to take a moment to give you
+[00:03:39.120] some background on
+[00:03:40.720] how bldc motors work because i think
+[00:03:43.599] this information
+[00:03:44.640] makes the settings in blheli32 make a
+[00:03:47.519] lot more sense
+[00:03:49.760] so this schematic shows a 12n 14p
+[00:03:53.680] brushless dc outrunner motor and this is
+[00:03:56.239] the typical type of motor that's used
+[00:03:58.480] in the majority of mini quads the 12n
+[00:04:02.560] refers to the 12 windings in the stator
+[00:04:07.200] and the 14p refers to the 14 magnets
+[00:04:10.799] or poles that are in the rotor and the
+[00:04:14.000] phases there are three phases are
+[00:04:17.120] labeled
+[00:04:17.759] a b and c you can see a b
+[00:04:20.799] and c here the magnetic north poles
+[00:04:25.199] in the diagram are shown in a red color
+[00:04:29.199] and the magnetic south poles are shown
+[00:04:31.840] in a green color
+[00:04:34.639] so this is how the phases are usually
+[00:04:37.199] connected
+[00:04:38.160] you can see that there are two common
+[00:04:40.080] configurations a
+[00:04:41.520] star configuration or a y configuration
+[00:04:44.880] where the phases are all connected into
+[00:04:46.880] the center and the center is a neutral
+[00:04:48.479] point
+[00:04:49.440] that is not typically used in mini quad
+[00:04:52.240] motors because it tends to
+[00:04:54.000] produce a low kv and a kv of a motor
+[00:04:58.000] that is
+[00:04:58.880] lower than we would like for our
+[00:05:00.400] application
+[00:05:02.240] mini quad motors are usually connected
+[00:05:05.120] in a delta configuration because this
+[00:05:06.960] provides
+[00:05:07.680] a higher kv and allows you to get more
+[00:05:10.160] rpm
+[00:05:10.800] out of the motor you can see that we
+[00:05:13.520] have three motor wires
+[00:05:14.800] one two and three and the phases a
+[00:05:18.240] b and c are connected across the wires
+[00:05:21.600] so
+[00:05:22.000] between one and two we have phase a
+[00:05:24.320] connected
+[00:05:25.120] between one and three we have phase c
+[00:05:27.600] connected
+[00:05:28.400] and between wire two and three we have
+[00:05:31.120] phase b
+[00:05:31.759] connected so you can see that the esc
+[00:05:35.120] can drive
+[00:05:35.919] current through any of these phases
+[00:05:38.160] depending on whether it connects
+[00:05:40.400] the wires one two and three either to
+[00:05:43.919] positive voltage to the battery or to
+[00:05:46.800] ground
+[00:05:48.080] and that is how commutation works the
+[00:05:50.400] esc
+[00:05:51.360] connects those different motor wires to
+[00:05:54.160] positive voltage
+[00:05:55.280] or ground and drives current through the
+[00:05:58.080] phases a b and c
+[00:06:00.720] now inside the motor the windings are
+[00:06:03.280] wound
+[00:06:03.759] either clockwise or counterclockwise
+[00:06:07.360] now here the capital a windings
+[00:06:11.360] are wound clockwise and the small
+[00:06:14.400] a windings are wound counterclockwise
+[00:06:17.360] and what that means is that when
+[00:06:18.880] phase a is energized by the esc when
+[00:06:21.919] current is driven through that phase
+[00:06:24.000] the capital a solenoids the capital a
+[00:06:26.960] windings
+[00:06:27.840] become magnetic south poles but the
+[00:06:31.280] little a solenoids which are wound in
+[00:06:33.280] the other direction become magnetic
+[00:06:35.039] north poles
+[00:06:37.360] and you can see that that allows the
+[00:06:39.680] motor
+[00:06:40.479] to push and pull
+[00:06:43.600] on both the magnetic north and magnetic
+[00:06:46.160] south poles
+[00:06:48.160] now this diagram here shows how the esc
+[00:06:51.919] commutates the motor now commutation is
+[00:06:54.800] the process of
+[00:06:55.840] energizing the phases with electric
+[00:06:57.840] current
+[00:06:58.960] in a certain order and at a certain time
+[00:07:01.599] to cause the motor to rotate
+[00:07:04.560] so i have this animation which shows how
+[00:07:07.039] the commutation process works
+[00:07:10.400] and if i can stop it at just the right
+[00:07:12.000] time okay
+[00:07:14.400] so here you can see that we have the
+[00:07:17.360] capital a
+[00:07:18.720] winding is a magnetic south pole
+[00:07:22.240] and that means that it's been energized
+[00:07:24.000] with positive current so we're
+[00:07:26.240] just here at about 90 degrees in the
+[00:07:30.240] commutation cycle and you can see that
+[00:07:33.039] it's a magnetic south pole which means
+[00:07:34.800] that it's pushing away
+[00:07:36.160] this magnetic south pole and it's
+[00:07:38.479] pulling on this magnetic north pole
+[00:07:40.800] and encouraging the motor to rotate in a
+[00:07:43.680] clockwise direction
+[00:07:49.120] now just a moment later the situation
+[00:07:52.000] has changed because the motor
+[00:07:53.680] outrunner has rotated a little bit so
+[00:07:56.720] you can see that now we have a magnetic
+[00:07:59.039] north pole being pushed away
+[00:08:01.039] by this capital a winding and the
+[00:08:03.520] magnetic
+[00:08:04.160] south pole being pulled towards the
+[00:08:06.240] capital a winding
+[00:08:08.160] and you can see that the capital a
+[00:08:10.160] winding has now
+[00:08:11.280] changed from a magnetic south pole which
+[00:08:13.599] is what it was
+[00:08:14.879] to a magnetic north pole and so that
+[00:08:17.199] must mean that we now have
+[00:08:18.879] negative current or reverse current
+[00:08:21.599] flowing
+[00:08:22.240] through the capital a winding and by
+[00:08:25.599] switching
+[00:08:26.400] between positive and reverse current
+[00:08:29.919] this allows the winding to commutate the
+[00:08:32.719] motor and make it rotate
+[00:08:37.839] if we look here when the capital a
+[00:08:41.200] winding is directly opposite a south
+[00:08:44.720] or in fact a north pole that's what we
+[00:08:48.080] call the zero crossing of the phase
+[00:08:50.959] and at this point the capital a winding
+[00:08:53.360] is not energized at all so there's no
+[00:08:55.440] current flowing
+[00:08:57.519] so you can see the different stages of
+[00:08:59.600] commutation
+[00:09:00.720] there's a stage where no current is
+[00:09:02.880] flowing
+[00:09:03.839] then there's a stage where we have
+[00:09:05.680] positive current
+[00:09:07.279] then back to a stage where no current is
+[00:09:09.360] flowing and then a stage where negative
+[00:09:11.839] current is flowing
+[00:09:12.880] and all the while the motor is rotating
+[00:09:16.240] and we go through a full 360 degrees of
+[00:09:20.839] commutation
+[00:09:22.000] every 1 7th of a mechanical revolution
+[00:09:25.040] so there are seven
+[00:09:26.240] full commutation cycles per rotation
+[00:09:29.360] of the outer rotor of the motor
+[00:09:33.200] and the reason for that is that one full
+[00:09:35.760] commutation cycle
+[00:09:37.120] is one pair of poles a
+[00:09:40.320] south pole and a north pole passing the
+[00:09:42.800] phase
+[00:09:43.440] and because we have seven sets of
+[00:09:46.880] north and south poles that means seven
+[00:09:50.640] electrical revolutions for one physical
+[00:09:53.680] revolution of the rotor
+[00:09:56.800] so as you watch this animation you can
+[00:09:58.959] see that
+[00:10:00.080] the three phases a b and c are working
+[00:10:03.360] together
+[00:10:04.000] to encourage the rotor to rotate in the
+[00:10:07.040] clockwise direction
+[00:10:08.720] and phase b and phase c are doing
+[00:10:11.040] exactly the same thing as phase a that
+[00:10:13.279] we've just discussed
+[00:10:14.880] they have positive current they have
+[00:10:18.079] no current when the zero crossing
+[00:10:20.399] happens
+[00:10:21.120] and then they have reverse current the
+[00:10:23.680] difference between
+[00:10:24.560] phase b and phase c is they're just 120
+[00:10:27.360] degrees
+[00:10:28.000] out of phase with phase a
+[00:10:31.680] and so all that means is they're doing
+[00:10:33.839] the same thing at a different
+[00:10:35.519] time in the commutation cycle
+[00:10:39.120] now you might ask the question why are
+[00:10:41.279] there three phases
+[00:10:42.880] not two or four or 50.
+[00:10:46.640] and the answer is that it's a balance
+[00:10:50.000] between performance and cost and
+[00:10:53.519] complexity
+[00:10:54.959] so you can make motors with fewer phases
+[00:10:58.320] but they don't have the same performance
+[00:11:00.160] they're more difficult to start
+[00:11:02.240] and um they have more torque ripples so
+[00:11:04.880] it's a noisier
+[00:11:06.640] motor there's more vibration and that
+[00:11:08.399] sort of thing so
+[00:11:09.839] that's not as desirable for what we want
+[00:11:11.519] to do and you can also make motors with
+[00:11:14.399] more phases than three phases
+[00:11:16.320] there are motors with four or five or
+[00:11:18.320] even 12 phases for different
+[00:11:20.160] applications
+[00:11:21.360] but the reason why we don't have
+[00:11:24.720] more phases in our application is simply
+[00:11:27.839] because
+[00:11:28.320] every additional phase you add is more
+[00:11:31.519] windings it's more complexity in
+[00:11:34.480] manufacturing
+[00:11:35.600] it's more fets on the esc it makes
+[00:11:38.240] everything more complicated
+[00:11:40.000] and so it turns out that three phases is
+[00:11:42.320] a really nice balance between
+[00:11:44.480] cost and complexity and performance and
+[00:11:46.800] kind of gives you the best of both
+[00:11:48.240] worlds
+[00:11:50.880] there's one final thing to say about
+[00:11:53.040] this period here
+[00:11:54.959] for a sensorless brushless dc motor
+[00:11:58.560] because the esc is actually measuring
+[00:12:01.519] the voltage on the phase
+[00:12:03.200] during this period here and it's using
+[00:12:05.760] that measured voltage
+[00:12:07.200] to determine when the zero crossing
+[00:12:09.920] actually happens
+[00:12:11.279] and that determination of the zero
+[00:12:13.040] crossing is how
+[00:12:14.800] the esc knows how fast the rotor is
+[00:12:18.399] rotating
+[00:12:19.839] and when it should energize
+[00:12:22.880] all the different phases so if there's a
+[00:12:26.320] lot of electrical noise
+[00:12:27.920] that can sometimes make it difficult for
+[00:12:29.920] the esc to detect this zero crossing
+[00:12:32.320] because there's lots of noise and it's
+[00:12:33.839] hard for it to measure the voltage
+[00:12:35.360] accurately
+[00:12:36.240] and that is what can cause things like
+[00:12:38.880] desyncs
+[00:12:40.639] so that zero crossing is really
+[00:12:42.560] important for making sure that the
+[00:12:44.480] esc stays in sync with the motor as it's
+[00:12:47.600] spinning round and round
+[00:12:50.560] so now that we've got the theory out of
+[00:12:52.480] the way let's jump into how to tune your
+[00:12:55.040] esc
+[00:12:56.079] and we're going to start with motor
+[00:12:57.600] direction and i think this is the most
+[00:13:00.160] important setting to know how to change
+[00:13:03.279] some motors might be spinning the wrong
+[00:13:05.360] way when you first
+[00:13:06.639] build your quad and this motor direction
+[00:13:09.920] setting
+[00:13:10.800] is really the only way apart from
+[00:13:14.000] physically resoldering the motor wires
+[00:13:16.399] to correctly
+[00:13:17.600] change the direction of motor rotation
+[00:13:21.680] now there are a few different options
+[00:13:23.440] here you have normal and reversed which
+[00:13:26.240] are the ones that you're probably most
+[00:13:27.600] likely going to be using
+[00:13:29.120] you also have bi-directional normal and
+[00:13:32.240] reversed
+[00:13:33.200] now bi-directional mode is only
+[00:13:36.240] used for 3d flying that's where you
+[00:13:39.600] actually reverse the direction of the
+[00:13:41.120] motor in flight for hovering upside down
+[00:13:44.160] unless you're into 3d flying
+[00:13:47.199] you're going to want to only use normal
+[00:13:50.000] and reversed
+[00:13:52.000] now to select which esc or which motor
+[00:13:55.120] you want to change the direction of
+[00:13:56.720] you come down here to this multiple esc
+[00:13:59.760] tab and you're going to want to
+[00:14:03.040] right click on the esc you want to
+[00:14:05.920] change the direction of
+[00:14:07.760] to single select it then change the
+[00:14:10.560] motor direction if it's not
+[00:14:11.920] correct then you're going to want to
+[00:14:15.279] write the setup to that esc and then
+[00:14:18.240] you're going to want to test that the
+[00:14:19.519] motor has actually changed direction
+[00:14:21.680] and you're going to want to do that for
+[00:14:23.440] all of the motors that are rotating in
+[00:14:25.839] the wrong direction
+[00:14:27.440] now just to be clear this is the only
+[00:14:30.320] way
+[00:14:31.040] to change the direction of your motor in
+[00:14:33.680] software
+[00:14:34.639] don't try and do it in the beta flight
+[00:14:37.600] flight controller configurator
+[00:14:39.760] you can tell it the motors have changed
+[00:14:41.279] direction there but that won't actually
+[00:14:43.680] change the motor direction you really
+[00:14:45.760] should be doing it here in the esc
+[00:14:47.680] settings
+[00:14:49.760] so the next setting i want to talk about
+[00:14:51.440] is motor timing
+[00:14:53.279] and to understand motor timing we need
+[00:14:55.279] to go back to the commutation graph
+[00:14:57.760] that we discussed earlier in the video
+[00:15:02.160] so here's the commutation graph again
+[00:15:04.720] you can see that
+[00:15:05.839] theoretically the ideal situation
+[00:15:08.959] would be to energize the phase
+[00:15:12.000] b here at 0 degrees so that's like the
+[00:15:15.600] theoretical moment that we would want to
+[00:15:17.360] energize the phase
+[00:15:19.120] but this motor timing setting allows us
+[00:15:22.000] to tell
+[00:15:22.720] the esc to energize the phase
+[00:15:25.839] a few degrees and these are electrical
+[00:15:28.000] degrees not mechanical degrees
+[00:15:30.000] a few electrical degrees before that
+[00:15:33.199] theoretical moment up to 30 or 31
+[00:15:36.399] degrees i think before
+[00:15:37.920] the theoretical moment when it would be
+[00:15:40.800] energized
+[00:15:42.639] so why would we want to energize a phase
+[00:15:45.440] early
+[00:15:47.120] well the answer is that each motor phase
+[00:15:49.360] acts as an
+[00:15:50.160] inductor because it's a coil of wire and
+[00:15:53.199] this means that it takes
+[00:15:54.560] time after the phase is first powered on
+[00:15:57.680] for the current to reach its maximum
+[00:16:00.560] value
+[00:16:01.920] and so to compensate for this lag we
+[00:16:04.800] must power the phase on
+[00:16:06.480] slightly before we need it and that's
+[00:16:08.880] what the motor timing setting allows us
+[00:16:10.800] to do
+[00:16:11.519] it allows us to power the motor phase on
+[00:16:14.560] a little bit before we actually want it
+[00:16:17.920] to be on
+[00:16:18.880] to give that current time to build up
+[00:16:22.320] you can see the effect of this lag here
+[00:16:24.959] in the graph
+[00:16:26.320] we have this switch closed where we turn
+[00:16:29.199] on the
+[00:16:29.839] the power to the phase but the current
+[00:16:32.160] in the inductor doesn't immediately jump
+[00:16:34.160] up it ramps up over time to its full
+[00:16:37.519] value
+[00:16:38.320] and then when we open the switch and
+[00:16:41.040] de-energize the phase
+[00:16:42.720] you can see that the current falls
+[00:16:45.199] gradually back down to zero
+[00:16:48.800] so what is the recommended motor timing
+[00:16:51.839] well faster spinning motors so the types
+[00:16:54.720] that you might find on smaller quads
+[00:16:56.880] do benefit from increasing timing
+[00:17:00.160] also slower motors can benefit from
+[00:17:02.560] reducing the timing
+[00:17:04.480] because the time for the phase to
+[00:17:06.799] energize of a big motor
+[00:17:08.720] is is less in comparison to the
+[00:17:12.160] rate of commutation than for a very
+[00:17:14.400] small fast spinning motor
+[00:17:16.240] where actually it takes quite a long
+[00:17:19.439] time
+[00:17:20.079] for the coil to energize compared to how
+[00:17:22.640] fast the motor is spinning
+[00:17:24.959] for most mini quads a timing of 23
+[00:17:27.679] degrees
+[00:17:28.160] which is the medium high setting in bl
+[00:17:31.200] heli s
+[00:17:32.160] or 23 degrees in bl heli32 is a good
+[00:17:35.440] starting value
+[00:17:37.679] increasing motor timing can help reduce
+[00:17:40.880] desyncs
+[00:17:41.600] and can increase top end power but can
+[00:17:43.840] also cause your motors to get
+[00:17:45.440] hotter decreasing the timing
+[00:17:49.039] makes things like desyncs a little more
+[00:17:51.120] likely but
+[00:17:52.320] can make your motors slightly more
+[00:17:54.000] efficient at the cost
+[00:17:55.919] of some power so i would say 23 degrees
+[00:17:59.520] for a 5
+[00:18:00.160] inch and if you're running very small
+[00:18:02.400] quads
+[00:18:03.200] you might even consider increasing it
+[00:18:05.280] even more from 23 degrees
+[00:18:07.520] and if you're running really big quads
+[00:18:09.280] like 7 inch or 8 inch or 10 inch
+[00:18:12.240] you might consider reducing the motor
+[00:18:14.240] timing um
+[00:18:15.280] down a little bit and you're looking to
+[00:18:18.720] find that balance where
+[00:18:20.400] the motors stay nice and cool but you
+[00:18:22.799] still get plenty of
+[00:18:24.400] torque and responsiveness and top end
+[00:18:27.360] power as well
+[00:18:29.960] blheli32 has an auto timing mode
+[00:18:33.440] which you can use it's typically a bit
+[00:18:36.160] on the conservative side so you tend to
+[00:18:38.160] sacrifice a little bit of power with
+[00:18:40.000] auto mode but that will compensate the
+[00:18:44.000] timing
+[00:18:44.960] based on what the esc is detecting as
+[00:18:48.559] it's
+[00:18:48.880] spinning the motor so that can be you
+[00:18:51.440] know a good thing
+[00:18:52.559] for for larger quads or very small quads
+[00:18:56.320] it kind of tries and does its best to
+[00:18:58.320] get the timing right
+[00:18:59.520] but it tends to be a bit on the
+[00:19:01.120] conservative side
+[00:19:02.559] so if you're not too worried about
+[00:19:04.559] sacrificing a little bit of top end
+[00:19:06.400] power
+[00:19:07.200] auto is probably a good solution for you
+[00:19:11.520] the next setting we're going to look at
+[00:19:12.960] is pwm frequency
+[00:19:16.000] and you can find that here there are two
+[00:19:17.760] settings pwm frequency
+[00:19:19.600] low and pwm frequency high
+[00:19:23.919] now when a phase is being driven
+[00:19:27.840] it's not just on at a hundred percent
+[00:19:30.640] the power to the phase
+[00:19:32.080] is being modulated using pulse width
+[00:19:34.320] modulation or pwm
+[00:19:36.480] and here's a graph of what that looks
+[00:19:38.240] like it means that in this area here
+[00:19:41.200] where the phase is energized it's
+[00:19:43.600] actually being
+[00:19:44.400] pulsed and depending on the duty cycle
+[00:19:47.840] of the pulse
+[00:19:48.799] that controls the amount of power that
+[00:19:50.799] the esc is giving to the motor
+[00:19:52.640] and that's basically the throttle
+[00:19:54.080] position so at 50
+[00:19:56.320] throttle you'll have a 50 on 50 off
+[00:19:59.919] pulsing during this period when the
+[00:20:02.000] phase is energized
+[00:20:03.440] at 75 percent it'll be on for 75
+[00:20:06.480] of the time and off for 25 and at
+[00:20:09.520] 25 throttle it will be on for 25
+[00:20:12.720] of the time and off for 75 of the time
+[00:20:16.080] and that's happening only when the phase
+[00:20:18.000] is energized
+[00:20:20.240] now a higher pwm frequency can give a
+[00:20:23.840] smoother approximation of the average
+[00:20:26.640] voltage
+[00:20:27.679] that the motor phase is supposed to
+[00:20:30.240] receive
+[00:20:31.600] because the motor inductance is better
+[00:20:34.159] able to smooth out the pulses of voltage
+[00:20:37.360] now it you can see what's happening here
+[00:20:40.080] in these two diagrams
+[00:20:41.520] at 24 kilohertz at 50 percent duty cycle
+[00:20:45.360] we have these longer pulses and longer
+[00:20:47.520] gaps but at 48 kilohertz
+[00:20:50.159] the pulses are shorter and the gaps are
+[00:20:52.400] shorter
+[00:20:53.280] but the proportion of time
+[00:20:56.559] that the power is on and off remains the
+[00:20:59.760] same
+[00:21:00.159] even as the frequency changes
+[00:21:03.280] now having quicker pulses
+[00:21:07.440] leads to a little less torque ripple so
+[00:21:10.640] that's a smoother application of force
+[00:21:15.120] as the rotor is spinning but
+[00:21:18.240] it does cause a little bit of additional
+[00:21:20.159] heating in the esc
+[00:21:21.360] fets because fets heat up most when they
+[00:21:24.240] actually are switching between on and
+[00:21:25.919] off so
+[00:21:26.559] the more often you switch them the
+[00:21:28.159] hotter they get
+[00:21:30.880] torque is also reduced by
+[00:21:33.919] having these faster pulses because a
+[00:21:37.120] shorter pulse
+[00:21:38.240] allows less time for the current to
+[00:21:40.880] build up
+[00:21:41.919] in the in the inductor in the motor
+[00:21:44.240] windings
+[00:21:45.039] so the peak current and therefore the
+[00:21:46.880] peak torque can be somewhat reduced by
+[00:21:49.840] increasing pwm frequency
+[00:21:51.679] so it's a bit of a trade-off a higher
+[00:21:53.840] pwm frequency gives you a
+[00:21:55.600] smoother running motor and maybe a
+[00:21:58.080] slightly more efficient motor as well
+[00:22:00.159] but it's a slightly less torquey motor a
+[00:22:03.120] little bit less mechanical torque out of
+[00:22:05.039] the motor
+[00:22:06.640] you can see what's going on in this
+[00:22:08.159] diagram with long pulses
+[00:22:10.320] the current is able to build up to a
+[00:22:12.480] higher value
+[00:22:13.919] before then falling again whereas
+[00:22:17.600] with shorter pulses the current doesn't
+[00:22:20.559] build up quite as much and so your
+[00:22:22.400] average current
+[00:22:23.440] is slightly lower it's only slight and
+[00:22:26.240] that does slightly reduce your
+[00:22:27.679] mechanical torque
+[00:22:30.559] so my recommendation is to use the
+[00:22:33.200] variable pwm
+[00:22:34.320] frequency that's in bl heli32
+[00:22:37.520] 32.8 the latest version this
+[00:22:40.720] variable pwm frequency allows you the
+[00:22:42.799] best of both worlds
+[00:22:44.480] so you set a minimum pwm which is 24
+[00:22:48.000] kilohertz
+[00:22:48.799] or perhaps even less for maximum torque
+[00:22:52.480] at low rpms
+[00:22:54.400] and then you set your max pwm to 48
+[00:22:57.039] kilohertz or perhaps even a bit more
+[00:22:59.520] to give you the smoothest possible top
+[00:23:01.440] end now that low pedogram frequency
+[00:23:04.799] is the frequency at zero throttle and
+[00:23:07.280] the max pwm frequency
+[00:23:09.360] is the frequency at full throttle
+[00:23:12.480] and it's just a linear scale between the
+[00:23:15.919] two
+[00:23:16.240] so as you increase the throttle the pwm
+[00:23:18.880] frequency
+[00:23:19.520] increases from 24 to 48
+[00:23:22.880] the next setting i want to talk about is
+[00:23:24.559] ramp up power
+[00:23:26.080] now this setting controls how quickly
+[00:23:29.039] the pwm
+[00:23:30.000] duty cycle is allowed to increase as
+[00:23:33.520] the motor speeds up now why is this
+[00:23:36.720] important
+[00:23:37.600] well when a motor is spinning it
+[00:23:40.080] produces
+[00:23:40.799] a back emf voltage that opposes
+[00:23:44.480] the battery voltage and opposes the
+[00:23:47.440] current flow
+[00:23:48.400] in the windings and it's actually the
+[00:23:51.440] electrical work
+[00:23:52.880] done by the current from the battery
+[00:23:54.880] against this back emf
+[00:23:56.720] that's what's converted into mechanical
+[00:23:58.720] power
+[00:24:00.000] now this back emf is really really
+[00:24:01.760] important because the back emf
+[00:24:04.400] also acts to limit the current through
+[00:24:07.039] the motor
+[00:24:07.840] and stops it smoking itself because
+[00:24:10.880] the current through the motor without
+[00:24:12.720] the back emf would be
+[00:24:14.480] so high that it would just cause the
+[00:24:17.279] windings to melt
+[00:24:19.919] now as the motor speeds up the faster
+[00:24:23.360] the motor is spinning the larger the
+[00:24:25.039] back emf
+[00:24:26.240] as the motor speeds up the back emf is
+[00:24:28.720] increasing the whole time
+[00:24:31.600] so how does this affect ramp up power
+[00:24:34.640] well if you were to suddenly greatly
+[00:24:37.760] increase the power that you're putting
+[00:24:39.679] into the motor
+[00:24:40.960] without first allowing the motor time
+[00:24:44.240] to accelerate its speed and build up a
+[00:24:46.960] bigger back emf
+[00:24:48.400] you could drive truly enormous currents
+[00:24:51.600] through the motor windings and that
+[00:24:54.240] could actually cause
+[00:24:55.440] damage to the motor or to the esc's
+[00:24:59.039] so this ramp up power setting prevents
+[00:25:01.440] that happening
+[00:25:02.480] by saying well when i'm increasing power
+[00:25:05.360] to the motor
+[00:25:06.240] i'm not going to do it all in one go i'm
+[00:25:08.559] going to do it a little bit gradually
+[00:25:10.080] and i'm going to allow the motor to
+[00:25:11.840] speed up
+[00:25:12.880] because obviously when you increase the
+[00:25:14.320] power the rpms are going to increase
+[00:25:16.480] and it's going to speed up and build
+[00:25:18.880] that back emf
+[00:25:20.240] and that increased back emf is going to
+[00:25:22.960] prevent
+[00:25:23.760] too much current flowing through the
+[00:25:25.440] motor windings and causing the motor to
+[00:25:27.520] smoke
+[00:25:27.919] itself so this ramp up power controls
+[00:25:31.360] how quickly that power is being
+[00:25:32.960] increased
+[00:25:35.279] ideally what you want is the ramp up
+[00:25:37.919] power set
+[00:25:38.640] high enough that you can access the full
+[00:25:41.360] mechanical
+[00:25:42.000] torque of the motor and get the motor
+[00:25:44.159] accelerating as quickly as it possibly
+[00:25:46.320] can
+[00:25:48.000] but beyond that there is no benefit to
+[00:25:51.360] further increasing the ramp up power
+[00:25:54.159] because once you've got the full
+[00:25:55.840] mechanical torque of the motor available
+[00:25:58.480] extra ramp up power is just
+[00:26:01.600] driving more current through the
+[00:26:03.200] windings it's just saturating that
+[00:26:06.080] magnetic system you're not getting any
+[00:26:07.840] benefit
+[00:26:08.480] from the increased current and it's just
+[00:26:11.200] causing extra heating
+[00:26:12.799] which will give you hot motors and could
+[00:26:15.279] cause your motors to smoke themselves
+[00:26:18.880] so the default value of 50 is
+[00:26:22.480] okay for most five inch mini quads um
+[00:26:25.679] but i typically find that the
+[00:26:27.679] optimum ramp up power for five inch is
+[00:26:30.480] more about
+[00:26:31.440] more around 20 to 30 percent so i
+[00:26:34.640] usually set my ramp up power at 30
+[00:26:36.840] percent
+[00:26:38.799] if you're looking to tune ramp up power
+[00:26:40.880] and find the optimum
+[00:26:42.400] value for a given quad what you can do
+[00:26:45.520] is start with a very low value i think
+[00:26:47.600] the minimum is 3 percent
+[00:26:49.120] and increase the ramp up power in steps
+[00:26:51.520] of five to ten percent
+[00:26:53.919] and stop increasing the ramp up power
+[00:26:56.400] when you no longer see an improvement in
+[00:26:58.880] the quad's
+[00:26:59.520] response in the air because what that
+[00:27:02.080] means is that
+[00:27:03.200] you've got enough ramp up power at that
+[00:27:04.960] stage to access the full
+[00:27:06.880] mechanical capacity of the motor and
+[00:27:09.360] adding more ramp up power above that
+[00:27:11.600] isn't actually helping it's just causing
+[00:27:13.520] motor heating
+[00:27:14.880] and i've done this experiment and i
+[00:27:16.799] found for me
+[00:27:18.399] that i certainly couldn't see any
+[00:27:20.640] difference
+[00:27:21.520] above thirty percent for my five-inch
+[00:27:23.840] quads and that's why i set my ramp up
+[00:27:26.080] power to thirty percent
+[00:27:28.320] now for larger quads ramp up power can
+[00:27:31.679] be typically reduced
+[00:27:33.440] from default so for a seven inch quad
+[00:27:37.840] or even a five inch quad you could
+[00:27:39.679] reduce it a bit
+[00:27:40.880] to maybe around fifteen to twenty
+[00:27:43.120] percent for a seven inch
+[00:27:44.480] and maybe twenty five to thirty percent
+[00:27:47.360] for a 5-inch
+[00:27:49.840] for smaller quads however there may
+[00:27:52.080] actually be a benefit to
+[00:27:53.600] increasing the ramp up power from
+[00:27:55.279] default because a
+[00:27:56.880] small motor will accelerate much more
+[00:27:58.960] quickly build that back emf
+[00:28:01.520] much more quickly and so that means it
+[00:28:03.679] can accept
+[00:28:04.559] a faster increase in ramp up power and
+[00:28:07.679] this can be really important for small
+[00:28:09.440] quads and tiny loops
+[00:28:10.880] to actually getting more responsiveness
+[00:28:13.200] more performance out of the motor
+[00:28:15.039] by increasing that ramp up power so if
+[00:28:17.840] you're running a smaller quad maybe
+[00:28:19.520] three inch or smaller consider doing an
+[00:28:22.559] experiment where you
+[00:28:23.840] gradually increase the ramp up power
+[00:28:25.919] from the default
+[00:28:27.200] and see if a ramp up power above 50
+[00:28:30.320] percent
+[00:28:31.120] actually gives you a little bit more
+[00:28:32.399] responsiveness from your motors
+[00:28:34.720] and obviously keep going until you no
+[00:28:37.200] longer see a benefit
+[00:28:38.480] and then stop and maybe go back a little
+[00:28:40.399] bit
+[00:28:41.760] that may give you a bit of a performance
+[00:28:44.000] benefit
+[00:28:45.760] so the next setting i want to talk about
+[00:28:47.520] is temperature protection
+[00:28:49.200] and what this does is it reduces power
+[00:28:50.960] to the motor if the esc
+[00:28:52.799] overheats now really the default should
+[00:28:55.360] be fine for this 140c
+[00:28:57.520] but if you're particularly worried about
+[00:28:59.120] your esc overheating for some reason
+[00:29:01.440] you could reduce a little bit maybe 120
+[00:29:03.919] or 100 degrees
+[00:29:05.760] i would say typically the default will
+[00:29:07.520] be fine
+[00:29:09.919] demag compensation is a setting that
+[00:29:12.240] modifies
+[00:29:13.440] some of the behavior of the esc related
+[00:29:16.480] to the handling of missed
+[00:29:17.840] zero crossings and for most quads
+[00:29:21.520] default or low should be fine
+[00:29:24.640] if you're having desyncs you can try
+[00:29:27.360] switching to high
+[00:29:28.399] and seeing if things improve but for
+[00:29:31.679] most mini quads that shouldn't be
+[00:29:33.919] required
+[00:29:34.960] you might find for very large motors
+[00:29:37.279] very large quads
+[00:29:38.559] um that there is a benefit to switching
+[00:29:40.880] dmag compensation to high
+[00:29:43.440] so sine modulation mode is quite an
+[00:29:45.600] interesting feature
+[00:29:47.360] this feature varies the duty cycle of
+[00:29:49.919] the pwm
+[00:29:50.880] at low rpms to more closely approximate
+[00:29:54.480] a sinusoidal driving voltage
+[00:29:58.320] so you can see in this diagram how this
+[00:30:00.320] works you adjust the pwm duty cycle
+[00:30:03.679] of the motor drive
+[00:30:07.039] and that more closely approximates a
+[00:30:10.159] sinusoidal voltage in the motor windings
+[00:30:14.880] for big motors that spin very slowly
+[00:30:18.080] this can make them a little bit more
+[00:30:19.760] smooth with less torque ripple
+[00:30:22.399] however it also does reduce the torque
+[00:30:25.520] slightly at higher rpms the esc switches
+[00:30:29.919] back to
+[00:30:30.480] normal trapezoidal drive
+[00:30:33.520] just because that's most effective and
+[00:30:35.760] efficient for
+[00:30:36.960] high rpm drive i would recommend leaving
+[00:30:40.240] this feature off unless you're running
+[00:30:42.000] props larger than seven inch diameter
+[00:30:44.720] and then you can maybe run an experiment
+[00:30:46.480] to see if it provides a benefit for you
+[00:30:49.760] what i would say is torque at low rpm is
+[00:30:52.720] critical for flight performance and we
+[00:30:54.799] really don't want to give any up
+[00:30:56.640] for mini quads and so i would strongly
+[00:30:59.760] advise for
+[00:31:01.600] anything seven inch or smaller leaving
+[00:31:04.240] the setting off
+[00:31:05.440] to maximize the torque at low rpms
+[00:31:10.880] the brake on stop feature makes your
+[00:31:13.519] props
+[00:31:14.080] stop instantly when you disarm the quad
+[00:31:16.399] because rather than just allowing the
+[00:31:18.080] prop
+[00:31:18.480] to naturally freewheel to a stop the esc
+[00:31:21.919] actually applies braking to slow the
+[00:31:23.919] prop down as quickly as possible
+[00:31:26.320] i quite like this feature for the added
+[00:31:28.880] safety benefit
+[00:31:30.240] particularly for large props which can
+[00:31:32.080] take a while to spin down
+[00:31:33.679] just because if you are about to hit
+[00:31:35.760] something
+[00:31:36.880] and you disarm you can be more confident
+[00:31:39.440] that you are not going to hit that
+[00:31:41.200] object
+[00:31:41.840] with the prop still spinning however
+[00:31:45.360] this setting may make it slightly more
+[00:31:47.679] likely
+[00:31:48.559] for the quad to get caught up in a tree
+[00:31:50.720] if you have it on
+[00:31:51.760] because if the props can't rotate when
+[00:31:54.320] the quad is disarmed
+[00:31:55.679] then that can make it more difficult for
+[00:31:57.679] a quad to fall out of a tree
+[00:32:00.399] while we're on the topic of safety i
+[00:32:02.399] would also recommend that you set your
+[00:32:04.399] quad up
+[00:32:05.279] as i do so that whenever you arm the
+[00:32:07.840] quad
+[00:32:08.480] the props are always spinning so that
+[00:32:12.320] you know when the quad is armed that no
+[00:32:14.159] one is going to go and approach it
+[00:32:15.919] there are some settings in beta flight
+[00:32:18.000] that allow you to have
+[00:32:19.679] motors stopped while the quad is armed
+[00:32:22.320] and
+[00:32:22.799] i think that adds a little bit of risk
+[00:32:26.080] so there are a few settings here that
+[00:32:28.240] you need to leave at default but i'll go
+[00:32:30.000] through and tell you what they all do
+[00:32:32.000] so low voltage protection turns
+[00:32:35.279] off the esc when the battery voltage
+[00:32:38.080] falls below a certain level
+[00:32:40.480] now for a plane this is really useful
+[00:32:43.279] because
+[00:32:44.000] it just means that you can glide the
+[00:32:45.679] plane into a landing and not cook your
+[00:32:47.679] battery
+[00:32:48.640] but for a mini quad the moment the esc
+[00:32:52.480] turns off your quad is going to fall out
+[00:32:54.080] of the sky so
+[00:32:55.600] i would always leave low voltage
+[00:32:57.120] protection off and that way
+[00:32:59.120] you'll kill your battery but you might
+[00:33:00.960] just get your quad home and that's the
+[00:33:02.320] most important thing
+[00:33:04.799] current protection this will limit the
+[00:33:08.399] motor power if the current through the
+[00:33:11.360] esc
+[00:33:12.240] is over a certain level and initially
+[00:33:15.519] this might seem like a good idea
+[00:33:17.360] but actually there are lots of
+[00:33:18.640] situations where you get very short
+[00:33:20.720] spikes of current
+[00:33:22.080] through the motor particularly when the
+[00:33:23.679] motor is changing speed or if you clip
+[00:33:25.760] something
+[00:33:26.559] and in that situation it's actually you
+[00:33:30.000] don't want
+[00:33:31.120] the current to be limited because you
+[00:33:32.720] want the motor to to be able to recover
+[00:33:35.200] as quickly as possible
+[00:33:36.480] so i would typically leave current
+[00:33:38.000] protection off and
+[00:33:40.080] the current consumption of the motor is
+[00:33:42.080] then really going to be controlled by
+[00:33:43.760] ramp up power so if you have that set
+[00:33:46.320] correctly
+[00:33:47.039] you shouldn't need current protection on
+[00:33:50.159] current sense calibration um i guess
+[00:33:52.240] that's if you've got a digital current
+[00:33:53.919] sensor
+[00:33:54.480] and you're you're calibrating it my
+[00:33:56.559] esc's all have analog current sensing
+[00:33:59.279] so i don't really use this setting um
+[00:34:02.559] non-damped mode for many quads you want
+[00:34:05.200] to leave this
+[00:34:06.159] off you don't want to switch it on
+[00:34:08.079] because it will make the
+[00:34:09.679] quad respond really horribly in the air
+[00:34:12.639] basically if you turn this
+[00:34:14.079] on it will turn off the active braking
+[00:34:16.879] of the esc
+[00:34:17.839] and active braking is really important
+[00:34:19.520] so just leave this at default and off
+[00:34:23.200] stall protection at normal i've never
+[00:34:25.200] seen a reason to change that
+[00:34:27.359] auto telemetry you can leave that off
+[00:34:29.760] because
+[00:34:30.480] beta flight will turn on telemetry by
+[00:34:32.839] itself when it connects with the esc
+[00:34:36.399] s bus channel and s port physical id um
+[00:34:39.919] if you've got this connected to a beta
+[00:34:41.440] flight flight controller just
+[00:34:43.040] leave these at off because your flight
+[00:34:46.159] controller
+[00:34:46.879] is going to be dealing with the s bus
+[00:34:48.720] and s port and all of that stuff
+[00:34:51.119] i hope that you enjoyed this video and
+[00:34:52.800] that you now feel like you have the
+[00:34:54.240] information you need
+[00:34:55.599] to get your esc set up correctly to get
+[00:34:58.240] the maximum performance
+[00:34:59.760] out of the motors on your quadcopter if
+[00:35:02.560] you like the work that i do
+[00:35:03.920] and would like to support me i have a
+[00:35:06.079] patreon
+[00:35:07.280] as a patron you will get access to a
+[00:35:09.280] discord server where you can discuss
+[00:35:10.960] these topics with me
+[00:35:12.320] and other like-minded pilots patrons
+[00:35:15.280] also get
+[00:35:16.000] sneak peeks of some of the things that
+[00:35:17.920] i'm working on
+[00:35:19.040] at the moment that's a seven inch long
+[00:35:21.200] range frame
+[00:35:22.320] a new type of carbon fiber and i'm just
+[00:35:25.200] about to start
+[00:35:26.240] a five inch racing frame design as well
+[00:35:29.359] so if you're interested in those things
+[00:35:31.280] please follow the link in the video
+[00:35:32.640] description
+[00:35:33.280] and sign up that's all i have for you
+[00:35:36.000] for today
+[00:35:36.880] so until next time i wish you all very
+[00:35:39.200] very happy flying
+[00:35:50.560] you

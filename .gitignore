@@ -1,2 +1,6 @@
 session-log/
-research/
+research/humand-pasted/
+
+# Override this machine's global ~/.gitignore exclusion of AGENTS.md —
+# tracked deliberately in this repo.
+!AGENTS.md

@@ -1,0 +1,295 @@
+[00:00:00.680] blheli32esc's just got a big performance
+[00:00:03.040] upgrade the devs have introduced a
+[00:00:04.880] feature called by rpm variable pwm
+[00:00:08.240] frequency and although that name may not
+[00:00:10.639] suggest much to you it is one of the
+[00:00:12.960] biggest leaps in smoothness torque
+[00:00:16.080] braking performance it is one of the
+[00:00:17.920] biggest leaps in performance for blhe32
+[00:00:20.320] escs since they came out
+[00:00:22.640] so in this video we're going to go over
+[00:00:25.119] what that feature is
+[00:00:27.119] why you want to be using it how to know
+[00:00:29.439] if your esc is actually going to be able
+[00:00:31.599] to support it and as long as we're on
+[00:00:33.440] the topic let's just take a look at
+[00:00:35.200] blj32 esc's in this day and age and talk
+[00:00:38.800] about how you should be picking them and
+[00:00:41.120] how you should be setting them up i'm
+[00:00:42.480] joshua bardwell and you're going to
+[00:00:43.840] learn something today the first thing
+[00:00:45.360] you need to know about this awesome new
+[00:00:46.879] feature is that you want to be on the
+[00:00:48.480] latest version of blheli32 in order to
+[00:00:50.719] use it
+[00:00:51.800] blheli32 had a thing called variable pwm
+[00:00:55.039] frequency but the by rpm is the thing
+[00:00:58.239] you really want and i think it's 32.8.3
+[00:01:01.760] that added that so let's go ahead and
+[00:01:03.760] download the latest version of bail
+[00:01:05.199] hilly suite and make sure we've got that
+[00:01:07.680] by the way if you have blheli s you're
+[00:01:10.159] not going to be able to use this exact
+[00:01:11.680] feature but you still can improve the
+[00:01:13.760] performance of your blheli s escs by
+[00:01:16.159] flashing a firmware called bluej i've
+[00:01:18.320] got a video about that i'm going to put
+[00:01:19.759] it down in the video description and
+[00:01:22.000] if you're not running bla32 you should
+[00:01:24.000] probably go watch that instead
+[00:01:26.720] rip my retention graph
+[00:01:30.000] the simplest way to download blheli
+[00:01:31.600] suite is to go to this google drive link
+[00:01:33.439] which i'll have linked in the video
+[00:01:34.880] description as always
+[00:01:37.200] and i'm going to download let's see i'm
+[00:01:38.960] running windows so i guess i want
+[00:01:40.240] blhillysweet3232812.zip
+[00:01:44.399] by the way blhelisweet1671
+[00:01:47.439] is for bl healthy s esc's you want
+[00:01:49.920] blheli suite 32. i'll go ahead and
+[00:01:52.320] download that
+[00:01:54.399] and when that download completes i'm
+[00:01:56.000] going to get a zip file with these
+[00:01:57.520] contents and you don't there's no
+[00:01:59.680] installer you just put it in a folder on
+[00:02:01.680] your hard drive and i've already got
+[00:02:03.840] that folder so i'm just going to replace
+[00:02:05.759] that stuff but i'm going to leave the
+[00:02:07.360] music folder behind which has my startup
+[00:02:09.679] tones
+[00:02:10.640] i'll just drag this
+[00:02:12.160] and copy it over
+[00:02:14.879] and then i'll just double-click blheli
+[00:02:16.520] suite32.exe to get that going and here
+[00:02:18.959] we are on the latest i guess it's
+[00:02:20.840] 32.8.1.2 hey there folks it's joshua
+[00:02:23.120] from the future don't let the fact that
+[00:02:24.400] i'm wearing a different shirt and i've
+[00:02:25.360] cut my hair confuse you i'm just
+[00:02:26.879] recording this on a different day the
+[00:02:28.400] next thing we're going to do is we're
+[00:02:29.440] going to
+[00:02:30.239] plug in our quadcopter and we're going
+[00:02:31.920] to plug in our flight controller to usb
+[00:02:35.360] and then here in blheli suite we're
+[00:02:37.760] going to select the correct com port
+[00:02:39.599] that appears and connect
+[00:02:41.440] and when once it connects we're going to
+[00:02:44.239] hit
+[00:02:45.200] read setup and what we're going to look
+[00:02:47.120] for here is this
+[00:02:48.959] text string if bl324 in one we need that
+[00:02:53.360] information because in order to get this
+[00:02:56.080] by rpm functionality we have to download
+[00:02:58.959] a pre-release and not yet released
+[00:03:01.040] firmware at least at the time that i'm
+[00:03:02.640] doing this at some point in the future
+[00:03:05.840] wait i thought i was joshua from the
+[00:03:07.200] future well
+[00:03:08.319] he's joshua from the far future
+[00:03:11.120] at some point in the future you will be
+[00:03:12.959] able to just go to this esc flash
+[00:03:15.519] tab and right here will be 32.8.3 which
+[00:03:18.560] is the firmware version we want today is
+[00:03:20.400] not that day though so we are going to
+[00:03:22.400] go to this github repo and we are going
+[00:03:26.879] to go
+[00:03:28.400] into the rev 32.8.3 test code folder
+[00:03:32.560] and here we are going to look for the
+[00:03:34.080] hex file that has that same name as the
+[00:03:37.200] uh esc name that we saw here iflight
+[00:03:39.840] bl3241
+[00:03:41.519] and the simplest thing to do is just hit
+[00:03:43.040] ctrl f and search
+[00:03:46.640] bl 32 4 in one
+[00:03:51.680] there is
+[00:03:53.239] bl324196k and bl3241 multi32
+[00:03:58.239] i'm not sure which of those is right so
+[00:04:00.319] let's download both of them
+[00:04:02.319] the next little quirk in this
+[00:04:04.640] process is that downloading files from
+[00:04:07.200] github is
+[00:04:08.480] confusing and not intuitive so what i'm
+[00:04:11.439] going to do is i'm just going to click
+[00:04:12.560] on this to go into this page
+[00:04:14.400] and that actually isn't going to
+[00:04:15.439] download the file to download the file
+[00:04:17.359] i'm going to need to right click on the
+[00:04:18.959] raw button and do save link as and
+[00:04:22.400] here's what you need to do don't just
+[00:04:23.919] save this to your downloads folder or
+[00:04:25.440] your desktop
+[00:04:26.639] go to the place where you installed
+[00:04:28.960] blheli
+[00:04:30.560] suite
+[00:04:31.919] and in that folder
+[00:04:33.680] there is a folder blhe32 hex files that
+[00:04:36.880] is where you're going to want to save
+[00:04:38.080] this hex file
+[00:04:40.080] and then after i've restarted blheli and
+[00:04:42.320] reconnected i'm going to go to the esc
+[00:04:44.160] flash tab and you should see here that
+[00:04:47.040] you have the option for 32.8.3 test
+[00:04:50.080] version external file and we're going to
+[00:04:52.479] flash the esc with the this firmware i
+[00:04:56.000] suggest that you do enable the keep
+[00:04:58.080] settings which will keep all your
+[00:04:59.759] settings your motor reversed basically
+[00:05:01.440] your motor direction is the one you're
+[00:05:02.560] most concerned with we'll just hit flash
+[00:05:04.400] selected esc and it will go through and
+[00:05:06.080] flash all four of those esc's now while
+[00:05:08.320] it's flashing the esc let's talk about
+[00:05:10.160] this new feature variable pwm frequency
+[00:05:12.720] and by rpm
+[00:05:15.199] when the esc drives the motor it doesn't
+[00:05:17.520] simply push a dc current through the
+[00:05:20.720] motor like it would with an older style
+[00:05:22.880] brushed motor it actually drives it with
+[00:05:25.360] a pwm pulse width modulated signal in
+[00:05:28.080] which the voltage goes up and down it's
+[00:05:30.320] actually a digital signal and the length
+[00:05:33.520] or width of those
+[00:05:35.600] high voltage pulses is what controls the
+[00:05:38.000] throttle the longer it leaves the
+[00:05:39.919] throttle of the signal at high voltage
+[00:05:42.479] the higher the throttle position and the
+[00:05:44.160] faster the motor spins
+[00:05:46.160] it turns out that the frequency of this
+[00:05:48.800] pwm signal has a significant effect on
+[00:05:51.199] motor performance
+[00:05:52.639] if we look at this chart from chris
+[00:05:54.240] rosser's recent video where he goes a
+[00:05:55.919] little bit more in depth into some of
+[00:05:57.520] the numbers behind what i'm talking
+[00:05:58.960] about here and i'll put a link to that
+[00:06:00.400] in the video description as well
+[00:06:02.479] we can see that as pwm frequency goes up
+[00:06:05.280] the efficiency of the motor goes up
+[00:06:07.840] and that's why wouldn't you want more
+[00:06:09.520] efficiency that means more power and
+[00:06:11.600] less battery usage and longer flight
+[00:06:14.160] times shouldn't we just run the highest
+[00:06:15.520] pwm frequency possible and the answer
+[00:06:17.919] that question is shown in this graph
+[00:06:19.520] from chris roster's video where he shows
+[00:06:21.360] that breaking performance significantly
+[00:06:24.000] reduces as pwm frequency goes up and it
+[00:06:27.840] turns out that one of the most important
+[00:06:29.919] characteristics for a mini quad motor
+[00:06:31.919] and esc
+[00:06:33.120] is the responsiveness
+[00:06:35.120] not neces because they're changing speed
+[00:06:37.280] all the time and the ability to change
+[00:06:39.360] speed very rapidly in response to
+[00:06:41.680] changing air conditions has a big big
+[00:06:44.160] influence on how well a quadcopter flies
+[00:06:46.720] so we don't run at maximum pwm frequency
+[00:06:50.000] uh because like as if it was an airplane
+[00:06:52.400] engine where you were just constantly at
+[00:06:54.479] 80 percent throttle
+[00:06:56.000] just cruising higher pwn frequency would
+[00:06:58.400] be amazing but because we're constantly
+[00:07:00.400] changing speed we often run at a lower
+[00:07:03.360] pwm frequency even though it's hurting
+[00:07:05.599] our efficiency and this is where
+[00:07:07.280] variable pwm frequency comes in now that
+[00:07:09.919] the esc has finished flashing we can
+[00:07:11.680] reconnect and we can take a look at how
+[00:07:13.840] variable pwm frequency is configured in
+[00:07:16.400] blheli suite and we can see right here
+[00:07:18.639] that we have two options pwm frequency
+[00:07:20.880] low and pwm frequency high
+[00:07:23.599] and what that lets us do is set a
+[00:07:26.560] lower bound and a higher bound on the
+[00:07:28.560] pwm frequency that blheli will use and
+[00:07:31.280] then as the throttle input goes up the
+[00:07:34.880] pwm frequency increases
+[00:07:37.360] why would you want to do that well if
+[00:07:39.199] you think about it
+[00:07:40.400] you need the maximum braking performance
+[00:07:43.680] when you are lowering the throttle when
+[00:07:45.919] the motor is slowing down
+[00:07:47.840] and you need the maximum efficiency
+[00:07:51.599] and power when the throttle is up so the
+[00:07:54.400] idea is that when the throttle's down
+[00:07:56.400] you go to a low pwm frequency when the
+[00:07:58.240] throttle is up you go to a high
+[00:07:59.520] pedometer frequency and you get the best
+[00:08:01.520] of both worlds but there's a problem
+[00:08:03.440] with the way that blheli implemented
+[00:08:05.440] this until now
+[00:08:07.360] and the problem is that they tied it
+[00:08:09.199] simply to the throttle position and it
+[00:08:12.479] turns out that when you do that the pwm
+[00:08:14.960] frequency can interface or interact with
+[00:08:18.000] the
+[00:08:19.120] rpm of the motor
+[00:08:20.879] to create harmonics and those harmonics
+[00:08:23.520] can cause mid throttle oscillation jello
+[00:08:26.160] and other flight performance problems
+[00:08:29.039] thanks joshua from the past good job
+[00:08:31.520] what you're going to want to do is set
+[00:08:33.200] the pwm frequency low as low as possible
+[00:08:36.240] because you're going to want the maximum
+[00:08:38.320] torque and maximum braking performance
+[00:08:40.320] when you're at low rpm and then for pwm
+[00:08:42.880] frequency high you're going to move that
+[00:08:44.480] all the way to the right and it should
+[00:08:45.760] say by rpm and that's the feature that's
+[00:08:48.480] the buy rpm variable pwm feature that we
+[00:08:51.440] have gone to all this trouble to get
+[00:08:53.519] once you've done that you're just going
+[00:08:55.040] to hit write setup and
+[00:08:58.000] you probably are going to need to do
+[00:08:59.120] that for all four of your yes no it
+[00:09:01.120] seems to be
+[00:09:02.320] consistent for all of the esc that's
+[00:09:05.120] awesome
+[00:09:06.080] well that wasn't so hard was it okay it
+[00:09:08.640] was probably a little bit hard for some
+[00:09:09.839] people if you made it this far and if
+[00:09:11.760] i've helped you get access to this new
+[00:09:13.279] feature would you consider going down
+[00:09:14.959] and hit the like button that tells
+[00:09:16.640] youtube that this is a useful video that
+[00:09:18.320] more people need to see and i really
+[00:09:20.080] want as many people as possible to be
+[00:09:21.519] able to benefit from this really awesome
+[00:09:23.519] feature thank you so much for taking the
+[00:09:25.519] effort to do that it means a lot this is
+[00:09:28.000] the best performance that i think you're
+[00:09:29.680] going to get out of a blh32 esc today
+[00:09:32.720] but you need to be aware that not all
+[00:09:34.560] ascs are going to be able to take full
+[00:09:36.480] advantage of it the buy rpm feature
+[00:09:39.360] gives you great smoothness power and
+[00:09:41.279] efficiency at the high end great
+[00:09:42.800] responsiveness breaking torque at the
+[00:09:45.360] low end and no mid throttle oscillations
+[00:09:47.760] hopefully throughout the whole throttle
+[00:09:49.360] range but in order to fully take
+[00:09:51.279] advantage of it you need an esc that can
+[00:09:53.600] go
+[00:09:54.399] all the way down to like 16 or 24
+[00:09:56.720] kilohertz at the low end and all the way
+[00:09:58.800] up to like oh my god look at this do you
+[00:10:00.800] see that my esc only goes up to 48k
+[00:10:04.240] that is awful you want an esc that goes
+[00:10:06.640] up to 96 or even 128k i'm not really
+[00:10:09.600] getting the most of this feature
+[00:10:11.600] if you want to be able to buy an esc
+[00:10:13.600] that you are sure is going to be able to
+[00:10:15.680] take full advantage of this feature i
+[00:10:17.200] got another video i made that tells you
+[00:10:19.279] the specific specs that you want to look
+[00:10:21.040] for now i'm going to put it up on screen
+[00:10:22.880] in a little flyout card it
+[00:10:25.279] also tells you the other things about
+[00:10:26.720] esc's that you might want to look for
+[00:10:28.160] such as amp rating and voltage rating
+[00:10:30.320] and i hope you'll check that out as well
+[00:10:32.480] in the meantime though that's gonna do
+[00:10:33.839] it for this video thank you so much for
+[00:10:35.680] watching and happy flying

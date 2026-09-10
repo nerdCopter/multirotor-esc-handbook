@@ -1,0 +1,392 @@
+[00:00:00.080] if your esc runs blheli s then i don't
+[00:00:02.720] blame you if you've been feeling a
+[00:00:04.160] little bit like a second class citizen
+[00:00:06.000] lately it seems like all the cool new
+[00:00:08.240] features go into blheli32 and blheli s
+[00:00:11.280] is just left out
+[00:00:12.799] and i i mean features that improve the
+[00:00:15.040] flight performance of your quadcopter
+[00:00:17.119] like a bi-directional d-shot so you can
+[00:00:19.359] do rpm filtering yeah blhelios didn't
+[00:00:22.160] support that for a long time
+[00:00:24.080] or features like uh like this
+[00:00:27.250] [Music]
+[00:00:28.840] huh yeah the ability to play music or
+[00:00:32.640] sounds when you first plug in okay it's
+[00:00:34.800] not going to make your quad fly better
+[00:00:36.320] but it sure is cool to be able to
+[00:00:38.399] personalize it in that way
+[00:00:40.000] today i'm going to show you a firmware
+[00:00:41.680] for blheli s that lets you get in on
+[00:00:44.239] many of these features and if you've
+[00:00:46.239] seen previous videos i've done about
+[00:00:48.320] jesc and jazz maverick no this is not
+[00:00:51.360] them i've got another recommendation
+[00:00:53.199] today and i'm going to tell you why
+[00:00:54.559] today bluej is the firmware that you
+[00:00:56.879] want to be running on your blheli scsc
+[00:01:00.320] and there is a newer even easier way to
+[00:01:02.239] flash bluej and a couple other firmwares
+[00:01:04.479] i'm joshua bardwell you're going to
+[00:01:05.920] learn something today
+[00:01:09.480] [Music]
+[00:01:15.200] before i tell you why blue jay is the
+[00:01:16.960] firmware that i recommend you put on
+[00:01:18.640] your bill hilly s esc's today i just
+[00:01:20.720] want to acknowledge the work done
+[00:01:22.240] previously by joe lucid uh for with the
+[00:01:25.600] jesc firmware and jazz maverick on the
+[00:01:28.799] jazz maverick firmware um all of these
+[00:01:31.280] people have contributed to the open
+[00:01:33.520] source uh expansion of the blheli s code
+[00:01:36.960] and many of these firmwares wouldn't be
+[00:01:38.720] here without the work they've done
+[00:01:40.400] there's nothing wrong with these
+[00:01:41.840] firmwares per se
+[00:01:43.680] but jdsc firmware uh it costs money
+[00:01:47.520] that's fine joe lucid wanted to charge
+[00:01:49.280] money for his work i don't begrudge him
+[00:01:50.880] that but there's a firmware that
+[00:01:52.560] basically does the same thing for free
+[00:01:54.399] so most people will probably choose that
+[00:01:56.640] especially because when you buy a jesc
+[00:01:59.040] license if your esc dies you don't get
+[00:02:01.280] that money back
+[00:02:03.520] and a lot of people are annoyed by that
+[00:02:05.040] that's actually always how it's worked
+[00:02:06.399] you just pay the license when you first
+[00:02:07.759] buy the esc they don't give you a back
+[00:02:09.599] when it dies but a lot of people are a
+[00:02:10.959] little bit annoyed about that so
+[00:02:13.040] and as far as jazz maverick goes well
+[00:02:15.680] the last update was august 2020 it's a
+[00:02:18.160] little bit out of date so the firmware
+[00:02:19.840] we're looking at here is called bluej
+[00:02:22.000] and yes you can flash it with a
+[00:02:24.640] standalone app if you prefer to download
+[00:02:26.560] the app to your hard drive but even
+[00:02:28.959] cooler there is a browser-based flasher
+[00:02:31.519] and a lot of people are going to like
+[00:02:33.040] that and find it more convenient than
+[00:02:34.800] downloading an app to their hard drive
+[00:02:36.400] the url is esc-configurator.com
+[00:02:39.440] and there's a link to that down in the
+[00:02:40.800] video description as you would expect so
+[00:02:43.360] in order to use this
+[00:02:45.519] we're just going to plug usb into the
+[00:02:47.599] flight controller and plug in a battery
+[00:02:50.319] to power up the esc
+[00:02:52.480] and then here in the browser i'm going
+[00:02:53.920] to hit open port selection and i'm going
+[00:02:55.840] to choose the com port of the flight
+[00:02:57.840] controller the very first time you do
+[00:02:59.360] this chrome is going to ask you for
+[00:03:01.200] permissions to access the com ports and
+[00:03:03.360] then once you do that you don't have to
+[00:03:04.720] do that again
+[00:03:06.000] by the way this is you'll need a chrome
+[00:03:07.680] based browser which
+[00:03:09.680] basically all of them are today but
+[00:03:12.000] yeah
+[00:03:13.120] so then we'll hit connect and we will
+[00:03:16.080] hit connect and now we are connected to
+[00:03:19.440] the esc and the next thing i'll do is
+[00:03:21.920] hit read setup down here in the lower
+[00:03:23.760] right now if you've used blheli s
+[00:03:25.920] configurator before then this all looks
+[00:03:28.640] very familiar and in fact i wouldn't be
+[00:03:30.319] surprised to learn it's all based on the
+[00:03:31.680] same code because it's all open source
+[00:03:33.840] many of the things in here are going to
+[00:03:36.159] be familiar to you
+[00:03:38.080] you can set whether the motor is
+[00:03:39.519] reversed you can change the ppm min and
+[00:03:42.000] max throttle if you're using d-shot you
+[00:03:43.840] don't have to worry about that
+[00:03:45.680] and over here on the left we've got
+[00:03:47.280] options like startup power temperature
+[00:03:49.200] protection the standard esc based
+[00:03:51.599] options that you're used to seeing
+[00:03:54.000] but if we flash the blue jay firmware
+[00:03:56.799] we're going to see some extra stuff so
+[00:03:58.239] let's go ahead and do that down here in
+[00:03:59.680] the lower right i'm going to hit flash
+[00:04:01.680] all
+[00:04:03.840] and the firmware i'm going to flash is
+[00:04:05.920] going to be bluej
+[00:04:08.159] for esc just leave this at whatever it
+[00:04:10.400] is gh30 don't change that because you'll
+[00:04:12.720] mess up your esc
+[00:04:14.640] and for version i suppose i'm going to
+[00:04:16.720] pick the latest version i don't know
+[00:04:18.720] what erpm test is but i don't think i
+[00:04:20.880] want test firmware
+[00:04:23.040] and then we got the first option that we
+[00:04:25.280] can select that's new with this firmware
+[00:04:28.000] the pwm frequency now on
+[00:04:30.520] blh32escs you don't have to flash
+[00:04:32.639] different firmware to change the motor
+[00:04:34.000] pwm frequency you can just change it in
+[00:04:35.840] software but on these blhelis esc's they
+[00:04:39.120] don't have enough space for the code how
+[00:04:41.280] do you choose which pwm frequency you
+[00:04:43.040] want for very small quads like
+[00:04:45.680] toothpicks and smaller down to 65
+[00:04:47.840] millimeter tiny whoops generally the
+[00:04:49.840] higher the pwm frequency the longer the
+[00:04:52.160] flight time you're going to get and this
+[00:04:53.840] is
+[00:04:55.040] much much more true for like 65
+[00:04:57.120] millimeter tiny whoops than it is for
+[00:04:59.120] like three inch toothpicks in fact maybe
+[00:05:01.039] even at the three inch size it doesn't
+[00:05:02.560] make sense anymore um this is a this is
+[00:05:05.840] a three inch
+[00:05:07.360] it's not really a toothpick though
+[00:05:09.440] so maybe i'm going to pick the middle 48
+[00:05:12.479] kilohertz the higher the frequency the
+[00:05:14.960] smoother the motors are going to be in
+[00:05:16.639] general so some people would argue that
+[00:05:18.560] for larger like freestyle quads you
+[00:05:20.560] would want the 96 kilohertz pwm
+[00:05:22.720] frequency the problem with that is that
+[00:05:24.639] the higher pwm frequencies also
+[00:05:26.800] significantly reduce braking torque and
+[00:05:30.000] they can make the quad handle worse so
+[00:05:31.840] for larger freestyle quads like five
+[00:05:33.919] inches and up you probably are going to
+[00:05:35.600] want to pick 24
+[00:05:37.600] for tiny whoops and so forth you're
+[00:05:39.759] definitely going to pick 96 and
+[00:05:41.520] somewhere around 3 inches maybe you'd
+[00:05:43.280] pick 48
+[00:05:44.800] yeah that's what you're going to go for
+[00:05:46.320] so then i'm just going to hit flash and
+[00:05:48.400] it's going to go flash all of those
+[00:05:49.840] esc's after you're done flashing you're
+[00:05:51.759] going to see that there's some new
+[00:05:52.800] options here that are unique to the
+[00:05:54.160] bluej firmware and we're going to go
+[00:05:55.520] through a couple of those what they mean
+[00:05:56.880] and how to tune them but the number one
+[00:05:58.720] thing you've got is not an option it's
+[00:06:00.880] just there and that is access to
+[00:06:03.199] bi-directional d-shot so here in
+[00:06:04.960] betaflight we can go to the well i'm in
+[00:06:07.840] the motors tab in betaflight
+[00:06:09.360] configurator 10.8 which is the newest
+[00:06:11.520] version uh that has just come out
+[00:06:14.000] they've moved the dshot settings to the
+[00:06:16.240] motors tab they used to be in the
+[00:06:17.600] configuration tab if you're on
+[00:06:19.520] 10 7 they're going to be in the
+[00:06:20.720] configuration tab
+[00:06:22.479] we can enable bi-directional d-shot and
+[00:06:25.199] save and reboot
+[00:06:29.600] and then here in the motors tab we can
+[00:06:32.080] see zero percent errors which with bless
+[00:06:35.840] we would now see a hundred percent
+[00:06:37.039] errors because it doesn't support
+[00:06:38.319] bi-directional d-shot we can now uh use
+[00:06:41.199] rpm filtering here in the pin tuning tab
+[00:06:44.000] we can go to the filter settings and you
+[00:06:46.800] can see that the gyro rpm filter is
+[00:06:49.759] enabled and that's fantastic that is
+[00:06:52.960] everybody should do that everybody
+[00:06:54.560] should do that and in fact once you've
+[00:06:56.080] done that you should also go ahead and
+[00:06:57.919] turn off the gyro lope whichever one low
+[00:06:59.840] pass leave gyro low pass two and leave
+[00:07:01.599] the d term that once you enable the gyro
+[00:07:03.840] rpm filter it's almost always safe to
+[00:07:06.160] just go ahead and disable that and uh
+[00:07:08.319] you know get some get your quadcopter
+[00:07:10.080] flying just a little bit better this
+[00:07:11.680] isn't a tuning guide this is about the
+[00:07:13.360] esc let's continue another feature that
+[00:07:15.759] you're really going to enjoy is the
+[00:07:17.120] ability to customize the startup sound
+[00:07:19.120] to make that be a song or sound
+[00:07:21.199] something that you personalize for
+[00:07:22.639] yourself why would you want to hear the
+[00:07:24.479] standard startup music every time you
+[00:07:26.080] plug in how boring
+[00:07:28.080] you're going to access that through the
+[00:07:29.280] melody editor here
+[00:07:30.960] and you can make your own melodies the
+[00:07:33.440] format is ringtone text transfer
+[00:07:36.240] language or rttl
+[00:07:38.800] and there's documentation online about
+[00:07:40.560] how to create rttl files but
+[00:07:43.039] is actually also just a library of
+[00:07:45.280] pre-made ones that you can pick
+[00:07:47.680] for example how about the rick and morty
+[00:07:50.720] theme we can even play it to uh
+[00:07:54.879] yeah there you go we can even play it to
+[00:07:57.120] hear what it sounds like and when we're
+[00:07:59.039] ready to go
+[00:08:00.800] we will
+[00:08:03.360] accept
+[00:08:05.759] each one
+[00:08:08.800] i believe so yes accept it and then
+[00:08:10.960] write melodies
+[00:08:19.039] shut up
+[00:08:20.400] you know that's the coolest thing you've
+[00:08:22.479] ever freaking heard
+[00:08:27.919] yeah finally my micro quads can have the
+[00:08:30.639] same startup tone as my big quad
+[00:08:33.360] like i always wanted
+[00:08:37.919] nice
+[00:08:39.279] that's that's what we need from life now
+[00:08:41.440] let's get to the serious stuff uh these
+[00:08:43.839] options over here and
+[00:08:45.760] the default options work fine that's why
+[00:08:47.440] they're the defaults if this stuff kind
+[00:08:49.120] of breaks your brain a little bit that
+[00:08:50.480] just fly the defaults and have fun and
+[00:08:51.920] enjoy your your new startup tones and
+[00:08:54.080] your bi-directional d-shot rpm filtering
+[00:08:56.399] now here in the bluej firmware we've got
+[00:08:58.160] two parameters that relate to startup
+[00:08:59.839] power one is the minimum and one is the
+[00:09:01.680] maximum and the way it works is that the
+[00:09:03.760] esc will start sort of kicking the motor
+[00:09:06.959] with the minimum startup power and if
+[00:09:09.600] the motor doesn't begin to spin smoothly
+[00:09:11.519] and back emf is detected then it will
+[00:09:14.320] slowly increase how hard it kicks the
+[00:09:16.399] motor until it reaches the maximum and
+[00:09:18.640] at that point hopefully the motor will
+[00:09:19.920] be spinning and the problem is that if
+[00:09:22.399] that electrical pulse that initial blind
+[00:09:25.519] kick is too weak the motor won't begin
+[00:09:27.760] to spin
+[00:09:29.120] it's not great but it's not the worst
+[00:09:30.640] thing in the world
+[00:09:31.760] if that pulse is too strong the motor
+[00:09:33.760] can be damaged for example what if the
+[00:09:35.680] motor isn't spinning because it's
+[00:09:37.279] blocked by a branch and you're like ah
+[00:09:39.519] start spinning you son of a ah you just
+[00:09:41.760] burned a motor so what the esc is gonna
+[00:09:43.600] do is it's gonna start with the minimum
+[00:09:45.920] startup power
+[00:09:47.279] and if the motor doesn't begin to spin
+[00:09:49.200] it's going to ramp up to the maximum
+[00:09:51.120] startup power
+[00:09:52.480] so the maximum startup power needs to be
+[00:09:55.040] low enough or that it doesn't let the
+[00:09:57.279] motor fry
+[00:09:58.720] and i don't know how you tune that value
+[00:10:00.560] just raise it until you fry a motor
+[00:10:02.880] i really don't so we're just going to
+[00:10:04.320] leave that at the default
+[00:10:06.000] the minimum startup power we can
+[00:10:07.440] actually tune to try and make it be just
+[00:10:10.079] high enough to get the motor going while
+[00:10:13.120] well not sort of over
+[00:10:15.200] kicking the motor if you will moving on
+[00:10:17.600] down the parameters we've got motor
+[00:10:19.279] timing
+[00:10:20.240] and the short value short version is
+[00:10:22.320] that you can set this timing from medium
+[00:10:24.079] high to high which decreases the odds of
+[00:10:26.320] a desync but can also make the motors
+[00:10:28.720] run hotter and less efficient it can
+[00:10:31.360] also make a little bit more power
+[00:10:32.880] sometimes a lot of racers prefer to run
+[00:10:35.040] at high timing the highest possible
+[00:10:37.360] timing there isn't really a compelling
+[00:10:39.600] reason to turn the timing down
+[00:10:42.959] that i can think of
+[00:10:47.440] like really big low kv motors you might
+[00:10:50.640] want to turn the timing down i suppose
+[00:10:53.839] because they're spinning so slowly now
+[00:10:55.360] but the default timing is probably fine
+[00:10:57.680] if you want a little bit more power at
+[00:10:59.279] the expense of efficiency turn it up to
+[00:11:01.040] high
+[00:11:01.839] dmag compensation uh that is a safety
+[00:11:05.040] setting where if the esc thinks that the
+[00:11:07.920] motor has desynced it will go into a
+[00:11:11.120] mode where it does what's called blind
+[00:11:12.399] commutation where it just tries to
+[00:11:13.760] commute the motor commutate the motor
+[00:11:15.519] without detecting zero crossings and low
+[00:11:18.399] is a fine value for most people if you
+[00:11:20.480] have a particularly desync prone
+[00:11:23.040] quadcopter you can set it to high and it
+[00:11:24.800] may fix your dsyncs
+[00:11:26.880] and basically nobody should set it to
+[00:11:28.720] off
+[00:11:29.760] probably beep strength is how loud the
+[00:11:32.560] motors beep if you turn this up you do
+[00:11:34.800] risk heating your motors up if the left
+[00:11:37.200] beeping too long but they will be louder
+[00:11:40.240] beacon strength is when the esc is
+[00:11:43.839] powered down for too long and it begins
+[00:11:46.560] to beep because it thinks you've lost it
+[00:11:48.880] that's how strong that will be uh and
+[00:11:52.399] oh we missed rpm power protection that
+[00:11:55.120] is how hard the esc will try to
+[00:11:58.160] accelerate the motor when it's already
+[00:12:00.000] spinning so if you're in a situation
+[00:12:01.680] where the motor is spinning and then
+[00:12:03.200] suddenly it needs to accelerate by
+[00:12:05.360] turning this up
+[00:12:07.360] it will accelerate harder but there will
+[00:12:09.440] be a greater chance of a desync or a
+[00:12:11.360] fried motor so you definitely could try
+[00:12:14.160] turning this up if you want more
+[00:12:16.399] responsive motors but you have much
+[00:12:18.480] higher risk of frying something and then
+[00:12:20.639] the last setting we're going to talk
+[00:12:21.680] about is dithering which should
+[00:12:23.120] basically always be on
+[00:12:24.880] unless you're using 24k pwm frequency
+[00:12:27.680] because without it your motor resolution
+[00:12:29.680] will be extremely low and that's going
+[00:12:31.680] to bring us to the end of the video
+[00:12:33.680] i am putting bluej on all of my quads
+[00:12:36.079] with bl heli s esc's to gain access to
+[00:12:39.279] bi-directional d-shot rpm filtering and
+[00:12:42.160] yes the mario power-up sound which is
+[00:12:44.639] more important to me than you know
+[00:12:46.959] if you're interested in tweaking some of
+[00:12:48.399] those advanced options that's cool but
+[00:12:50.639] even if you're not i suggest you flash
+[00:12:52.800] this and that is the advice that i not
+[00:12:54.959] just me but i talked to a whole bunch of
+[00:12:56.959] other people i know who a lot of people
+[00:12:58.720] who fly micro quads with bl heli scscs
+[00:13:01.200] and this is the firmware they're all
+[00:13:02.480] using too sorry jesc jazz maverick etc
+[00:13:05.519] this just seems to be where people are
+[00:13:07.279] at
+[00:13:08.079] so there's links in the video
+[00:13:09.360] description to all the stuff if you're
+[00:13:10.959] interested and uh yeah oh right
+[00:13:14.720] if you value content like this i have a
+[00:13:17.120] patreon page patreon is a website where
+[00:13:19.279] you can subscribe to me for as little as
+[00:13:21.440] two dollars a month or more if you feel
+[00:13:23.040] like i've earned it you're totally in
+[00:13:24.560] charge of how much you decide to spend
+[00:13:27.040] it helps support me every month helps me
+[00:13:28.880] pay the bills
+[00:13:30.240] and helps me keep making content like
+[00:13:32.000] this but don't worry content like this
+[00:13:34.079] will always be available for free so if
+[00:13:36.079] today is not the day where you feel like
+[00:13:37.680] i've earned it that's fine keep watching
+[00:13:39.600] and hopefully that day will come but if
+[00:13:41.040] that today is that day down in the video
+[00:13:43.040] description is a link to patreon.com as
+[00:13:45.519] well as some other ways you can support
+[00:13:46.959] me thanks for watching happy flying
+[00:13:53.360] what are you doing in here
+[00:13:56.079] the least you could do is subscribe or
+[00:13:58.800] join my patreon or
+[00:14:00.639] like just here's another video i picked
+[00:14:02.480] out for you
+[00:14:03.920] jeez
