@@ -6,7 +6,7 @@ Every URL that backs a claim anywhere in this knowledge base, plus additional so
 
 ## 1. Video Sources (YouTube)
 
-Real captions were downloaded and read in full for 8 of these 10; the 2 marked "not transcribed" are cited only for their title/creator (verified real via YouTube's oEmbed API), not for any specific claim.
+Real captions were downloaded and read in full for all 10 of these.
 
 | Video | Creator | Status | Cited in |
 | :--- | :--- | :--- | :--- |
@@ -18,8 +18,8 @@ Real captions were downloaded and read in full for 8 of these 10; the 2 marked "
 | [youtu.be/oKcyXR7Yx64](https://youtu.be/oKcyXR7Yx64) — "Stop desyncs on your 160 mph 6S 2700kv quad" | Joshua Bardwell w/ Ryan Harrell | Transcribed | desyncs.md, blheli32.md, theory-operation-hardware.md, video-audio-knowledge.md |
 | [youtu.be/c94e9TCCP8Y](https://youtu.be/c94e9TCCP8Y) — "Demag Compensation Explained - BLHeli_32 ESC" | Pawel Spychalski (channel: FPV University) | Transcribed | desyncs.md, blheli32.md, video-audio-knowledge.md |
 | [youtu.be/7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE) — "Tuning your ESC (BLHeli_32) to stop desyncs..." | Chris Rosser | Transcribed | desyncs.md, blheli32.md, video-audio-knowledge.md |
-| [youtu.be/3SHzyUaypFw](https://youtu.be/3SHzyUaypFw) — "Tuning AM32 ESCs for Ultimate Performance" | Chris Rosser | **Not transcribed** (YouTube rate-limited every retry) | am32.md (title/creator only) |
-| [youtu.be/6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM) — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones" | Chris Rosser | **Not transcribed** (YouTube rate-limited every retry) | blheli32.md (title/creator only) |
+| [youtu.be/3SHzyUaypFw](https://youtu.be/3SHzyUaypFw) — "Tuning AM32 ESCs for Ultimate Performance" | Chris Rosser | Transcribed (took several days of retries past YouTube rate-limiting) | am32.md, desyncs.md, video-audio-knowledge.md |
+| [youtu.be/6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM) — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones" | Chris Rosser | Transcribed (took several days of retries past YouTube rate-limiting) | blheli32.md, desyncs.md, README.md, video-audio-knowledge.md |
 
 **Playlists** (verified to exist and be topically relevant; not transcribed video-by-video):
 * [Bardwell/Harrell BLHeli_32 series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8kXOyPdBog1wtRcxnXMasUb)

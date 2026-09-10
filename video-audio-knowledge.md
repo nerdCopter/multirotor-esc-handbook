@@ -4,7 +4,7 @@
 >
 > Video transcripts aren't the only primary source used in this KB — where a video claim couldn't be confirmed or contradicted one way, project GitHub history (issues, PRs, release notes, official wikis) was checked directly. The clearest example: the "avoid 96kHz on whoops" question wasn't actually resolved by any video — it was resolved by reading Bluejay's own GitHub issue tracker, which turned up the real maintainer reasoning. See [bluejay.md §PWM Switching Frequency Breakdown](bluejay.md#pwm-switching-frequency-breakdown) and video 4 below.
 
-**Coverage:** 8 of the 10 individually-cited videos have been transcribed. 2 Chris Rosser videos (`3SHzyUaypFw` — "Tuning AM32 ESCs for Ultimate Performance", `6gv0_jTEYZM` — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones") consistently hit YouTube rate-limiting (HTTP 429) across multiple retries and client types — not yet transcribed. They are **not** used as a source for any claim in this KB. The two cited playlists (Bardwell/Harrell BLHeli_32 series, High Energy Failures AM32 series) were verified to exist and be topically relevant but not individually transcribed video-by-video.
+**Coverage:** all 10 individually-cited videos have now been transcribed. The last 2 (`3SHzyUaypFw`, `6gv0_jTEYZM`) hit YouTube rate-limiting for several days before finally succeeding. The two cited playlists (Bardwell/Harrell BLHeli_32 series, High Energy Failures AM32 series) were verified to exist and be topically relevant but not individually transcribed video-by-video.
 
 ---
 
@@ -91,6 +91,28 @@ The core "how do I actually fix a desync" reference for this KB.
 * **Same incremental Demag guidance as Spychalski's video (@29:09):** default/Low unless desyncing, step up as needed — independent confirmation of the same point from a different creator.
 * **PWM tradeoff direction confirmed:** lower frequency = more torque, less efficiency (matches [pwm-frequency-heat.md](pwm-frequency-heat.md)).
 * **Real numeric Rampup Power guidance by airframe size** — more specific than this KB's earlier flat "30%-50%": 5" ≈ 20%-30% (he uses 30%), 7" ≈ 15%-20%, sub-3" builds possibly >50% by default. Used in [desyncs.md](desyncs.md) and [blheli32.md](blheli32.md).
+
+---
+
+## 9. Chris Rosser — "Tuning AM32 ESCs for Ultimate Performance"
+[youtu.be/3SHzyUaypFw](https://youtu.be/3SHzyUaypFw)
+
+* **AM32 PWM frequency recommendation: Variable/By-RPM, stated directly** ("definitely use the variable pwm") — this is the sourced basis for [am32.md](am32.md)/[desyncs.md](desyncs.md) now splitting the PWM-frequency guidance by firmware instead of treating AM32 and BLHeli_32 as one "32-bit" bucket.
+* **AM32 timing:** **15°** recommended as a safe universal default across 3"/5"/7" motors (not size-tiered the way BLHeli_32 is treated elsewhere in this KB). **7.5°** usable for racing only if the build stays desync-free at that setting. **0° is demonstrated to desync** in his own test data — the motor loses control entirely under acceleration at 0° timing. This is real *demonstrated-failure* evidence, not just a recommendation to avoid low timing.
+* **Genuinely new AM32 setting not previously documented in this KB: "Motor KV."** Functions like BLHeli_32's Rampup Power (lower value = more low-RPM current/torque), but is a distinct field that should be set to the motor's actual KV rating, rounding down if the exact value isn't available. Matters most on low-KV big builds (8"/10", 900/800/400KV motors) — AM32's default assumption is around 2000KV, which under-drives a low-KV motor and causes poor acceleration until corrected.
+* **Rampup Power figures independently corroborated:** ~30% conservative on a 5" test motor, ~50% conservative on a 3" test motor — consistent with the different Chris Rosser video ([7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE)) already cited for these figures in desyncs.md/blheli32.md. Rampup showed zero effect on deceleration in his testing, consistent with the KB's framing that it's an acceleration-only axis.
+
+---
+
+## 10. Chris Rosser — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones"
+[youtu.be/6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM)
+
+A rigorous thrust-stand comparison — the most direct tested source in the KB for BLHeli_32 PWM frequency, though (see below) it's one build under bench conditions, not a survey of real-world practice.
+
+* **BLHeli_32 PWM frequency, in his tested result:** static 24kHz was the best balance of "motor responsiveness and also efficiency" for both his 5" and 3" motors. By-throttle Variable PWM "doesn't offer a lot of benefit" in his direct comparison. He runs 24kHz fixed on his own quads.
+* **This corrected part of an error, and prompted a more careful fix than a straight flip.** A prior pass had concluded "48kHz static or 24-48kHz Variable is the dominant real-world default for 5" freestyle on 32-bit firmware," generalizing from an AM32-context source to BLHeli_32 as well — this video is BLHeli_32-specific, rigorously tested, and points the opposite way for that firmware. But treating this one bench test as "the" new answer would have been the same mistake in reverse: it's one build under test conditions, not a survey of real-world practice, and this KB's own maintainer reports static 48kHz as the more common real-world default for non-race 5" freestyle. [desyncs.md §3](desyncs.md) and [README.md](README.md) now present both — Rosser's tested 24kHz result and the widely-used 48kHz default — rather than picking a single winner.
+* **BLHeli_32 timing, more granular than this KB's existing "22°-23°" figure:** 5" test motor (Supernova) → **16°** for cruise efficiency, or **24°** for top-end power (minimal extra heat either way — his choice depends on use case, not a single "best" number). 3" test motor (Sky Stars, 12-pole/9-coil) → **24°** outright, a clear benefit across the board.
+* **Demag Compensation is not mentioned at all** in this video — some panel settings were tested and showed no measurable effect, but Demag specifically isn't named among them. Neither confirms nor contradicts this KB's existing Demag guidance (sourced elsewhere).
 
 ---
 

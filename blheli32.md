@@ -17,7 +17,8 @@ BLHeli_32 is a third-generation, 32-bit closed-source ESC firmware designed for 
 * **Physics:** Advances the phase commutation angle ahead of the magnetic neutral point to compensate for stator coil current rise time ($L/R$ time constant).
 * **Tuning Recommendations:**
   * **Auto:** Dynamic algorithm adjusts timing based on estimated load. While efficient in steady state, aggressive throttle steps (0% to 100% punches) can outpace the algorithm, causing desyncs.
-  * **Static 22°–23°:** The gold standard for 5" freestyle and racing builds. Completely eliminates tracking lag during violent punchouts.
+  * **Static 22°–23°:** The gold standard for 5" freestyle and racing builds ([7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE) @16:44). Completely eliminates tracking lag during violent punchouts.
+  * **More granular, sourced from a separate rigorous thrust-stand test** ([6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM)): 5" test motor (Supernova) → **16°** for cruise efficiency, or **24°** for top-end power (his choice depends on use case, not a single "best" number — minimal extra heat penalty either way). 3" test motor (Sky Stars, 12-pole/9-coil) → **24°** outright, a clear benefit across the board. Both are close to but slightly refine the 22-23° figure above.
   * **Static 15°–18°:** Essential for large, high-inductance stators (2806.5 to 3115 on 7"–10" builds) to avoid magnetic core saturation.
 
 ### Demagnetization Compensation (Demag)
