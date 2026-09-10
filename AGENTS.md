@@ -35,6 +35,10 @@ BLHeli_32, Bluejay, AM32, and ESCape32 are architecturally different firmwares, 
 
 Before stating a setting exists on a given firmware, or a range/default applies to it, check that firmware's own actual configurator or wiki — don't assume parity across firmwares just because a parameter name sounds generic (e.g. "timing," "startup power").
 
+## ESC brand/vendor neutrality
+
+Do not promote or rank specific ESC hardware brands/vendors (e.g. "buy this board over that one"). Firmware names (BLHeli_32, Bluejay, AM32, ESCape32, FETtec) are not covered by this — they're the subject of this repository. When a source (e.g. a third-party bench-test video) ranks or compares specific ESC boards by brand, extract only the underlying firmware-level or hardware-design finding (e.g. "firmware X showed a different torque curve than firmware Y on identical hardware," "thicker PCB copper correlated with better thermal performance") and leave out the brand rankings/recommendations themselves. Capacitor/TVS-diode component brands are a different category and are not subject to this restriction — naming a specific capacitor manufacturer/series is fine when it's directly sourced.
+
 ## Voice and style
 
 - State facts directly with their real, named source. Avoid vague collective attributions like "the creators' own approach" when it's unclear whose approach is meant (a video's presenter, a firmware's actual developer, and a community consensus are three different things — name which one).

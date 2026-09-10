@@ -120,7 +120,7 @@ A **motor desynchronization (desync)** occurs when an Electronic Speed Controlle
   * **Demag Compensation (BLHeli_32/Bluejay only — AM32 has none, see note above):** Start at default/Low, step up one level at a time toward High if experiencing desyncs — larger stators have more flyback energy, so this class is more likely to need it, but "strictly High" as a blanket default is not sourced.
   * **Rampup Power:** Sourced (Chris Rosser, [7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE)): **≈15%–20%** for 7" builds.
   * **PWM Frequency:** For AM32 on 7" specifically, **24-48kHz Variable/By-RPM is sourced** (Chris Rosser, [3SHzyUaypFw](https://youtu.be/3SHzyUaypFw): "definitely use the variable pwm just to avoid any risk of that notchy throttle") — no source covers AM32 PWM at 8"-10" at all. For BLHeli_32 (any size in this class), static **24kHz** is a reasonable default for maximum active-braking torque, but this is engineering reasoning (torque/inertia), not a citation — the Bardwell "24kHz for 5"+" figure cited elsewhere in this KB is Bluejay-specific (see §3) and doesn't apply here either.
-  * **Capacitors:** See [Theory of Operation & Hardware](theory-operation-hardware.md#4-power-filtering-capacitors-tvs-diodes--esc-longevity) — sizing is a community-sourced starting point, not a formal spec; size to your actual pack voltage and peak current.
+  * **Capacitors:** See [Theory of Operation & Hardware](theory-operation-hardware.md#4-power-filtering-capacitors-tvs-diodes--esc-longevity) for sourced sizing/brand guidance by prop size — not a manufacturer spec, but based on direct bench testing rather than folklore.
 
 ---
 

@@ -1,0 +1,2448 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.830 align:start position:0%
+ 
+Hi<00:00:00.120><c> there</c><00:00:00.280><c> everyone.</c><00:00:00.920><c> In</c><00:00:01.040><c> this</c><00:00:01.200><c> video,</c><00:00:01.600><c> I</c><00:00:01.680><c> am</c>
+
+00:00:01.830 --> 00:00:01.840 align:start position:0%
+Hi there everyone. In this video, I am
+ 
+
+00:00:01.840 --> 00:00:03.670 align:start position:0%
+Hi there everyone. In this video, I am
+throwing<00:00:02.200><c> open</c><00:00:02.400><c> the</c><00:00:02.480><c> doors</c><00:00:02.800><c> on</c><00:00:02.960><c> a</c><00:00:03.040><c> brand</c><00:00:03.440><c> new</c>
+
+00:00:03.670 --> 00:00:03.680 align:start position:0%
+throwing open the doors on a brand new
+ 
+
+00:00:03.680 --> 00:00:06.430 align:start position:0%
+throwing open the doors on a brand new
+era<00:00:04.040><c> of</c><00:00:04.240><c> ESC</c><00:00:04.640><c> testing</c><00:00:05.040><c> at</c><00:00:05.160><c> AOS</c><00:00:05.480><c> Labs.</c><00:00:06.280><c> I've</c>
+
+00:00:06.430 --> 00:00:06.440 align:start position:0%
+era of ESC testing at AOS Labs. I've
+ 
+
+00:00:06.440 --> 00:00:08.350 align:start position:0%
+era of ESC testing at AOS Labs. I've
+taken<00:00:06.680><c> some</c><00:00:06.880><c> time</c><00:00:07.240><c> to</c><00:00:07.360><c> develop</c><00:00:07.680><c> a</c><00:00:07.800><c> brand</c><00:00:08.200><c> new</c>
+
+00:00:08.350 --> 00:00:08.360 align:start position:0%
+taken some time to develop a brand new
+ 
+
+00:00:08.360 --> 00:00:10.830 align:start position:0%
+taken some time to develop a brand new
+test<00:00:08.600><c> methodology</c><00:00:09.320><c> for</c><00:00:09.480><c> ESCs</c><00:00:10.280><c> that</c><00:00:10.440><c> allows</c><00:00:10.760><c> us</c>
+
+00:00:10.830 --> 00:00:10.840 align:start position:0%
+test methodology for ESCs that allows us
+ 
+
+00:00:10.840 --> 00:00:12.350 align:start position:0%
+test methodology for ESCs that allows us
+to<00:00:11.000><c> look</c><00:00:11.240><c> at</c><00:00:11.360><c> the</c><00:00:11.440><c> performance</c><00:00:12.080><c> of</c><00:00:12.200><c> these</c>
+
+00:00:12.350 --> 00:00:12.360 align:start position:0%
+to look at the performance of these
+ 
+
+00:00:12.360 --> 00:00:14.230 align:start position:0%
+to look at the performance of these
+pieces<00:00:12.640><c> of</c><00:00:12.760><c> hardware</c><00:00:13.160><c> in</c><00:00:13.360><c> unprecedented</c>
+
+00:00:14.230 --> 00:00:14.240 align:start position:0%
+pieces of hardware in unprecedented
+ 
+
+00:00:14.240 --> 00:00:15.350 align:start position:0%
+pieces of hardware in unprecedented
+detail.
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+detail.
+ 
+
+00:00:15.360 --> 00:00:16.830 align:start position:0%
+detail.
+In<00:00:15.440><c> this</c><00:00:15.600><c> video,</c><00:00:16.120><c> I'm</c><00:00:16.280><c> going</c><00:00:16.400><c> to</c><00:00:16.440><c> be</c><00:00:16.520><c> taking</c>
+
+00:00:16.830 --> 00:00:16.840 align:start position:0%
+In this video, I'm going to be taking
+ 
+
+00:00:16.840 --> 00:00:18.470 align:start position:0%
+In this video, I'm going to be taking
+you<00:00:16.920><c> through</c><00:00:17.160><c> this</c><00:00:17.320><c> new</c><00:00:17.520><c> test</c><00:00:17.760><c> methodology</c>
+
+00:00:18.470 --> 00:00:18.480 align:start position:0%
+you through this new test methodology
+ 
+
+00:00:18.480 --> 00:00:20.830 align:start position:0%
+you through this new test methodology
+and<00:00:18.680><c> using</c><00:00:18.920><c> it</c><00:00:19.000><c> in</c><00:00:19.160><c> anger</c><00:00:19.720><c> on</c><00:00:19.840><c> a</c><00:00:19.880><c> bunch</c><00:00:20.160><c> of</c><00:00:20.280><c> ESCs</c>
+
+00:00:20.830 --> 00:00:20.840 align:start position:0%
+and using it in anger on a bunch of ESCs
+ 
+
+00:00:20.840 --> 00:00:23.710 align:start position:0%
+and using it in anger on a bunch of ESCs
+with<00:00:21.000><c> BLHeli_32,</c><00:00:22.280><c> AM32,</c><00:00:23.040><c> and</c><00:00:23.320><c> Blue</c><00:00:23.520><c> Jay</c>
+
+00:00:23.710 --> 00:00:23.720 align:start position:0%
+with BLHeli_32, AM32, and Blue Jay
+ 
+
+00:00:23.720 --> 00:00:26.150 align:start position:0%
+with BLHeli_32, AM32, and Blue Jay
+firmware<00:00:24.400><c> to</c><00:00:24.520><c> see</c><00:00:24.720><c> how</c><00:00:24.920><c> they</c><00:00:25.040><c> stack</c><00:00:25.360><c> up.</c><00:00:25.920><c> And</c>
+
+00:00:26.150 --> 00:00:26.160 align:start position:0%
+firmware to see how they stack up. And
+ 
+
+00:00:26.160 --> 00:00:27.790 align:start position:0%
+firmware to see how they stack up. And
+if<00:00:26.280><c> that</c><00:00:26.480><c> wasn't</c><00:00:26.720><c> enough,</c><00:00:27.360><c> then</c><00:00:27.560><c> we're</c><00:00:27.680><c> going</c>
+
+00:00:27.790 --> 00:00:27.800 align:start position:0%
+if that wasn't enough, then we're going
+ 
+
+00:00:27.800 --> 00:00:29.750 align:start position:0%
+if that wasn't enough, then we're going
+to<00:00:27.840><c> be</c><00:00:27.920><c> seeing</c><00:00:28.240><c> how</c><00:00:28.560><c> all</c><00:00:28.760><c> of</c><00:00:28.840><c> these</c><00:00:29.080><c> ESCs</c>
+
+00:00:29.750 --> 00:00:29.760 align:start position:0%
+to be seeing how all of these ESCs
+ 
+
+00:00:29.760 --> 00:00:32.109 align:start position:0%
+to be seeing how all of these ESCs
+compare<00:00:30.280><c> against</c><00:00:30.640><c> something</c><00:00:31.120><c> brand</c><00:00:31.600><c> new</c><00:00:31.920><c> from</c>
+
+00:00:32.109 --> 00:00:32.119 align:start position:0%
+compare against something brand new from
+ 
+
+00:00:32.119 --> 00:00:34.830 align:start position:0%
+compare against something brand new from
+FETtec.<00:00:33.000><c> A</c><00:00:33.160><c> prototype</c><00:00:33.960><c> piece</c><00:00:34.240><c> of</c><00:00:34.360><c> hardware</c>
+
+00:00:34.830 --> 00:00:34.840 align:start position:0%
+FETtec. A prototype piece of hardware
+ 
+
+00:00:34.840 --> 00:00:38.590 align:start position:0%
+FETtec. A prototype piece of hardware
+and<00:00:35.000><c> software</c><00:00:35.680><c> for</c><00:00:35.800><c> their</c><00:00:35.960><c> new</c><00:00:36.280><c> SFOC</c><00:00:37.600><c> ESC.</c>
+
+00:00:38.590 --> 00:00:38.600 align:start position:0%
+and software for their new SFOC ESC.
+ 
+
+00:00:38.600 --> 00:00:40.950 align:start position:0%
+and software for their new SFOC ESC.
+This<00:00:38.760><c> is</c><00:00:39.040><c> simple</c><00:00:39.400><c> field</c><00:00:39.720><c> orientated</c><00:00:40.360><c> control.</c>
+
+00:00:40.950 --> 00:00:40.960 align:start position:0%
+This is simple field orientated control.
+ 
+
+00:00:40.960 --> 00:00:42.230 align:start position:0%
+This is simple field orientated control.
+We're<00:00:41.080><c> going</c><00:00:41.200><c> to</c><00:00:41.280><c> be</c><00:00:41.320><c> talking</c><00:00:41.640><c> about</c><00:00:41.800><c> it</c><00:00:41.880><c> a</c><00:00:41.920><c> lot</c>
+
+00:00:42.230 --> 00:00:42.240 align:start position:0%
+We're going to be talking about it a lot
+ 
+
+00:00:42.240 --> 00:00:43.590 align:start position:0%
+We're going to be talking about it a lot
+at<00:00:42.360><c> the</c><00:00:42.440><c> end</c><00:00:42.560><c> of</c><00:00:42.640><c> this</c><00:00:42.760><c> video,</c><00:00:43.360><c> and</c><00:00:43.480><c> it</c>
+
+00:00:43.590 --> 00:00:43.600 align:start position:0%
+at the end of this video, and it
+ 
+
+00:00:43.600 --> 00:00:45.390 align:start position:0%
+at the end of this video, and it
+promises<00:00:44.120><c> to</c><00:00:44.240><c> be</c><00:00:44.440><c> a</c><00:00:44.600><c> technological</c>
+
+00:00:45.390 --> 00:00:45.400 align:start position:0%
+promises to be a technological
+ 
+
+00:00:45.400 --> 00:00:47.910 align:start position:0%
+promises to be a technological
+revolution<00:00:45.960><c> in</c><00:00:46.080><c> FPV.</c><00:00:47.080><c> Let's</c><00:00:47.320><c> not</c><00:00:47.480><c> waste</c><00:00:47.760><c> any</c>
+
+00:00:47.910 --> 00:00:47.920 align:start position:0%
+revolution in FPV. Let's not waste any
+ 
+
+00:00:47.920 --> 00:00:49.590 align:start position:0%
+revolution in FPV. Let's not waste any
+more<00:00:48.040><c> time.</c><00:00:48.480><c> There's</c><00:00:48.640><c> heaps</c><00:00:48.880><c> to</c><00:00:49.000><c> cover.</c><00:00:49.440><c> Let's</c>
+
+00:00:49.590 --> 00:00:49.600 align:start position:0%
+more time. There's heaps to cover. Let's
+ 
+
+00:00:49.600 --> 00:00:50.990 align:start position:0%
+more time. There's heaps to cover. Let's
+dive<00:00:49.800><c> right</c><00:00:49.920><c> into</c><00:00:50.120><c> it.</c><00:00:50.440><c> All</c><00:00:50.520><c> right,</c><00:00:50.720><c> so</c><00:00:50.800><c> let</c><00:00:50.920><c> me</c>
+
+00:00:50.990 --> 00:00:51.000 align:start position:0%
+dive right into it. All right, so let me
+ 
+
+00:00:51.000 --> 00:00:52.750 align:start position:0%
+dive right into it. All right, so let me
+take<00:00:51.240><c> you</c><00:00:51.320><c> through</c><00:00:51.480><c> the</c><00:00:51.560><c> new</c><00:00:51.760><c> test</c><00:00:52.000><c> setup.</c>
+
+00:00:52.750 --> 00:00:52.760 align:start position:0%
+take you through the new test setup.
+ 
+
+00:00:52.760 --> 00:00:54.110 align:start position:0%
+take you through the new test setup.
+Starting<00:00:53.120><c> with</c><00:00:53.240><c> a</c><00:00:53.280><c> prop,</c><00:00:53.640><c> this</c><00:00:53.840><c> hasn't</c>
+
+00:00:54.110 --> 00:00:54.120 align:start position:0%
+Starting with a prop, this hasn't
+ 
+
+00:00:54.120 --> 00:00:57.190 align:start position:0%
+Starting with a prop, this hasn't
+changed.<00:00:54.480><c> This</c><00:00:54.640><c> is</c><00:00:54.760><c> still</c><00:00:55.080><c> the</c><00:00:55.280><c> HQ</c><00:00:56.000><c> 5</c><00:00:56.280><c> by</c><00:00:56.520><c> 4.5</c>
+
+00:00:57.190 --> 00:00:57.200 align:start position:0%
+changed. This is still the HQ 5 by 4.5
+ 
+
+00:00:57.200 --> 00:01:00.470 align:start position:0%
+changed. This is still the HQ 5 by 4.5
+by<00:00:57.360><c> 3</c><00:00:57.720><c> V1S</c><00:00:58.200><c> prop.</c><00:00:59.080><c> And</c><00:00:59.400><c> it's</c><00:00:59.640><c> being</c><00:00:59.880><c> driven</c><00:01:00.280><c> by</c>
+
+00:01:00.470 --> 00:01:00.480 align:start position:0%
+by 3 V1S prop. And it's being driven by
+ 
+
+00:01:00.480 --> 00:01:02.270 align:start position:0%
+by 3 V1S prop. And it's being driven by
+the<00:01:00.600><c> test</c><00:01:00.880><c> motor,</c><00:01:01.240><c> which</c><00:01:01.400><c> is</c><00:01:01.520><c> this</c><00:01:01.760><c> AOS</c>
+
+00:01:02.270 --> 00:01:02.280 align:start position:0%
+the test motor, which is this AOS
+ 
+
+00:01:02.280 --> 00:01:05.590 align:start position:0%
+the test motor, which is this AOS
+Supernova<00:01:03.000><c> 2207.</c><00:01:04.400><c> The</c><00:01:04.440><c> Supernova</c><00:01:04.960><c> is</c><00:01:05.440><c> the</c>
+
+00:01:05.590 --> 00:01:05.600 align:start position:0%
+Supernova 2207. The Supernova is the
+ 
+
+00:01:05.600 --> 00:01:07.470 align:start position:0%
+Supernova 2207. The Supernova is the
+highest<00:01:05.880><c> performing</c><00:01:06.360><c> 5-in</c><00:01:06.640><c> motor</c><00:01:06.920><c> available</c>
+
+00:01:07.470 --> 00:01:07.480 align:start position:0%
+highest performing 5-in motor available
+ 
+
+00:01:07.480 --> 00:01:09.110 align:start position:0%
+highest performing 5-in motor available
+in<00:01:07.560><c> terms</c><00:01:07.840><c> of</c><00:01:07.920><c> power</c><00:01:08.200><c> and</c><00:01:08.320><c> torque,</c><00:01:08.840><c> so</c><00:01:08.960><c> it's</c>
+
+00:01:09.110 --> 00:01:09.120 align:start position:0%
+in terms of power and torque, so it's
+ 
+
+00:01:09.120 --> 00:01:10.710 align:start position:0%
+in terms of power and torque, so it's
+really<00:01:09.320><c> going</c><00:01:09.440><c> to</c><00:01:09.520><c> put</c><00:01:09.680><c> these</c><00:01:09.920><c> ESCs</c><00:01:10.520><c> through</c>
+
+00:01:10.710 --> 00:01:10.720 align:start position:0%
+really going to put these ESCs through
+ 
+
+00:01:10.720 --> 00:01:12.110 align:start position:0%
+really going to put these ESCs through
+their<00:01:10.840><c> paces.</c>
+
+00:01:12.110 --> 00:01:12.120 align:start position:0%
+their paces.
+ 
+
+00:01:12.120 --> 00:01:13.470 align:start position:0%
+their paces.
+On<00:01:12.200><c> the</c><00:01:12.280><c> top</c><00:01:12.480><c> of</c><00:01:12.560><c> the</c><00:01:12.640><c> test</c><00:01:12.840><c> stand,</c><00:01:13.200><c> we</c><00:01:13.320><c> have</c>
+
+00:01:13.470 --> 00:01:13.480 align:start position:0%
+On the top of the test stand, we have
+ 
+
+00:01:13.480 --> 00:01:15.870 align:start position:0%
+On the top of the test stand, we have
+the<00:01:13.600><c> ESC</c><00:01:14.000><c> to</c><00:01:14.080><c> be</c><00:01:14.200><c> tested,</c><00:01:14.960><c> and</c><00:01:15.120><c> it's</c><00:01:15.240><c> connected</c>
+
+00:01:15.870 --> 00:01:15.880 align:start position:0%
+the ESC to be tested, and it's connected
+ 
+
+00:01:15.880 --> 00:01:17.350 align:start position:0%
+the ESC to be tested, and it's connected
+to<00:01:15.960><c> this</c><00:01:16.160><c> flight</c><00:01:16.400><c> controller</c><00:01:16.800><c> on</c><00:01:16.920><c> the</c><00:01:17.000><c> side.</c>
+
+00:01:17.350 --> 00:01:17.360 align:start position:0%
+to this flight controller on the side.
+ 
+
+00:01:17.360 --> 00:01:19.630 align:start position:0%
+to this flight controller on the side.
+This<00:01:17.520><c> is</c><00:01:17.600><c> a</c><00:01:17.640><c> normal</c><00:01:18.080><c> F7</c><00:01:18.560><c> flight</c><00:01:18.800><c> controller,</c>
+
+00:01:19.630 --> 00:01:19.640 align:start position:0%
+This is a normal F7 flight controller,
+ 
+
+00:01:19.640 --> 00:01:20.990 align:start position:0%
+This is a normal F7 flight controller,
+and<00:01:19.880><c> this</c><00:01:20.040><c> flight</c><00:01:20.240><c> controller</c><00:01:20.600><c> is</c><00:01:20.720><c> doing</c>
+
+00:01:20.990 --> 00:01:21.000 align:start position:0%
+and this flight controller is doing
+ 
+
+00:01:21.000 --> 00:01:22.630 align:start position:0%
+and this flight controller is doing
+everything<00:01:21.440><c> for</c><00:01:21.520><c> this</c><00:01:21.680><c> testing.</c><00:01:22.440><c> It's</c>
+
+00:01:22.630 --> 00:01:22.640 align:start position:0%
+everything for this testing. It's
+ 
+
+00:01:22.640 --> 00:01:25.270 align:start position:0%
+everything for this testing. It's
+driving<00:01:23.160><c> the</c><00:01:23.280><c> ESC,</c><00:01:24.000><c> and</c><00:01:24.120><c> it's</c><00:01:24.240><c> also</c><00:01:24.560><c> recording</c>
+
+00:01:25.270 --> 00:01:25.280 align:start position:0%
+driving the ESC, and it's also recording
+ 
+
+00:01:25.280 --> 00:01:27.390 align:start position:0%
+driving the ESC, and it's also recording
+all<00:01:25.520><c> of</c><00:01:25.600><c> the</c><00:01:25.680><c> data</c><00:01:26.360><c> being</c><00:01:26.560><c> reported</c><00:01:27.080><c> back</c><00:01:27.280><c> from</c>
+
+00:01:27.390 --> 00:01:27.400 align:start position:0%
+all of the data being reported back from
+ 
+
+00:01:27.400 --> 00:01:29.910 align:start position:0%
+all of the data being reported back from
+the<00:01:27.520><c> ESC</c><00:01:28.000><c> over</c><00:01:28.240><c> bi-directional</c><00:01:28.840><c> DShot.</c><00:01:29.840><c> And</c>
+
+00:01:29.910 --> 00:01:29.920 align:start position:0%
+the ESC over bi-directional DShot. And
+ 
+
+00:01:29.920 --> 00:01:32.750 align:start position:0%
+the ESC over bi-directional DShot. And
+this<00:01:30.040><c> setup</c><00:01:30.440><c> allows</c><00:01:31.160><c> much,</c><00:01:31.640><c> much</c><00:01:31.920><c> faster</c><00:01:32.600><c> than</c>
+
+00:01:32.750 --> 00:01:32.760 align:start position:0%
+this setup allows much, much faster than
+ 
+
+00:01:32.760 --> 00:01:34.590 align:start position:0%
+this setup allows much, much faster than
+we<00:01:32.880><c> could</c><00:01:33.280><c> with</c><00:01:33.520><c> the</c><00:01:33.880><c> thrust</c><00:01:34.160><c> test</c><00:01:34.360><c> stand</c>
+
+00:01:34.590 --> 00:01:34.600 align:start position:0%
+we could with the thrust test stand
+ 
+
+00:01:34.600 --> 00:01:37.070 align:start position:0%
+we could with the thrust test stand
+alone.<00:01:35.520><c> The</c><00:01:35.600><c> test</c><00:01:35.840><c> stand</c><00:01:36.240><c> tops</c><00:01:36.560><c> out</c><00:01:36.720><c> at</c><00:01:36.800><c> about</c>
+
+00:01:37.070 --> 00:01:37.080 align:start position:0%
+alone. The test stand tops out at about
+ 
+
+00:01:37.080 --> 00:01:40.190 align:start position:0%
+alone. The test stand tops out at about
+180<00:01:37.800><c> hertz,</c><00:01:38.160><c> 180</c><00:01:38.720><c> samples</c><00:01:39.080><c> per</c><00:01:39.160><c> second.</c><00:01:40.120><c> With</c>
+
+00:01:40.190 --> 00:01:40.200 align:start position:0%
+180 hertz, 180 samples per second. With
+ 
+
+00:01:40.200 --> 00:01:42.190 align:start position:0%
+180 hertz, 180 samples per second. With
+this<00:01:40.360><c> flight</c><00:01:40.600><c> controller,</c><00:01:41.040><c> we</c><00:01:41.160><c> can</c><00:01:41.400><c> log</c><00:01:41.760><c> at</c><00:01:42.000><c> 8</c>
+
+00:01:42.190 --> 00:01:42.200 align:start position:0%
+this flight controller, we can log at 8
+ 
+
+00:01:42.200 --> 00:01:45.230 align:start position:0%
+this flight controller, we can log at 8
+kilohertz,<00:01:42.920><c> 8,000</c><00:01:43.600><c> times</c><00:01:43.880><c> per</c><00:01:44.000><c> second.</c>
+
+00:01:45.230 --> 00:01:45.240 align:start position:0%
+kilohertz, 8,000 times per second.
+ 
+
+00:01:45.240 --> 00:01:48.030 align:start position:0%
+kilohertz, 8,000 times per second.
+This<00:01:45.440><c> whole</c><00:01:45.680><c> setup</c><00:01:46.320><c> is</c><00:01:46.520><c> powered</c><00:01:47.000><c> from</c><00:01:47.280><c> a</c><00:01:47.400><c> 24-V</c>
+
+00:01:48.030 --> 00:01:48.040 align:start position:0%
+This whole setup is powered from a 24-V
+ 
+
+00:01:48.040 --> 00:01:50.270 align:start position:0%
+This whole setup is powered from a 24-V
+power<00:01:48.320><c> supply</c><00:01:48.880><c> that</c><00:01:49.000><c> is</c><00:01:49.160><c> topping</c><00:01:49.520><c> up</c><00:01:49.840><c> this</c>
+
+00:01:50.270 --> 00:01:50.280 align:start position:0%
+power supply that is topping up this
+ 
+
+00:01:50.280 --> 00:01:54.790 align:start position:0%
+power supply that is topping up this
+5,200<00:01:51.640><c> mA</c><00:01:52.320><c> 6S</c><00:01:52.760><c> pack.</c><00:01:53.400><c> So,</c><00:01:53.600><c> these</c><00:01:53.840><c> ESCs</c><00:01:54.360><c> are</c><00:01:54.520><c> not</c>
+
+00:01:54.790 --> 00:01:54.800 align:start position:0%
+5,200 mA 6S pack. So, these ESCs are not
+ 
+
+00:01:54.800 --> 00:01:56.110 align:start position:0%
+5,200 mA 6S pack. So, these ESCs are not
+going<00:01:54.920><c> to</c><00:01:55.000><c> run</c><00:01:55.160><c> out</c><00:01:55.240><c> of</c><00:01:55.360><c> power</c><00:01:55.720><c> during</c><00:01:56.000><c> the</c>
+
+00:01:56.110 --> 00:01:56.120 align:start position:0%
+going to run out of power during the
+ 
+
+00:01:56.120 --> 00:01:58.150 align:start position:0%
+going to run out of power during the
+testing.
+
+00:01:58.150 --> 00:01:58.160 align:start position:0%
+testing.
+ 
+
+00:01:58.160 --> 00:02:00.390 align:start position:0%
+testing.
+We've<00:01:58.280><c> got</c><00:01:58.480><c> three</c><00:01:58.800><c> tests.</c><00:01:59.400><c> We've</c><00:01:59.560><c> got</c><00:01:59.880><c> a</c><00:02:00.000><c> prop</c>
+
+00:02:00.390 --> 00:02:00.400 align:start position:0%
+We've got three tests. We've got a prop
+ 
+
+00:02:00.400 --> 00:02:03.190 align:start position:0%
+We've got three tests. We've got a prop
+ramp<00:02:00.880><c> from</c><00:02:01.240><c> 0</c><00:02:01.800><c> to</c><00:02:01.960><c> 100%</c><00:02:02.600><c> throttle</c><00:02:02.920><c> and</c><00:02:03.000><c> back</c>
+
+00:02:03.190 --> 00:02:03.200 align:start position:0%
+ramp from 0 to 100% throttle and back
+ 
+
+00:02:03.200 --> 00:02:04.910 align:start position:0%
+ramp from 0 to 100% throttle and back
+down<00:02:03.360><c> again.</c><00:02:04.120><c> We've</c><00:02:04.240><c> got</c><00:02:04.520><c> a</c><00:02:04.600><c> prop</c>
+
+00:02:04.910 --> 00:02:04.920 align:start position:0%
+down again. We've got a prop
+ 
+
+00:02:04.920 --> 00:02:07.270 align:start position:0%
+down again. We've got a prop
+responsiveness<00:02:05.600><c> test,</c><00:02:06.120><c> so</c><00:02:06.320><c> stepping</c><00:02:06.840><c> from</c><00:02:07.040><c> 10</c>
+
+00:02:07.270 --> 00:02:07.280 align:start position:0%
+responsiveness test, so stepping from 10
+ 
+
+00:02:07.280 --> 00:02:09.749 align:start position:0%
+responsiveness test, so stepping from 10
+to<00:02:07.400><c> 50%</c><00:02:07.960><c> throttle</c><00:02:08.320><c> and</c><00:02:08.440><c> back.</c><00:02:09.280><c> And</c><00:02:09.399><c> then</c><00:02:09.560><c> we</c>
+
+00:02:09.749 --> 00:02:09.759 align:start position:0%
+to 50% throttle and back. And then we
+ 
+
+00:02:09.759 --> 00:02:12.670 align:start position:0%
+to 50% throttle and back. And then we
+also<00:02:10.119><c> have</c><00:02:10.479><c> a</c><00:02:10.640><c> flywheel</c><00:02:11.200><c> test</c><00:02:11.640><c> using</c><00:02:11.959><c> this</c><00:02:12.200><c> 100</c>
+
+00:02:12.670 --> 00:02:12.680 align:start position:0%
+also have a flywheel test using this 100
+ 
+
+00:02:12.680 --> 00:02:15.590 align:start position:0%
+also have a flywheel test using this 100
+kg<00:02:13.080><c> mm</c><00:02:13.480><c> squared</c><00:02:13.840><c> flywheel.</c><00:02:14.840><c> And</c><00:02:15.200><c> that's</c><00:02:15.480><c> what</c>
+
+00:02:15.590 --> 00:02:15.600 align:start position:0%
+kg mm squared flywheel. And that's what
+ 
+
+00:02:15.600 --> 00:02:17.670 align:start position:0%
+kg mm squared flywheel. And that's what
+we<00:02:15.680><c> need</c><00:02:15.880><c> this</c><00:02:16.080><c> massive</c><00:02:16.680><c> capacitor</c><00:02:17.160><c> for.</c><00:02:17.480><c> It's</c>
+
+00:02:17.670 --> 00:02:17.680 align:start position:0%
+we need this massive capacitor for. It's
+ 
+
+00:02:17.680 --> 00:02:19.150 align:start position:0%
+we need this massive capacitor for. It's
+to<00:02:17.800><c> deal</c><00:02:18.160><c> with</c><00:02:18.320><c> the</c><00:02:18.440><c> current</c><00:02:18.760><c> spikes</c>
+
+00:02:19.150 --> 00:02:19.160 align:start position:0%
+to deal with the current spikes
+ 
+
+00:02:19.160 --> 00:02:21.310 align:start position:0%
+to deal with the current spikes
+accelerating<00:02:19.880><c> and</c><00:02:20.000><c> decelerating</c><00:02:20.800><c> this</c><00:02:21.040><c> large</c>
+
+00:02:21.310 --> 00:02:21.320 align:start position:0%
+accelerating and decelerating this large
+ 
+
+00:02:21.320 --> 00:02:22.710 align:start position:0%
+accelerating and decelerating this large
+flywheel.
+
+00:02:22.710 --> 00:02:22.720 align:start position:0%
+flywheel.
+ 
+
+00:02:22.720 --> 00:02:24.750 align:start position:0%
+flywheel.
+So,<00:02:23.000><c> this</c><00:02:23.280><c> is</c><00:02:23.400><c> the</c><00:02:23.480><c> new</c><00:02:23.640><c> test</c><00:02:23.840><c> setup.</c><00:02:24.600><c> Now,</c>
+
+00:02:24.750 --> 00:02:24.760 align:start position:0%
+So, this is the new test setup. Now,
+ 
+
+00:02:24.760 --> 00:02:26.270 align:start position:0%
+So, this is the new test setup. Now,
+let's<00:02:25.000><c> talk</c><00:02:25.240><c> through</c><00:02:25.440><c> the</c><00:02:25.600><c> ESCs</c><00:02:26.080><c> that</c><00:02:26.200><c> we're</c>
+
+00:02:26.270 --> 00:02:26.280 align:start position:0%
+let's talk through the ESCs that we're
+ 
+
+00:02:26.280 --> 00:02:27.630 align:start position:0%
+let's talk through the ESCs that we're
+going<00:02:26.400><c> to</c><00:02:26.440><c> be</c><00:02:26.480><c> looking</c><00:02:26.720><c> at.</c><00:02:27.200><c> All</c><00:02:27.320><c> right.</c><00:02:27.520><c> So,</c>
+
+00:02:27.630 --> 00:02:27.640 align:start position:0%
+going to be looking at. All right. So,
+ 
+
+00:02:27.640 --> 00:02:29.190 align:start position:0%
+going to be looking at. All right. So,
+these<00:02:27.840><c> are</c><00:02:27.880><c> the</c><00:02:28.000><c> five</c><00:02:28.360><c> ESCs</c><00:02:28.920><c> we're</c><00:02:29.000><c> going</c><00:02:29.120><c> to</c>
+
+00:02:29.190 --> 00:02:29.200 align:start position:0%
+these are the five ESCs we're going to
+ 
+
+00:02:29.200 --> 00:02:31.430 align:start position:0%
+these are the five ESCs we're going to
+be<00:02:29.240><c> testing</c><00:02:29.600><c> today.</c><00:02:30.280><c> We've</c><00:02:30.320><c> got</c><00:02:30.480><c> this</c><00:02:30.640><c> 55</c><00:02:31.200><c> amp</c>
+
+00:02:31.430 --> 00:02:31.440 align:start position:0%
+be testing today. We've got this 55 amp
+ 
+
+00:02:31.440 --> 00:02:33.550 align:start position:0%
+be testing today. We've got this 55 amp
+8-bit<00:02:31.880><c> ESC</c><00:02:32.360><c> from</c><00:02:32.520><c> SpeedyBee,</c><00:02:33.200><c> and</c><00:02:33.320><c> that's</c>
+
+00:02:33.550 --> 00:02:33.560 align:start position:0%
+8-bit ESC from SpeedyBee, and that's
+ 
+
+00:02:33.560 --> 00:02:37.590 align:start position:0%
+8-bit ESC from SpeedyBee, and that's
+running<00:02:33.959><c> the</c><00:02:34.120><c> BlueJay</c><00:02:34.680><c> firmware</c><00:02:35.440><c> 0.19.2.</c>
+
+00:02:37.590 --> 00:02:37.600 align:start position:0%
+running the BlueJay firmware 0.19.2.
+ 
+
+00:02:37.600 --> 00:02:39.990 align:start position:0%
+running the BlueJay firmware 0.19.2.
+We've<00:02:37.720><c> got</c><00:02:37.880><c> this</c><00:02:38.040><c> Diatone</c><00:02:38.560><c> Mamba</c><00:02:38.920><c> F60</c><00:02:39.480><c> Pro</c>
+
+00:02:39.990 --> 00:02:40.000 align:start position:0%
+We've got this Diatone Mamba F60 Pro
+ 
+
+00:02:40.000 --> 00:02:43.510 align:start position:0%
+We've got this Diatone Mamba F60 Pro
+running<00:02:40.600><c> AM32</c><00:02:41.680><c> version</c><00:02:42.040><c> 1.99.</c>
+
+00:02:43.510 --> 00:02:43.520 align:start position:0%
+running AM32 version 1.99.
+ 
+
+00:02:43.520 --> 00:02:45.830 align:start position:0%
+running AM32 version 1.99.
+We've<00:02:43.680><c> got</c><00:02:43.880><c> the</c><00:02:44.040><c> F55</c><00:02:44.800><c> amp</c><00:02:45.000><c> Pro</c><00:02:45.280><c> 3</c><00:02:45.600><c> from</c>
+
+00:02:45.830 --> 00:02:45.840 align:start position:0%
+We've got the F55 amp Pro 3 from
+ 
+
+00:02:45.840 --> 00:02:49.949 align:start position:0%
+We've got the F55 amp Pro 3 from
+T-Motor.<00:02:46.760><c> That's</c><00:02:47.000><c> running</c><00:02:47.400><c> BLHeli32.10.</c>
+
+00:02:49.949 --> 00:02:49.959 align:start position:0%
+T-Motor. That's running BLHeli32.10.
+ 
+
+00:02:49.959 --> 00:02:53.470 align:start position:0%
+T-Motor. That's running BLHeli32.10.
+We<00:02:50.080><c> have</c><00:02:50.280><c> this</c><00:02:50.520><c> Skystars</c><00:02:51.400><c> KM55</c><00:02:52.360><c> amp</c><00:02:52.720><c> 20</c><00:02:53.000><c> by</c><00:02:53.160><c> 20</c>
+
+00:02:53.470 --> 00:02:53.480 align:start position:0%
+We have this Skystars KM55 amp 20 by 20
+ 
+
+00:02:53.480 --> 00:02:57.910 align:start position:0%
+We have this Skystars KM55 amp 20 by 20
+ESC,<00:02:54.320><c> again</c><00:02:54.760><c> running</c><00:02:55.160><c> AM32</c><00:02:56.160><c> version</c><00:02:56.560><c> 1.99.</c>
+
+00:02:57.910 --> 00:02:57.920 align:start position:0%
+ESC, again running AM32 version 1.99.
+ 
+
+00:02:57.920 --> 00:03:01.509 align:start position:0%
+ESC, again running AM32 version 1.99.
+And<00:02:58.280><c> we</c><00:02:58.440><c> have</c><00:02:58.920><c> this</c><00:02:59.320><c> brand</c><00:02:59.760><c> new</c><00:03:00.160><c> prototype</c><00:03:01.000><c> ESC</c>
+
+00:03:01.509 --> 00:03:01.519 align:start position:0%
+And we have this brand new prototype ESC
+ 
+
+00:03:01.519 --> 00:03:04.990 align:start position:0%
+And we have this brand new prototype ESC
+from<00:03:01.760><c> FETtec</c><00:03:02.720><c> running</c><00:03:03.000><c> their</c><00:03:03.400><c> SFOC</c><00:03:04.360><c> firmware</c>
+
+00:03:04.990 --> 00:03:05.000 align:start position:0%
+from FETtec running their SFOC firmware
+ 
+
+00:03:05.000 --> 00:03:07.070 align:start position:0%
+from FETtec running their SFOC firmware
+version<00:03:05.480><c> 1.01.</c>
+
+00:03:07.070 --> 00:03:07.080 align:start position:0%
+version 1.01.
+ 
+
+00:03:07.080 --> 00:03:08.390 align:start position:0%
+version 1.01.
+Before<00:03:07.239><c> we</c><00:03:07.320><c> dive</c><00:03:07.560><c> into</c><00:03:07.720><c> the</c><00:03:07.800><c> test</c><00:03:08.000><c> results,</c>
+
+00:03:08.390 --> 00:03:08.400 align:start position:0%
+Before we dive into the test results,
+ 
+
+00:03:08.400 --> 00:03:10.070 align:start position:0%
+Before we dive into the test results,
+and<00:03:08.519><c> they</c><00:03:08.640><c> are</c><00:03:08.800><c> really</c><00:03:09.040><c> interesting,</c><00:03:09.920><c> I</c><00:03:09.959><c> want</c>
+
+00:03:10.070 --> 00:03:10.080 align:start position:0%
+and they are really interesting, I want
+ 
+
+00:03:10.080 --> 00:03:11.630 align:start position:0%
+and they are really interesting, I want
+to<00:03:10.160><c> let</c><00:03:10.280><c> you</c><00:03:10.360><c> know</c><00:03:10.560><c> about</c><00:03:10.840><c> my</c><00:03:11.080><c> open-door</c>
+
+00:03:11.630 --> 00:03:11.640 align:start position:0%
+to let you know about my open-door
+ 
+
+00:03:11.640 --> 00:03:14.110 align:start position:0%
+to let you know about my open-door
+testing<00:03:12.040><c> policy.</c><00:03:12.880><c> It's</c><00:03:12.959><c> basically</c><00:03:13.440><c> a</c><00:03:13.600><c> free</c>
+
+00:03:14.110 --> 00:03:14.120 align:start position:0%
+testing policy. It's basically a free
+ 
+
+00:03:14.120 --> 00:03:16.790 align:start position:0%
+testing policy. It's basically a free
+testing<00:03:14.600><c> service</c><00:03:15.120><c> for</c><00:03:15.280><c> FPV</c><00:03:15.640><c> products.</c><00:03:16.600><c> You</c>
+
+00:03:16.790 --> 00:03:16.800 align:start position:0%
+testing service for FPV products. You
+ 
+
+00:03:16.800 --> 00:03:19.990 align:start position:0%
+testing service for FPV products. You
+can<00:03:17.000><c> send</c><00:03:17.239><c> me</c><00:03:17.600><c> motors,</c><00:03:18.360><c> props,</c><00:03:19.120><c> batteries,</c>
+
+00:03:19.990 --> 00:03:20.000 align:start position:0%
+can send me motors, props, batteries,
+ 
+
+00:03:20.000 --> 00:03:22.509 align:start position:0%
+can send me motors, props, batteries,
+and<00:03:20.200><c> now</c><00:03:20.519><c> ESCs,</c><00:03:21.480><c> and</c><00:03:21.640><c> I</c><00:03:21.720><c> will</c><00:03:21.880><c> test</c><00:03:22.120><c> them</c><00:03:22.280><c> for</c>
+
+00:03:22.509 --> 00:03:22.519 align:start position:0%
+and now ESCs, and I will test them for
+ 
+
+00:03:22.519 --> 00:03:24.590 align:start position:0%
+and now ESCs, and I will test them for
+you<00:03:22.760><c> free</c><00:03:23.040><c> of</c><00:03:23.160><c> charge.</c><00:03:24.120><c> I'll</c><00:03:24.239><c> share</c><00:03:24.480><c> the</c>
+
+00:03:24.590 --> 00:03:24.600 align:start position:0%
+you free of charge. I'll share the
+ 
+
+00:03:24.600 --> 00:03:26.150 align:start position:0%
+you free of charge. I'll share the
+results<00:03:25.000><c> with</c><00:03:25.200><c> you.</c><00:03:25.560><c> I'll</c><00:03:25.720><c> publish</c><00:03:26.080><c> the</c>
+
+00:03:26.150 --> 00:03:26.160 align:start position:0%
+results with you. I'll publish the
+ 
+
+00:03:26.160 --> 00:03:28.550 align:start position:0%
+results with you. I'll publish the
+results<00:03:26.640><c> on</c><00:03:26.880><c> AOS</c><00:03:27.200><c> Labs,</c><00:03:27.920><c> and</c><00:03:28.120><c> I'll</c><00:03:28.239><c> make</c><00:03:28.440><c> the</c>
+
+00:03:28.550 --> 00:03:28.560 align:start position:0%
+results on AOS Labs, and I'll make the
+ 
+
+00:03:28.560 --> 00:03:30.390 align:start position:0%
+results on AOS Labs, and I'll make the
+detailed<00:03:29.080><c> test</c><00:03:29.280><c> data</c><00:03:29.640><c> available</c><00:03:30.160><c> on</c><00:03:30.280><c> my</c>
+
+00:03:30.390 --> 00:03:30.400 align:start position:0%
+detailed test data available on my
+ 
+
+00:03:30.400 --> 00:03:32.509 align:start position:0%
+detailed test data available on my
+Patreon.<00:03:31.280><c> This</c><00:03:31.440><c> free</c><00:03:31.640><c> testing</c><00:03:32.000><c> service</c><00:03:32.360><c> is</c>
+
+00:03:32.509 --> 00:03:32.519 align:start position:0%
+Patreon. This free testing service is
+ 
+
+00:03:32.519 --> 00:03:34.350 align:start position:0%
+Patreon. This free testing service is
+available<00:03:32.959><c> to</c><00:03:33.120><c> everyone,</c><00:03:33.680><c> and</c><00:03:33.840><c> it's</c><00:03:34.080><c> only</c>
+
+00:03:34.350 --> 00:03:34.360 align:start position:0%
+available to everyone, and it's only
+ 
+
+00:03:34.360 --> 00:03:36.310 align:start position:0%
+available to everyone, and it's only
+possible<00:03:34.880><c> with</c><00:03:35.040><c> your</c><00:03:35.200><c> support.</c><00:03:36.080><c> If</c><00:03:36.200><c> you'd</c>
+
+00:03:36.310 --> 00:03:36.320 align:start position:0%
+possible with your support. If you'd
+ 
+
+00:03:36.320 --> 00:03:37.990 align:start position:0%
+possible with your support. If you'd
+like<00:03:36.480><c> to</c><00:03:36.600><c> support</c><00:03:37.000><c> this</c><00:03:37.160><c> testing</c><00:03:37.600><c> and</c><00:03:37.720><c> help</c><00:03:37.920><c> me</c>
+
+00:03:37.990 --> 00:03:38.000 align:start position:0%
+like to support this testing and help me
+ 
+
+00:03:38.000 --> 00:03:40.470 align:start position:0%
+like to support this testing and help me
+expand<00:03:38.480><c> my</c><00:03:38.600><c> testing</c><00:03:39.040><c> service</c><00:03:39.400><c> further,</c><00:03:40.160><c> then</c>
+
+00:03:40.470 --> 00:03:40.480 align:start position:0%
+expand my testing service further, then
+ 
+
+00:03:40.480 --> 00:03:42.030 align:start position:0%
+expand my testing service further, then
+please<00:03:40.760><c> consider</c><00:03:41.080><c> supporting</c><00:03:41.600><c> me</c><00:03:41.840><c> either</c>
+
+00:03:42.030 --> 00:03:42.040 align:start position:0%
+please consider supporting me either
+ 
+
+00:03:42.040 --> 00:03:43.870 align:start position:0%
+please consider supporting me either
+directly<00:03:42.600><c> through</c><00:03:42.840><c> Patreon</c><00:03:43.400><c> or</c><00:03:43.519><c> Buy</c><00:03:43.680><c> Me</c><00:03:43.800><c> a</c>
+
+00:03:43.870 --> 00:03:43.880 align:start position:0%
+directly through Patreon or Buy Me a
+ 
+
+00:03:43.880 --> 00:03:45.990 align:start position:0%
+directly through Patreon or Buy Me a
+Coffee,<00:03:44.680><c> or</c><00:03:44.880><c> indirectly</c><00:03:45.680><c> using</c><00:03:45.920><c> the</c>
+
+00:03:45.990 --> 00:03:46.000 align:start position:0%
+Coffee, or indirectly using the
+ 
+
+00:03:46.000 --> 00:03:47.790 align:start position:0%
+Coffee, or indirectly using the
+affiliate<00:03:46.400><c> links</c><00:03:46.680><c> you</c><00:03:46.760><c> can</c><00:03:46.920><c> find</c><00:03:47.280><c> down</c><00:03:47.600><c> in</c><00:03:47.720><c> the</c>
+
+00:03:47.790 --> 00:03:47.800 align:start position:0%
+affiliate links you can find down in the
+ 
+
+00:03:47.800 --> 00:03:49.229 align:start position:0%
+affiliate links you can find down in the
+video<00:03:48.040><c> description.</c>
+
+00:03:49.229 --> 00:03:49.239 align:start position:0%
+video description.
+ 
+
+00:03:49.239 --> 00:03:50.830 align:start position:0%
+video description.
+If<00:03:49.360><c> you're</c><00:03:49.480><c> thinking</c><00:03:49.880><c> of</c><00:03:50.040><c> buying</c><00:03:50.280><c> some</c><00:03:50.440><c> FPV</c>
+
+00:03:50.830 --> 00:03:50.840 align:start position:0%
+If you're thinking of buying some FPV
+ 
+
+00:03:50.840 --> 00:03:52.790 align:start position:0%
+If you're thinking of buying some FPV
+gear,<00:03:51.400><c> or</c><00:03:51.560><c> just</c><00:03:51.800><c> making</c><00:03:52.080><c> a</c><00:03:52.200><c> purchase</c><00:03:52.560><c> from</c>
+
+00:03:52.790 --> 00:03:52.800 align:start position:0%
+gear, or just making a purchase from
+ 
+
+00:03:52.800 --> 00:03:54.710 align:start position:0%
+gear, or just making a purchase from
+Amazon,<00:03:53.480><c> please</c><00:03:53.920><c> click</c><00:03:54.200><c> through</c><00:03:54.440><c> on</c><00:03:54.560><c> my</c>
+
+00:03:54.710 --> 00:03:54.720 align:start position:0%
+Amazon, please click through on my
+ 
+
+00:03:54.720 --> 00:03:56.590 align:start position:0%
+Amazon, please click through on my
+affiliate<00:03:55.120><c> link.</c><00:03:55.640><c> It</c><00:03:55.840><c> won't</c><00:03:56.080><c> cost</c><00:03:56.400><c> you</c>
+
+00:03:56.590 --> 00:03:56.600 align:start position:0%
+affiliate link. It won't cost you
+ 
+
+00:03:56.600 --> 00:03:58.670 align:start position:0%
+affiliate link. It won't cost you
+anything.<00:03:57.400><c> Amazon</c><00:03:57.800><c> will</c><00:03:57.880><c> make</c><00:03:58.080><c> a</c><00:03:58.160><c> little</c><00:03:58.480><c> bit</c>
+
+00:03:58.670 --> 00:03:58.680 align:start position:0%
+anything. Amazon will make a little bit
+ 
+
+00:03:58.680 --> 00:04:00.750 align:start position:0%
+anything. Amazon will make a little bit
+less<00:03:58.960><c> profit</c><00:03:59.280><c> off</c><00:03:59.400><c> of</c><00:03:59.520><c> you,</c><00:03:59.960><c> and</c><00:04:00.120><c> Jeff</c><00:04:00.360><c> Bezos</c>
+
+00:04:00.750 --> 00:04:00.760 align:start position:0%
+less profit off of you, and Jeff Bezos
+ 
+
+00:04:00.760 --> 00:04:02.590 align:start position:0%
+less profit off of you, and Jeff Bezos
+will<00:04:00.840><c> send</c><00:04:01.040><c> a</c><00:04:01.080><c> few</c><00:04:01.320><c> bucks</c><00:04:01.560><c> my</c><00:04:01.720><c> way</c><00:04:02.200><c> to</c><00:04:02.320><c> help</c>
+
+00:04:02.590 --> 00:04:02.600 align:start position:0%
+will send a few bucks my way to help
+ 
+
+00:04:02.600 --> 00:04:04.590 align:start position:0%
+will send a few bucks my way to help
+continue<00:04:03.000><c> this</c><00:04:03.200><c> testing.</c><00:04:03.960><c> It's</c><00:04:04.120><c> a</c><00:04:04.240><c> real</c>
+
+00:04:04.590 --> 00:04:04.600 align:start position:0%
+continue this testing. It's a real
+ 
+
+00:04:04.600 --> 00:04:06.550 align:start position:0%
+continue this testing. It's a real
+win-win,<00:04:05.320><c> and</c><00:04:05.440><c> I</c><00:04:05.520><c> would</c><00:04:05.760><c> really</c><00:04:05.960><c> appreciate</c>
+
+00:04:06.550 --> 00:04:06.560 align:start position:0%
+win-win, and I would really appreciate
+ 
+
+00:04:06.560 --> 00:04:08.230 align:start position:0%
+win-win, and I would really appreciate
+any<00:04:06.840><c> and</c><00:04:07.080><c> all</c><00:04:07.240><c> support</c><00:04:07.680><c> that</c><00:04:07.800><c> you</c><00:04:07.920><c> can</c><00:04:08.040><c> give</c>
+
+00:04:08.230 --> 00:04:08.240 align:start position:0%
+any and all support that you can give
+ 
+
+00:04:08.240 --> 00:04:09.949 align:start position:0%
+any and all support that you can give
+me.<00:04:08.920><c> All</c><00:04:09.040><c> right.</c><00:04:09.240><c> So,</c><00:04:09.280><c> the</c><00:04:09.400><c> first</c><00:04:09.720><c> test</c><00:04:09.880><c> we're</c>
+
+00:04:09.949 --> 00:04:09.959 align:start position:0%
+me. All right. So, the first test we're
+ 
+
+00:04:09.959 --> 00:04:11.910 align:start position:0%
+me. All right. So, the first test we're
+going<00:04:10.080><c> to</c><00:04:10.160><c> look</c><00:04:10.360><c> at</c><00:04:10.520><c> is</c><00:04:10.680><c> the</c><00:04:10.800><c> throttle</c><00:04:11.160><c> ramp.</c>
+
+00:04:11.910 --> 00:04:11.920 align:start position:0%
+going to look at is the throttle ramp.
+ 
+
+00:04:11.920 --> 00:04:13.310 align:start position:0%
+going to look at is the throttle ramp.
+Here,<00:04:12.160><c> we</c><00:04:12.320><c> are</c><00:04:12.400><c> ramping</c><00:04:12.720><c> the</c><00:04:12.800><c> throttle</c><00:04:13.120><c> on</c><00:04:13.200><c> the</c>
+
+00:04:13.310 --> 00:04:13.320 align:start position:0%
+Here, we are ramping the throttle on the
+ 
+
+00:04:13.320 --> 00:04:16.870 align:start position:0%
+Here, we are ramping the throttle on the
+ESC<00:04:13.840><c> from</c><00:04:14.080><c> 0</c><00:04:14.560><c> to</c><00:04:14.720><c> 100%</c><00:04:15.520><c> over</c><00:04:15.760><c> 5</c><00:04:16.079><c> seconds,</c>
+
+00:04:16.870 --> 00:04:16.880 align:start position:0%
+ESC from 0 to 100% over 5 seconds,
+ 
+
+00:04:16.880 --> 00:04:18.870 align:start position:0%
+ESC from 0 to 100% over 5 seconds,
+pausing<00:04:17.320><c> at</c><00:04:17.440><c> 100%</c><00:04:18.079><c> throttle</c><00:04:18.400><c> for</c><00:04:18.560><c> half</c><00:04:18.799><c> a</c>
+
+00:04:18.870 --> 00:04:18.880 align:start position:0%
+pausing at 100% throttle for half a
+ 
+
+00:04:18.880 --> 00:04:21.949 align:start position:0%
+pausing at 100% throttle for half a
+second,<00:04:19.600><c> and</c><00:04:19.720><c> then</c><00:04:20.040><c> ramping</c><00:04:20.480><c> back</c><00:04:20.720><c> down</c><00:04:21.000><c> to</c><00:04:21.160><c> 0%</c>
+
+00:04:21.949 --> 00:04:21.959 align:start position:0%
+second, and then ramping back down to 0%
+ 
+
+00:04:21.959 --> 00:04:24.190 align:start position:0%
+second, and then ramping back down to 0%
+over<00:04:22.240><c> 5</c><00:04:22.520><c> seconds.</c><00:04:23.480><c> All</c><00:04:23.560><c> right.</c><00:04:23.760><c> Let's</c><00:04:23.960><c> take</c><00:04:24.120><c> a</c>
+
+00:04:24.190 --> 00:04:24.200 align:start position:0%
+over 5 seconds. All right. Let's take a
+ 
+
+00:04:24.200 --> 00:04:25.470 align:start position:0%
+over 5 seconds. All right. Let's take a
+look<00:04:24.400><c> at</c><00:04:24.520><c> the</c><00:04:24.600><c> results</c><00:04:25.000><c> of</c><00:04:25.080><c> the</c><00:04:25.160><c> throttle</c>
+
+00:04:25.470 --> 00:04:25.480 align:start position:0%
+look at the results of the throttle
+ 
+
+00:04:25.480 --> 00:04:27.950 align:start position:0%
+look at the results of the throttle
+ramp.<00:04:26.120><c> On</c><00:04:26.240><c> the</c><00:04:26.400><c> X</c><00:04:26.640><c> axis,</c><00:04:27.000><c> we</c><00:04:27.120><c> have</c><00:04:27.360><c> time</c><00:04:27.840><c> in</c>
+
+00:04:27.950 --> 00:04:27.960 align:start position:0%
+ramp. On the X axis, we have time in
+ 
+
+00:04:27.960 --> 00:04:30.590 align:start position:0%
+ramp. On the X axis, we have time in
+seconds,<00:04:28.600><c> and</c><00:04:28.720><c> on</c><00:04:28.800><c> the</c><00:04:28.919><c> Y</c><00:04:29.120><c> axis,</c><00:04:29.520><c> we</c><00:04:29.680><c> have</c><00:04:30.040><c> RPM</c>
+
+00:04:30.590 --> 00:04:30.600 align:start position:0%
+seconds, and on the Y axis, we have RPM
+ 
+
+00:04:30.600 --> 00:04:32.990 align:start position:0%
+seconds, and on the Y axis, we have RPM
+reported<00:04:31.160><c> over</c><00:04:31.360><c> bidirectional</c><00:04:31.919><c> Dshot.</c><00:04:32.880><c> And</c>
+
+00:04:32.990 --> 00:04:33.000 align:start position:0%
+reported over bidirectional Dshot. And
+ 
+
+00:04:33.000 --> 00:04:34.510 align:start position:0%
+reported over bidirectional Dshot. And
+the<00:04:33.080><c> throttle</c><00:04:33.480><c> setting</c><00:04:33.840><c> at</c><00:04:33.960><c> each</c><00:04:34.160><c> point</c><00:04:34.400><c> in</c>
+
+00:04:34.510 --> 00:04:34.520 align:start position:0%
+the throttle setting at each point in
+ 
+
+00:04:34.520 --> 00:04:37.390 align:start position:0%
+the throttle setting at each point in
+time<00:04:35.040><c> is</c><00:04:35.240><c> the</c><00:04:35.360><c> same</c><00:04:35.800><c> for</c><00:04:35.960><c> all</c><00:04:36.080><c> the</c><00:04:36.200><c> ESCs.</c>
+
+00:04:37.390 --> 00:04:37.400 align:start position:0%
+time is the same for all the ESCs.
+ 
+
+00:04:37.400 --> 00:04:39.030 align:start position:0%
+time is the same for all the ESCs.
+What<00:04:37.480><c> we</c><00:04:37.600><c> can</c><00:04:37.720><c> see</c><00:04:37.960><c> is</c><00:04:38.120><c> that</c><00:04:38.320><c> all</c><00:04:38.480><c> the</c><00:04:38.560><c> ESCs</c>
+
+00:04:39.030 --> 00:04:39.040 align:start position:0%
+What we can see is that all the ESCs
+ 
+
+00:04:39.040 --> 00:04:40.990 align:start position:0%
+What we can see is that all the ESCs
+have<00:04:39.280><c> pretty</c><00:04:39.440><c> much</c><00:04:39.640><c> identical</c><00:04:40.280><c> RPM</c><00:04:40.680><c> versus</c>
+
+00:04:40.990 --> 00:04:41.000 align:start position:0%
+have pretty much identical RPM versus
+ 
+
+00:04:41.000 --> 00:04:43.190 align:start position:0%
+have pretty much identical RPM versus
+throttle<00:04:41.320><c> curves</c><00:04:41.800><c> up</c><00:04:42.000><c> to</c><00:04:42.200><c> about</c><00:04:42.560><c> 40%</c>
+
+00:04:43.190 --> 00:04:43.200 align:start position:0%
+throttle curves up to about 40%
+ 
+
+00:04:43.200 --> 00:04:45.430 align:start position:0%
+throttle curves up to about 40%
+throttle,<00:04:44.080><c> and</c><00:04:44.320><c> then</c><00:04:44.680><c> they</c><00:04:44.840><c> all</c><00:04:45.000><c> start</c><00:04:45.320><c> to</c>
+
+00:04:45.430 --> 00:04:45.440 align:start position:0%
+throttle, and then they all start to
+ 
+
+00:04:45.440 --> 00:04:46.950 align:start position:0%
+throttle, and then they all start to
+kink<00:04:45.720><c> over</c><00:04:45.919><c> slightly,</c><00:04:46.280><c> and</c><00:04:46.400><c> we</c><00:04:46.480><c> get</c><00:04:46.680><c> some</c>
+
+00:04:46.950 --> 00:04:46.960 align:start position:0%
+kink over slightly, and we get some
+ 
+
+00:04:46.960 --> 00:04:49.590 align:start position:0%
+kink over slightly, and we get some
+differences<00:04:47.400><c> in</c><00:04:47.520><c> shape</c><00:04:47.880><c> at</c><00:04:48.080><c> high</c><00:04:48.280><c> throttle.</c>
+
+00:04:49.590 --> 00:04:49.600 align:start position:0%
+differences in shape at high throttle.
+ 
+
+00:04:49.600 --> 00:04:51.950 align:start position:0%
+differences in shape at high throttle.
+When<00:04:49.680><c> we</c><00:04:49.760><c> get</c><00:04:50.040><c> to</c><00:04:50.320><c> the</c><00:04:50.480><c> peak</c><00:04:50.960><c> RPM,</c><00:04:51.560><c> so</c><00:04:51.680><c> that's</c>
+
+00:04:51.950 --> 00:04:51.960 align:start position:0%
+When we get to the peak RPM, so that's
+ 
+
+00:04:51.960 --> 00:04:53.590 align:start position:0%
+When we get to the peak RPM, so that's
+full<00:04:52.200><c> throttle,</c><00:04:52.880><c> we</c><00:04:52.960><c> can</c><00:04:53.080><c> see</c><00:04:53.200><c> that</c><00:04:53.320><c> there's</c>
+
+00:04:53.590 --> 00:04:53.600 align:start position:0%
+full throttle, we can see that there's
+ 
+
+00:04:53.600 --> 00:04:55.790 align:start position:0%
+full throttle, we can see that there's
+about<00:04:53.919><c> a</c><00:04:53.960><c> 3%</c><00:04:54.640><c> spread</c><00:04:55.000><c> across</c><00:04:55.400><c> all</c><00:04:55.560><c> of</c><00:04:55.640><c> these</c>
+
+00:04:55.790 --> 00:04:55.800 align:start position:0%
+about a 3% spread across all of these
+ 
+
+00:04:55.800 --> 00:04:59.390 align:start position:0%
+about a 3% spread across all of these
+ESCs,<00:04:56.680><c> with</c><00:04:56.840><c> an</c><00:04:57.040><c> edge</c><00:04:57.480><c> to</c><00:04:57.800><c> the</c><00:04:58.080><c> SpeedyBee</c><00:04:58.720><c> ESC,</c>
+
+00:04:59.390 --> 00:04:59.400 align:start position:0%
+ESCs, with an edge to the SpeedyBee ESC,
+ 
+
+00:04:59.400 --> 00:05:01.710 align:start position:0%
+ESCs, with an edge to the SpeedyBee ESC,
+the<00:04:59.520><c> BlueJay</c><00:04:59.960><c> ESC,</c><00:05:00.720><c> that</c><00:05:01.160><c> achieves</c><00:05:01.600><c> the</c>
+
+00:05:01.710 --> 00:05:01.720 align:start position:0%
+the BlueJay ESC, that achieves the
+ 
+
+00:05:01.720 --> 00:05:05.590 align:start position:0%
+the BlueJay ESC, that achieves the
+highest<00:05:02.200><c> RPM,</c><00:05:03.080><c> and</c><00:05:03.560><c> the</c><00:05:04.080><c> Mamba</c><00:05:04.480><c> F60</c><00:05:04.919><c> Pro</c><00:05:05.480><c> with</c>
+
+00:05:05.590 --> 00:05:05.600 align:start position:0%
+highest RPM, and the Mamba F60 Pro with
+ 
+
+00:05:05.600 --> 00:05:08.230 align:start position:0%
+highest RPM, and the Mamba F60 Pro with
+the<00:05:05.760><c> AM32</c><00:05:06.480><c> firmware</c><00:05:07.160><c> achieves</c><00:05:07.680><c> the</c><00:05:07.840><c> lowest</c>
+
+00:05:08.230 --> 00:05:08.240 align:start position:0%
+the AM32 firmware achieves the lowest
+ 
+
+00:05:08.240 --> 00:05:10.670 align:start position:0%
+the AM32 firmware achieves the lowest
+RPM<00:05:08.800><c> at</c><00:05:08.919><c> full</c><00:05:09.080><c> throttle.</c><00:05:10.040><c> This</c><00:05:10.200><c> could</c><00:05:10.400><c> be</c><00:05:10.560><c> to</c>
+
+00:05:10.670 --> 00:05:10.680 align:start position:0%
+RPM at full throttle. This could be to
+ 
+
+00:05:10.680 --> 00:05:12.550 align:start position:0%
+RPM at full throttle. This could be to
+do<00:05:10.800><c> with</c><00:05:10.960><c> firmware,</c><00:05:11.360><c> but</c><00:05:11.520><c> can</c><00:05:11.680><c> also</c><00:05:11.960><c> be</c><00:05:12.080><c> due</c>
+
+00:05:12.550 --> 00:05:12.560 align:start position:0%
+do with firmware, but can also be due
+ 
+
+00:05:12.560 --> 00:05:15.270 align:start position:0%
+do with firmware, but can also be due
+due<00:05:12.760><c> to</c><00:05:12.880><c> differences</c><00:05:13.360><c> in</c><00:05:13.480><c> the</c><00:05:13.600><c> ESCs</c><00:05:14.080><c> as</c><00:05:14.200><c> well.</c>
+
+00:05:15.270 --> 00:05:15.280 align:start position:0%
+due to differences in the ESCs as well.
+ 
+
+00:05:15.280 --> 00:05:17.830 align:start position:0%
+due to differences in the ESCs as well.
+With<00:05:15.480><c> the</c><00:05:15.720><c> BlueJay</c><00:05:16.320><c> SpeedyBee</c><00:05:16.800><c> ESC,</c><00:05:17.520><c> we</c><00:05:17.640><c> see</c><00:05:17.760><c> a</c>
+
+00:05:17.830 --> 00:05:17.840 align:start position:0%
+With the BlueJay SpeedyBee ESC, we see a
+ 
+
+00:05:17.840 --> 00:05:20.590 align:start position:0%
+With the BlueJay SpeedyBee ESC, we see a
+really<00:05:18.200><c> interesting</c><00:05:18.880><c> stepped</c><00:05:19.680><c> response</c><00:05:20.440><c> as</c>
+
+00:05:20.590 --> 00:05:20.600 align:start position:0%
+really interesting stepped response as
+ 
+
+00:05:20.600 --> 00:05:22.310 align:start position:0%
+really interesting stepped response as
+we<00:05:20.720><c> get</c><00:05:20.919><c> to</c><00:05:21.040><c> very</c><00:05:21.240><c> high</c><00:05:21.400><c> throttle,</c><00:05:22.040><c> and</c><00:05:22.160><c> it's</c>
+
+00:05:22.310 --> 00:05:22.320 align:start position:0%
+we get to very high throttle, and it's
+ 
+
+00:05:22.320 --> 00:05:24.790 align:start position:0%
+we get to very high throttle, and it's
+quite<00:05:22.640><c> apparent</c><00:05:23.200><c> that</c><00:05:24.040><c> it</c><00:05:24.120><c> appears</c><00:05:24.640><c> like</c>
+
+00:05:24.790 --> 00:05:24.800 align:start position:0%
+quite apparent that it appears like
+ 
+
+00:05:24.800 --> 00:05:26.750 align:start position:0%
+quite apparent that it appears like
+we're<00:05:24.960><c> running</c><00:05:25.280><c> out</c><00:05:25.400><c> of</c><00:05:25.480><c> throttle</c><00:05:25.800><c> resolution</c>
+
+00:05:26.750 --> 00:05:26.760 align:start position:0%
+we're running out of throttle resolution
+ 
+
+00:05:26.760 --> 00:05:29.750 align:start position:0%
+we're running out of throttle resolution
+at<00:05:27.000><c> the</c><00:05:27.120><c> very</c><00:05:27.400><c> top</c><00:05:27.720><c> end,</c><00:05:28.320><c> and</c><00:05:28.919><c> that</c><00:05:29.160><c> might</c><00:05:29.440><c> lead</c>
+
+00:05:29.750 --> 00:05:29.760 align:start position:0%
+at the very top end, and that might lead
+ 
+
+00:05:29.760 --> 00:05:31.430 align:start position:0%
+at the very top end, and that might lead
+to<00:05:30.120><c> the</c><00:05:30.200><c> throttle</c><00:05:30.520><c> being</c><00:05:30.720><c> a</c><00:05:30.760><c> little</c><00:05:30.960><c> bit</c><00:05:31.120><c> less</c>
+
+00:05:31.430 --> 00:05:31.440 align:start position:0%
+to the throttle being a little bit less
+ 
+
+00:05:31.440 --> 00:05:34.070 align:start position:0%
+to the throttle being a little bit less
+smooth,<00:05:32.400><c> but</c><00:05:32.880><c> that's</c><00:05:33.080><c> probably</c><00:05:33.600><c> not</c><00:05:33.800><c> a</c><00:05:33.840><c> big</c>
+
+00:05:34.070 --> 00:05:34.080 align:start position:0%
+smooth, but that's probably not a big
+ 
+
+00:05:34.080 --> 00:05:35.510 align:start position:0%
+smooth, but that's probably not a big
+deal<00:05:34.480><c> because</c><00:05:34.720><c> we</c><00:05:34.800><c> don't</c><00:05:35.000><c> spend</c><00:05:35.200><c> a</c><00:05:35.240><c> lot</c><00:05:35.400><c> of</c>
+
+00:05:35.510 --> 00:05:35.520 align:start position:0%
+deal because we don't spend a lot of
+ 
+
+00:05:35.520 --> 00:05:37.750 align:start position:0%
+deal because we don't spend a lot of
+time<00:05:35.960><c> at</c><00:05:36.040><c> that</c><00:05:36.280><c> high</c><00:05:36.480><c> in</c><00:05:36.600><c> the</c><00:05:36.680><c> throttle.</c>
+
+00:05:37.750 --> 00:05:37.760 align:start position:0%
+time at that high in the throttle.
+ 
+
+00:05:37.760 --> 00:05:39.470 align:start position:0%
+time at that high in the throttle.
+It<00:05:37.880><c> may</c><00:05:38.040><c> also</c><00:05:38.360><c> be</c><00:05:38.560><c> due</c><00:05:38.800><c> to</c><00:05:38.919><c> the</c><00:05:39.000><c> fact</c><00:05:39.240><c> that</c><00:05:39.320><c> this</c>
+
+00:05:39.470 --> 00:05:39.480 align:start position:0%
+It may also be due to the fact that this
+ 
+
+00:05:39.480 --> 00:05:41.909 align:start position:0%
+It may also be due to the fact that this
+is<00:05:39.600><c> the</c><00:05:39.720><c> only</c><00:05:40.000><c> 8-bit</c><00:05:40.400><c> ESC</c><00:05:41.080><c> that</c><00:05:41.440><c> I'm</c><00:05:41.560><c> testing</c>
+
+00:05:41.909 --> 00:05:41.919 align:start position:0%
+is the only 8-bit ESC that I'm testing
+ 
+
+00:05:41.919 --> 00:05:45.110 align:start position:0%
+is the only 8-bit ESC that I'm testing
+today.<00:05:42.680><c> All</c><00:05:42.840><c> of</c><00:05:42.919><c> the</c><00:05:43.000><c> other</c><00:05:43.160><c> ESCs</c><00:05:43.840><c> are</c><00:05:44.040><c> 32-bit,</c>
+
+00:05:45.110 --> 00:05:45.120 align:start position:0%
+today. All of the other ESCs are 32-bit,
+ 
+
+00:05:45.120 --> 00:05:46.710 align:start position:0%
+today. All of the other ESCs are 32-bit,
+and<00:05:45.280><c> so</c><00:05:45.680><c> they</c><00:05:45.800><c> may</c><00:05:45.960><c> just</c><00:05:46.200><c> have</c><00:05:46.400><c> more</c>
+
+00:05:46.710 --> 00:05:46.720 align:start position:0%
+and so they may just have more
+ 
+
+00:05:46.720 --> 00:05:48.630 align:start position:0%
+and so they may just have more
+resolution<00:05:47.360><c> and</c><00:05:47.480><c> have</c><00:05:47.720><c> finer</c><00:05:48.160><c> steps</c><00:05:48.520><c> in</c>
+
+00:05:48.630 --> 00:05:48.640 align:start position:0%
+resolution and have finer steps in
+ 
+
+00:05:48.640 --> 00:05:51.230 align:start position:0%
+resolution and have finer steps in
+throttle.<00:05:49.640><c> We</c><00:05:49.840><c> see</c><00:05:50.000><c> that</c><00:05:50.240><c> the</c><00:05:50.600><c> throttle</c>
+
+00:05:51.230 --> 00:05:51.240 align:start position:0%
+throttle. We see that the throttle
+ 
+
+00:05:51.240 --> 00:05:53.270 align:start position:0%
+throttle. We see that the throttle
+versus<00:05:51.600><c> RPM</c><00:05:52.000><c> curves</c><00:05:52.320><c> are</c><00:05:52.480><c> symmetric,</c><00:05:53.120><c> they're</c>
+
+00:05:53.270 --> 00:05:53.280 align:start position:0%
+versus RPM curves are symmetric, they're
+ 
+
+00:05:53.280 --> 00:05:54.870 align:start position:0%
+versus RPM curves are symmetric, they're
+identical<00:05:53.840><c> on</c><00:05:53.920><c> the</c><00:05:54.000><c> way</c><00:05:54.160><c> up</c><00:05:54.520><c> and</c><00:05:54.600><c> on</c><00:05:54.680><c> the</c><00:05:54.760><c> way</c>
+
+00:05:54.870 --> 00:05:54.880 align:start position:0%
+identical on the way up and on the way
+ 
+
+00:05:54.880 --> 00:05:57.790 align:start position:0%
+identical on the way up and on the way
+down,<00:05:55.160><c> which</c><00:05:55.320><c> is</c><00:05:55.400><c> good</c><00:05:55.560><c> to</c><00:05:55.680><c> see,</c><00:05:56.480><c> and</c><00:05:56.720><c> that</c><00:05:57.440><c> um</c>
+
+00:05:57.790 --> 00:05:57.800 align:start position:0%
+down, which is good to see, and that um
+ 
+
+00:05:57.800 --> 00:05:59.390 align:start position:0%
+down, which is good to see, and that um
+they're<00:05:57.960><c> pretty</c><00:05:58.200><c> similar</c><00:05:58.640><c> overall.</c><00:05:59.280><c> So,</c>
+
+00:05:59.390 --> 00:05:59.400 align:start position:0%
+they're pretty similar overall. So,
+ 
+
+00:05:59.400 --> 00:06:01.510 align:start position:0%
+they're pretty similar overall. So,
+let's<00:05:59.600><c> move</c><00:05:59.840><c> on</c><00:06:00.000><c> and</c><00:06:00.160><c> look</c><00:06:00.360><c> at</c><00:06:00.440><c> the</c><00:06:00.520><c> next</c><00:06:00.760><c> test.</c>
+
+00:06:01.510 --> 00:06:01.520 align:start position:0%
+let's move on and look at the next test.
+ 
+
+00:06:01.520 --> 00:06:02.870 align:start position:0%
+let's move on and look at the next test.
+The<00:06:01.680><c> next</c><00:06:01.920><c> test</c><00:06:02.120><c> we're</c><00:06:02.200><c> going</c><00:06:02.320><c> to</c><00:06:02.400><c> look</c><00:06:02.600><c> at</c><00:06:02.760><c> is</c>
+
+00:06:02.870 --> 00:06:02.880 align:start position:0%
+The next test we're going to look at is
+ 
+
+00:06:02.880 --> 00:06:05.310 align:start position:0%
+The next test we're going to look at is
+the<00:06:03.000><c> responsiveness</c><00:06:03.800><c> of</c><00:06:03.880><c> the</c><00:06:04.040><c> ESC.</c><00:06:05.000><c> And</c><00:06:05.240><c> for</c>
+
+00:06:05.310 --> 00:06:05.320 align:start position:0%
+the responsiveness of the ESC. And for
+ 
+
+00:06:05.320 --> 00:06:06.790 align:start position:0%
+the responsiveness of the ESC. And for
+this<00:06:05.520><c> test,</c><00:06:05.920><c> we're</c><00:06:06.040><c> going</c><00:06:06.240><c> to</c><00:06:06.280><c> be</c><00:06:06.400><c> doing</c>
+
+00:06:06.790 --> 00:06:06.800 align:start position:0%
+this test, we're going to be doing
+ 
+
+00:06:06.800 --> 00:06:08.990 align:start position:0%
+this test, we're going to be doing
+throttle<00:06:07.200><c> steps.</c><00:06:07.760><c> We're</c><00:06:07.920><c> stepping</c><00:06:08.400><c> the</c><00:06:08.520><c> ESC</c>
+
+00:06:08.990 --> 00:06:09.000 align:start position:0%
+throttle steps. We're stepping the ESC
+ 
+
+00:06:09.000 --> 00:06:12.030 align:start position:0%
+throttle steps. We're stepping the ESC
+from<00:06:09.240><c> 10%</c><00:06:10.200><c> to</c><00:06:10.360><c> 50%</c><00:06:10.960><c> throttle</c><00:06:11.560><c> and</c><00:06:11.680><c> then</c><00:06:11.800><c> back</c>
+
+00:06:12.030 --> 00:06:12.040 align:start position:0%
+from 10% to 50% throttle and then back
+ 
+
+00:06:12.040 --> 00:06:14.630 align:start position:0%
+from 10% to 50% throttle and then back
+down<00:06:12.320><c> to</c><00:06:12.440><c> 10%</c><00:06:12.920><c> again,</c><00:06:13.520><c> and</c><00:06:13.680><c> we're</c><00:06:13.880><c> logging</c><00:06:14.400><c> the</c>
+
+00:06:14.630 --> 00:06:14.640 align:start position:0%
+down to 10% again, and we're logging the
+ 
+
+00:06:14.640 --> 00:06:17.350 align:start position:0%
+down to 10% again, and we're logging the
+RPM<00:06:15.560><c> as</c><00:06:15.800><c> the</c><00:06:15.960><c> ESC</c><00:06:16.440><c> accelerates</c><00:06:17.200><c> and</c>
+
+00:06:17.350 --> 00:06:17.360 align:start position:0%
+RPM as the ESC accelerates and
+ 
+
+00:06:17.360 --> 00:06:19.590 align:start position:0%
+RPM as the ESC accelerates and
+decelerates<00:06:18.000><c> the</c><00:06:18.080><c> motor.</c><00:06:18.919><c> We're</c><00:06:19.080><c> doing</c><00:06:19.320><c> that</c>
+
+00:06:19.590 --> 00:06:19.600 align:start position:0%
+decelerates the motor. We're doing that
+ 
+
+00:06:19.600 --> 00:06:21.470 align:start position:0%
+decelerates the motor. We're doing that
+10<00:06:19.919><c> times,</c><00:06:20.560><c> and</c><00:06:20.680><c> then</c><00:06:20.800><c> we're</c><00:06:20.919><c> taking</c><00:06:21.240><c> the</c>
+
+00:06:21.470 --> 00:06:21.480 align:start position:0%
+10 times, and then we're taking the
+ 
+
+00:06:21.480 --> 00:06:24.790 align:start position:0%
+10 times, and then we're taking the
+average<00:06:22.040><c> of</c><00:06:22.280><c> all</c><00:06:22.640><c> 10</c><00:06:23.080><c> of</c><00:06:23.240><c> those</c><00:06:23.560><c> responses</c><00:06:24.600><c> and</c>
+
+00:06:24.790 --> 00:06:24.800 align:start position:0%
+average of all 10 of those responses and
+ 
+
+00:06:24.800 --> 00:06:26.750 align:start position:0%
+average of all 10 of those responses and
+plotting<00:06:25.160><c> them</c><00:06:25.440><c> so</c><00:06:25.600><c> we</c><00:06:25.720><c> can</c><00:06:25.840><c> look</c><00:06:26.040><c> at</c><00:06:26.200><c> how</c><00:06:26.400><c> fast</c>
+
+00:06:26.750 --> 00:06:26.760 align:start position:0%
+plotting them so we can look at how fast
+ 
+
+00:06:26.760 --> 00:06:28.870 align:start position:0%
+plotting them so we can look at how fast
+the<00:06:26.880><c> ESC</c><00:06:27.320><c> is</c><00:06:27.480><c> able</c><00:06:27.680><c> to</c><00:06:27.800><c> respond.</c>
+
+00:06:28.870 --> 00:06:28.880 align:start position:0%
+the ESC is able to respond.
+ 
+
+00:06:28.880 --> 00:06:30.030 align:start position:0%
+the ESC is able to respond.
+All<00:06:29.040><c> right,</c><00:06:29.240><c> so</c><00:06:29.320><c> let's</c><00:06:29.520><c> take</c><00:06:29.720><c> a</c><00:06:29.760><c> look</c><00:06:29.880><c> at</c><00:06:29.960><c> the</c>
+
+00:06:30.030 --> 00:06:30.040 align:start position:0%
+All right, so let's take a look at the
+ 
+
+00:06:30.040 --> 00:06:32.510 align:start position:0%
+All right, so let's take a look at the
+results<00:06:30.480><c> of</c><00:06:30.560><c> the</c><00:06:30.680><c> ESC</c><00:06:31.080><c> responsiveness</c><00:06:31.680><c> test.</c>
+
+00:06:32.510 --> 00:06:32.520 align:start position:0%
+results of the ESC responsiveness test.
+ 
+
+00:06:32.520 --> 00:06:34.350 align:start position:0%
+results of the ESC responsiveness test.
+What<00:06:32.720><c> you're</c><00:06:32.800><c> looking</c><00:06:33.080><c> at</c><00:06:33.200><c> here</c><00:06:33.440><c> is</c><00:06:33.640><c> time</c><00:06:34.240><c> on</c>
+
+00:06:34.350 --> 00:06:34.360 align:start position:0%
+What you're looking at here is time on
+ 
+
+00:06:34.360 --> 00:06:37.430 align:start position:0%
+What you're looking at here is time on
+the<00:06:34.480><c> x-axis</c><00:06:35.040><c> in</c><00:06:35.240><c> milliseconds</c><00:06:36.160><c> and</c><00:06:36.440><c> RPM</c><00:06:37.320><c> of</c>
+
+00:06:37.430 --> 00:06:37.440 align:start position:0%
+the x-axis in milliseconds and RPM of
+ 
+
+00:06:37.440 --> 00:06:39.950 align:start position:0%
+the x-axis in milliseconds and RPM of
+the<00:06:37.520><c> motor</c><00:06:38.000><c> on</c><00:06:38.120><c> the</c><00:06:38.240><c> y-axis.</c>
+
+00:06:39.950 --> 00:06:39.960 align:start position:0%
+the motor on the y-axis.
+ 
+
+00:06:39.960 --> 00:06:42.390 align:start position:0%
+the motor on the y-axis.
+All<00:06:40.280><c> of</c><00:06:40.400><c> the</c><00:06:40.680><c> throttle</c><00:06:41.000><c> steps</c><00:06:41.560><c> start</c><00:06:42.160><c> at</c>
+
+00:06:42.390 --> 00:06:42.400 align:start position:0%
+All of the throttle steps start at
+ 
+
+00:06:42.400 --> 00:06:44.350 align:start position:0%
+All of the throttle steps start at
+exactly<00:06:42.919><c> 0</c><00:06:43.200><c> milliseconds,</c><00:06:44.040><c> and</c><00:06:44.200><c> you're</c>
+
+00:06:44.350 --> 00:06:44.360 align:start position:0%
+exactly 0 milliseconds, and you're
+ 
+
+00:06:44.360 --> 00:06:47.030 align:start position:0%
+exactly 0 milliseconds, and you're
+watching<00:06:44.760><c> the</c><00:06:44.919><c> ESC</c><00:06:45.520><c> accelerate</c><00:06:46.240><c> the</c><00:06:46.320><c> motor</c>
+
+00:06:47.030 --> 00:06:47.040 align:start position:0%
+watching the ESC accelerate the motor
+ 
+
+00:06:47.040 --> 00:06:50.790 align:start position:0%
+watching the ESC accelerate the motor
+from<00:06:47.480><c> about</c><00:06:47.720><c> 6,000</c><00:06:48.240><c> RPM</c><00:06:48.880><c> to</c><00:06:49.000><c> 21,000</c><00:06:49.880><c> RPM</c><00:06:50.560><c> as</c>
+
+00:06:50.790 --> 00:06:50.800 align:start position:0%
+from about 6,000 RPM to 21,000 RPM as
+ 
+
+00:06:50.800 --> 00:06:52.830 align:start position:0%
+from about 6,000 RPM to 21,000 RPM as
+fast<00:06:51.120><c> as</c><00:06:51.200><c> it</c><00:06:51.320><c> possibly</c><00:06:51.680><c> can.</c>
+
+00:06:52.830 --> 00:06:52.840 align:start position:0%
+fast as it possibly can.
+ 
+
+00:06:52.840 --> 00:06:54.790 align:start position:0%
+fast as it possibly can.
+We<00:06:53.040><c> have</c><00:06:53.360><c> a</c><00:06:53.480><c> white</c><00:06:53.880><c> dashed</c><00:06:54.240><c> line</c><00:06:54.640><c> that</c>
+
+00:06:54.790 --> 00:06:54.800 align:start position:0%
+We have a white dashed line that
+ 
+
+00:06:54.800 --> 00:06:57.950 align:start position:0%
+We have a white dashed line that
+indicates<00:06:55.400><c> 90%</c><00:06:56.320><c> of</c><00:06:56.400><c> the</c><00:06:56.600><c> RPM</c><00:06:57.120><c> change</c><00:06:57.640><c> on</c><00:06:57.800><c> this</c>
+
+00:06:57.950 --> 00:06:57.960 align:start position:0%
+indicates 90% of the RPM change on this
+ 
+
+00:06:57.960 --> 00:07:00.070 align:start position:0%
+indicates 90% of the RPM change on this
+step.<00:06:58.600><c> So,</c><00:06:58.760><c> we're</c><00:06:58.880><c> looking</c><00:06:59.200><c> for</c><00:06:59.320><c> the</c><00:06:59.440><c> ESCs</c>
+
+00:07:00.070 --> 00:07:00.080 align:start position:0%
+step. So, we're looking for the ESCs
+ 
+
+00:07:00.080 --> 00:07:02.670 align:start position:0%
+step. So, we're looking for the ESCs
+that<00:07:00.240><c> are</c><00:07:00.360><c> the</c><00:07:00.480><c> fastest</c><00:07:01.320><c> to</c><00:07:01.440><c> get</c><00:07:01.720><c> to</c><00:07:01.840><c> that</c><00:07:02.040><c> 90%</c>
+
+00:07:02.670 --> 00:07:02.680 align:start position:0%
+that are the fastest to get to that 90%
+ 
+
+00:07:02.680 --> 00:07:03.830 align:start position:0%
+that are the fastest to get to that 90%
+line.
+
+00:07:03.830 --> 00:07:03.840 align:start position:0%
+line.
+ 
+
+00:07:03.840 --> 00:07:06.870 align:start position:0%
+line.
+The<00:07:04.000><c> slowest</c><00:07:04.440><c> ESC</c><00:07:04.880><c> is</c><00:07:05.080><c> the</c><00:07:05.240><c> T-Motor</c><00:07:05.880><c> F55A</c>
+
+00:07:06.870 --> 00:07:06.880 align:start position:0%
+The slowest ESC is the T-Motor F55A
+ 
+
+00:07:06.880 --> 00:07:09.390 align:start position:0%
+The slowest ESC is the T-Motor F55A
+running<00:07:07.200><c> BLHeli</c><00:07:07.720><c> 32.</c><00:07:08.600><c> You</c><00:07:08.720><c> can</c><00:07:08.840><c> see</c><00:07:09.000><c> that</c><00:07:09.240><c> it</c>
+
+00:07:09.390 --> 00:07:09.400 align:start position:0%
+running BLHeli 32. You can see that it
+ 
+
+00:07:09.400 --> 00:07:12.150 align:start position:0%
+running BLHeli 32. You can see that it
+takes<00:07:09.760><c> about</c><00:07:10.160><c> 52</c><00:07:10.720><c> milliseconds</c><00:07:11.720><c> to</c><00:07:11.919><c> reach</c>
+
+00:07:12.150 --> 00:07:12.160 align:start position:0%
+takes about 52 milliseconds to reach
+ 
+
+00:07:12.160 --> 00:07:14.430 align:start position:0%
+takes about 52 milliseconds to reach
+that<00:07:12.360><c> 90%</c><00:07:13.120><c> white</c><00:07:13.360><c> line.</c>
+
+00:07:14.430 --> 00:07:14.440 align:start position:0%
+that 90% white line.
+ 
+
+00:07:14.440 --> 00:07:17.390 align:start position:0%
+that 90% white line.
+Then<00:07:14.680><c> we</c><00:07:14.840><c> have</c><00:07:15.320><c> all</c><00:07:15.640><c> of</c><00:07:15.760><c> the</c><00:07:16.000><c> AM32</c><00:07:16.840><c> and</c><00:07:17.000><c> BlueJay</c>
+
+00:07:17.390 --> 00:07:17.400 align:start position:0%
+Then we have all of the AM32 and BlueJay
+ 
+
+00:07:17.400 --> 00:07:19.750 align:start position:0%
+Then we have all of the AM32 and BlueJay
+ESCs.<00:07:17.960><c> They</c><00:07:18.160><c> all</c><00:07:18.400><c> take</c><00:07:18.720><c> almost</c><00:07:19.040><c> exactly</c><00:07:19.640><c> the</c>
+
+00:07:19.750 --> 00:07:19.760 align:start position:0%
+ESCs. They all take almost exactly the
+ 
+
+00:07:19.760 --> 00:07:21.990 align:start position:0%
+ESCs. They all take almost exactly the
+same<00:07:19.960><c> amount</c><00:07:20.200><c> of</c><00:07:20.320><c> time.</c><00:07:20.960><c> It's</c><00:07:21.360><c> 44</c>
+
+00:07:21.990 --> 00:07:22.000 align:start position:0%
+same amount of time. It's 44
+ 
+
+00:07:22.000 --> 00:07:23.870 align:start position:0%
+same amount of time. It's 44
+milliseconds<00:07:22.720><c> to</c><00:07:22.840><c> accelerate</c><00:07:23.320><c> up</c><00:07:23.480><c> to</c><00:07:23.600><c> that</c>
+
+00:07:23.870 --> 00:07:23.880 align:start position:0%
+milliseconds to accelerate up to that
+ 
+
+00:07:23.880 --> 00:07:27.470 align:start position:0%
+milliseconds to accelerate up to that
+white<00:07:24.160><c> 90%</c><00:07:24.760><c> line.</c><00:07:25.600><c> But</c><00:07:25.800><c> the</c><00:07:25.919><c> fastest</c><00:07:26.560><c> ESC,</c><00:07:27.280><c> by</c>
+
+00:07:27.470 --> 00:07:27.480 align:start position:0%
+white 90% line. But the fastest ESC, by
+ 
+
+00:07:27.480 --> 00:07:31.670 align:start position:0%
+white 90% line. But the fastest ESC, by
+some<00:07:27.720><c> margin,</c><00:07:28.360><c> is</c><00:07:28.560><c> the</c><00:07:28.640><c> new</c><00:07:28.880><c> FETtec</c><00:07:29.680><c> SFOC</c><00:07:30.720><c> ESC.</c>
+
+00:07:31.670 --> 00:07:31.680 align:start position:0%
+some margin, is the new FETtec SFOC ESC.
+ 
+
+00:07:31.680 --> 00:07:33.990 align:start position:0%
+some margin, is the new FETtec SFOC ESC.
+That<00:07:31.919><c> reaches</c><00:07:32.320><c> 90%</c><00:07:33.120><c> in</c><00:07:33.240><c> just</c><00:07:33.600><c> 40</c>
+
+00:07:33.990 --> 00:07:34.000 align:start position:0%
+That reaches 90% in just 40
+ 
+
+00:07:34.000 --> 00:07:36.030 align:start position:0%
+That reaches 90% in just 40
+milliseconds.<00:07:35.160><c> And</c><00:07:35.320><c> if</c><00:07:35.440><c> we</c><00:07:35.520><c> think</c><00:07:35.760><c> of</c><00:07:35.840><c> those</c>
+
+00:07:36.030 --> 00:07:36.040 align:start position:0%
+milliseconds. And if we think of those
+ 
+
+00:07:36.040 --> 00:07:38.510 align:start position:0%
+milliseconds. And if we think of those
+differences,<00:07:36.680><c> you</c><00:07:36.760><c> know,</c><00:07:37.240><c> 52</c><00:07:37.840><c> milliseconds</c>
+
+00:07:38.510 --> 00:07:38.520 align:start position:0%
+differences, you know, 52 milliseconds
+ 
+
+00:07:38.520 --> 00:07:40.909 align:start position:0%
+differences, you know, 52 milliseconds
+versus<00:07:38.840><c> 40</c><00:07:39.200><c> milliseconds,</c><00:07:40.080><c> that's</c><00:07:40.280><c> a</c><00:07:40.360><c> 12</c>
+
+00:07:40.909 --> 00:07:40.919 align:start position:0%
+versus 40 milliseconds, that's a 12
+ 
+
+00:07:40.919 --> 00:07:42.790 align:start position:0%
+versus 40 milliseconds, that's a 12
+millisecond<00:07:41.400><c> difference,</c><00:07:42.200><c> and</c><00:07:42.360><c> that's</c><00:07:42.680><c> a</c>
+
+00:07:42.790 --> 00:07:42.800 align:start position:0%
+millisecond difference, and that's a
+ 
+
+00:07:42.800 --> 00:07:45.430 align:start position:0%
+millisecond difference, and that's a
+significant<00:07:43.480><c> amount</c><00:07:43.760><c> of</c><00:07:43.880><c> delay.</c><00:07:44.800><c> That's</c><00:07:45.280><c> as</c>
+
+00:07:45.430 --> 00:07:45.440 align:start position:0%
+significant amount of delay. That's as
+ 
+
+00:07:45.440 --> 00:07:47.630 align:start position:0%
+significant amount of delay. That's as
+much<00:07:45.640><c> delay</c><00:07:45.960><c> as</c><00:07:46.080><c> you're</c><00:07:46.200><c> likely</c><00:07:46.520><c> have</c><00:07:46.960><c> on</c><00:07:47.480><c> your</c>
+
+00:07:47.630 --> 00:07:47.640 align:start position:0%
+much delay as you're likely have on your
+ 
+
+00:07:47.640 --> 00:07:49.990 align:start position:0%
+much delay as you're likely have on your
+filters<00:07:48.280><c> or</c><00:07:48.400><c> your</c><00:07:48.600><c> RC</c><00:07:48.960><c> link.</c><00:07:49.480><c> So,</c><00:07:49.640><c> if</c><00:07:49.760><c> you</c><00:07:49.840><c> can</c>
+
+00:07:49.990 --> 00:07:50.000 align:start position:0%
+filters or your RC link. So, if you can
+ 
+
+00:07:50.000 --> 00:07:52.750 align:start position:0%
+filters or your RC link. So, if you can
+pick<00:07:50.200><c> an</c><00:07:50.360><c> ESC</c><00:07:51.080><c> that</c><00:07:51.520><c> is</c><00:07:51.680><c> significantly</c><00:07:52.240><c> faster</c>
+
+00:07:52.750 --> 00:07:52.760 align:start position:0%
+pick an ESC that is significantly faster
+ 
+
+00:07:52.760 --> 00:07:54.870 align:start position:0%
+pick an ESC that is significantly faster
+to<00:07:52.880><c> accelerate</c><00:07:53.280><c> the</c><00:07:53.360><c> prop,</c><00:07:53.960><c> that</c><00:07:54.280><c> is</c><00:07:54.560><c> going</c><00:07:54.800><c> to</c>
+
+00:07:54.870 --> 00:07:54.880 align:start position:0%
+to accelerate the prop, that is going to
+ 
+
+00:07:54.880 --> 00:07:57.510 align:start position:0%
+to accelerate the prop, that is going to
+make<00:07:55.040><c> the</c><00:07:55.120><c> quad</c><00:07:55.520><c> feel</c><00:07:55.960><c> more</c><00:07:56.240><c> responsive.</c><00:07:57.200><c> And</c>
+
+00:07:57.510 --> 00:07:57.520 align:start position:0%
+make the quad feel more responsive. And
+ 
+
+00:07:57.520 --> 00:07:59.590 align:start position:0%
+make the quad feel more responsive. And
+I<00:07:57.640><c> think</c><00:07:57.920><c> pilots</c><00:07:58.400><c> will</c><00:07:58.720><c> be</c><00:07:58.880><c> able</c><00:07:59.040><c> to</c><00:07:59.160><c> notice</c><00:07:59.520><c> a</c>
+
+00:07:59.590 --> 00:07:59.600 align:start position:0%
+I think pilots will be able to notice a
+ 
+
+00:07:59.600 --> 00:08:00.710 align:start position:0%
+I think pilots will be able to notice a
+difference
+
+00:08:00.710 --> 00:08:00.720 align:start position:0%
+difference
+ 
+
+00:08:00.720 --> 00:08:01.950 align:start position:0%
+difference
+with<00:08:01.000><c> a</c><00:08:01.040><c> difference</c><00:08:01.360><c> of</c><00:08:01.400><c> about</c><00:08:01.720><c> 10</c>
+
+00:08:01.950 --> 00:08:01.960 align:start position:0%
+with a difference of about 10
+ 
+
+00:08:01.960 --> 00:08:03.910 align:start position:0%
+with a difference of about 10
+milliseconds<00:08:02.680><c> in</c><00:08:02.840><c> terms</c><00:08:03.080><c> of</c><00:08:03.200><c> how</c><00:08:03.400><c> fast</c><00:08:03.800><c> the</c>
+
+00:08:03.910 --> 00:08:03.920 align:start position:0%
+milliseconds in terms of how fast the
+ 
+
+00:08:03.920 --> 00:08:06.910 align:start position:0%
+milliseconds in terms of how fast the
+ESC<00:08:04.320><c> accelerates</c><00:08:04.800><c> the</c><00:08:04.880><c> prop</c><00:08:05.600><c> because</c><00:08:06.560><c> we</c>
+
+00:08:06.910 --> 00:08:06.920 align:start position:0%
+ESC accelerates the prop because we
+ 
+
+00:08:06.920 --> 00:08:09.230 align:start position:0%
+ESC accelerates the prop because we
+definitely<00:08:07.360><c> have</c><00:08:07.560><c> anecdotal</c><00:08:08.080><c> evidence</c><00:08:08.600><c> that</c>
+
+00:08:09.230 --> 00:08:09.240 align:start position:0%
+definitely have anecdotal evidence that
+ 
+
+00:08:09.240 --> 00:08:10.830 align:start position:0%
+definitely have anecdotal evidence that
+there<00:08:09.480><c> is</c><00:08:09.600><c> a</c><00:08:09.680><c> perceivable</c><00:08:10.360><c> difference</c>
+
+00:08:10.830 --> 00:08:10.840 align:start position:0%
+there is a perceivable difference
+ 
+
+00:08:10.840 --> 00:08:12.150 align:start position:0%
+there is a perceivable difference
+between
+
+00:08:12.150 --> 00:08:12.160 align:start position:0%
+between
+ 
+
+00:08:12.160 --> 00:08:15.510 align:start position:0%
+between
+um<00:08:12.520><c> video</c><00:08:12.919><c> links</c><00:08:13.480><c> with</c><00:08:14.160><c> 30</c><00:08:14.840><c> and</c><00:08:15.080><c> 40</c>
+
+00:08:15.510 --> 00:08:15.520 align:start position:0%
+um video links with 30 and 40
+ 
+
+00:08:15.520 --> 00:08:17.790 align:start position:0%
+um video links with 30 and 40
+milliseconds<00:08:16.040><c> of</c><00:08:16.120><c> delay.</c><00:08:16.520><c> So,</c><00:08:17.240><c> I</c><00:08:17.400><c> definitely</c>
+
+00:08:17.790 --> 00:08:17.800 align:start position:0%
+milliseconds of delay. So, I definitely
+ 
+
+00:08:17.800 --> 00:08:19.710 align:start position:0%
+milliseconds of delay. So, I definitely
+think<00:08:18.000><c> that</c><00:08:18.120><c> it's</c><00:08:18.320><c> worth</c><00:08:18.760><c> having</c><00:08:19.160><c> this</c><00:08:19.400><c> extra</c>
+
+00:08:19.710 --> 00:08:19.720 align:start position:0%
+think that it's worth having this extra
+ 
+
+00:08:19.720 --> 00:08:21.110 align:start position:0%
+think that it's worth having this extra
+responsiveness,<00:08:20.720><c> and</c><00:08:20.840><c> it's</c><00:08:20.960><c> really</c>
+
+00:08:21.110 --> 00:08:21.120 align:start position:0%
+responsiveness, and it's really
+ 
+
+00:08:21.120 --> 00:08:23.590 align:start position:0%
+responsiveness, and it's really
+impressive<00:08:21.600><c> to</c><00:08:21.760><c> see</c><00:08:22.000><c> this</c><00:08:22.520><c> prototype</c><00:08:23.160><c> FETtec</c>
+
+00:08:23.590 --> 00:08:23.600 align:start position:0%
+impressive to see this prototype FETtec
+ 
+
+00:08:23.600 --> 00:08:26.230 align:start position:0%
+impressive to see this prototype FETtec
+ESC<00:08:24.560><c> um</c><00:08:24.840><c> beating</c><00:08:25.160><c> out</c><00:08:25.560><c> all</c><00:08:25.919><c> of</c><00:08:26.080><c> the</c>
+
+00:08:26.230 --> 00:08:26.240 align:start position:0%
+ESC um beating out all of the
+ 
+
+00:08:26.240 --> 00:08:28.350 align:start position:0%
+ESC um beating out all of the
+established<00:08:26.680><c> competition.</c><00:08:27.760><c> When</c><00:08:27.919><c> it</c><00:08:28.000><c> comes</c>
+
+00:08:28.350 --> 00:08:28.360 align:start position:0%
+established competition. When it comes
+ 
+
+00:08:28.360 --> 00:08:30.870 align:start position:0%
+established competition. When it comes
+to<00:08:28.680><c> deceleration,</c><00:08:29.600><c> we</c><00:08:29.720><c> can</c><00:08:29.880><c> perform</c><00:08:30.360><c> exactly</c>
+
+00:08:30.870 --> 00:08:30.880 align:start position:0%
+to deceleration, we can perform exactly
+ 
+
+00:08:30.880 --> 00:08:33.070 align:start position:0%
+to deceleration, we can perform exactly
+the<00:08:30.960><c> same</c><00:08:31.200><c> analysis.</c><00:08:32.200><c> But</c><00:08:32.440><c> in</c><00:08:32.520><c> this</c><00:08:32.680><c> case,</c><00:08:32.919><c> we</c>
+
+00:08:33.070 --> 00:08:33.080 align:start position:0%
+the same analysis. But in this case, we
+ 
+
+00:08:33.080 --> 00:08:35.190 align:start position:0%
+the same analysis. But in this case, we
+find<00:08:33.400><c> that</c><00:08:33.599><c> all</c><00:08:33.800><c> of</c><00:08:33.880><c> the</c><00:08:34.000><c> ESCs</c><00:08:34.599><c> perform</c><00:08:35.000><c> pretty</c>
+
+00:08:35.190 --> 00:08:35.200 align:start position:0%
+find that all of the ESCs perform pretty
+ 
+
+00:08:35.200 --> 00:08:37.430 align:start position:0%
+find that all of the ESCs perform pretty
+much<00:08:35.400><c> exactly</c><00:08:35.880><c> the</c><00:08:35.960><c> same</c><00:08:36.360><c> when</c><00:08:36.680><c> decelerating</c>
+
+00:08:37.430 --> 00:08:37.440 align:start position:0%
+much exactly the same when decelerating
+ 
+
+00:08:37.440 --> 00:08:38.709 align:start position:0%
+much exactly the same when decelerating
+the<00:08:37.520><c> motor,</c><00:08:38.120><c> and</c><00:08:38.240><c> there's</c><00:08:38.360><c> no</c><00:08:38.520><c> real</c>
+
+00:08:38.709 --> 00:08:38.719 align:start position:0%
+the motor, and there's no real
+ 
+
+00:08:38.719 --> 00:08:40.870 align:start position:0%
+the motor, and there's no real
+difference.<00:08:39.640><c> We</c><00:08:39.800><c> do</c><00:08:40.000><c> see</c><00:08:40.240><c> a</c><00:08:40.320><c> little</c><00:08:40.520><c> bit</c><00:08:40.680><c> more</c>
+
+00:08:40.870 --> 00:08:40.880 align:start position:0%
+difference. We do see a little bit more
+ 
+
+00:08:40.880 --> 00:08:44.510 align:start position:0%
+difference. We do see a little bit more
+noise<00:08:41.440><c> on</c><00:08:41.560><c> the</c><00:08:41.680><c> RPM</c><00:08:42.080><c> signal</c><00:08:42.760><c> at</c><00:08:43.159><c> uh</c><00:08:43.479><c> lower</c><00:08:43.800><c> RPMs</c>
+
+00:08:44.510 --> 00:08:44.520 align:start position:0%
+noise on the RPM signal at uh lower RPMs
+ 
+
+00:08:44.520 --> 00:08:47.829 align:start position:0%
+noise on the RPM signal at uh lower RPMs
+for<00:08:44.880><c> the</c><00:08:45.040><c> FETtec</c><00:08:45.640><c> SFOC</c><00:08:46.400><c> ESC,</c><00:08:47.240><c> but</c><00:08:47.520><c> this</c><00:08:47.720><c> is</c>
+
+00:08:47.829 --> 00:08:47.839 align:start position:0%
+for the FETtec SFOC ESC, but this is
+ 
+
+00:08:47.839 --> 00:08:49.990 align:start position:0%
+for the FETtec SFOC ESC, but this is
+prototype<00:08:48.440><c> hardware,</c><00:08:48.920><c> prototype</c><00:08:49.480><c> software.</c>
+
+00:08:49.990 --> 00:08:50.000 align:start position:0%
+prototype hardware, prototype software.
+ 
+
+00:08:50.000 --> 00:08:52.670 align:start position:0%
+prototype hardware, prototype software.
+So,<00:08:50.880><c> Felix</c><00:08:51.200><c> is</c><00:08:51.400><c> actively</c><00:08:51.839><c> working</c><00:08:52.200><c> on</c><00:08:52.320><c> this,</c>
+
+00:08:52.670 --> 00:08:52.680 align:start position:0%
+So, Felix is actively working on this,
+ 
+
+00:08:52.680 --> 00:08:54.430 align:start position:0%
+So, Felix is actively working on this,
+and<00:08:52.839><c> I</c><00:08:52.920><c> expect</c><00:08:53.400><c> that</c><00:08:53.680><c> this</c><00:08:53.880><c> will</c><00:08:54.000><c> probably</c><00:08:54.320><c> be</c>
+
+00:08:54.430 --> 00:08:54.440 align:start position:0%
+and I expect that this will probably be
+ 
+
+00:08:54.440 --> 00:08:56.350 align:start position:0%
+and I expect that this will probably be
+resolved<00:08:55.120><c> long</c><00:08:55.400><c> before</c><00:08:55.680><c> the</c><00:08:55.800><c> firmware</c><00:08:56.200><c> is</c>
+
+00:08:56.350 --> 00:08:56.360 align:start position:0%
+resolved long before the firmware is
+ 
+
+00:08:56.360 --> 00:08:58.670 align:start position:0%
+resolved long before the firmware is
+actually<00:08:56.760><c> released,</c><00:08:57.560><c> and</c><00:08:57.880><c> I</c><00:08:58.000><c> will</c><00:08:58.240><c> verify</c>
+
+00:08:58.670 --> 00:08:58.680 align:start position:0%
+actually released, and I will verify
+ 
+
+00:08:58.680 --> 00:09:00.510 align:start position:0%
+actually released, and I will verify
+that<00:08:58.920><c> in</c><00:08:59.040><c> future</c><00:08:59.320><c> testing.</c>
+
+00:09:00.510 --> 00:09:00.520 align:start position:0%
+that in future testing.
+ 
+
+00:09:00.520 --> 00:09:01.990 align:start position:0%
+that in future testing.
+The<00:09:00.680><c> final</c><00:09:00.960><c> test</c><00:09:01.200><c> we're</c><00:09:01.280><c> going</c><00:09:01.400><c> to</c><00:09:01.480><c> look</c><00:09:01.680><c> at</c><00:09:01.839><c> is</c>
+
+00:09:01.990 --> 00:09:02.000 align:start position:0%
+The final test we're going to look at is
+ 
+
+00:09:02.000 --> 00:09:04.950 align:start position:0%
+The final test we're going to look at is
+the<00:09:02.200><c> flywheel</c><00:09:02.920><c> dyno</c><00:09:03.280><c> test.</c><00:09:04.120><c> And</c><00:09:04.280><c> here,</c><00:09:04.760><c> we're</c>
+
+00:09:04.950 --> 00:09:04.960 align:start position:0%
+the flywheel dyno test. And here, we're
+ 
+
+00:09:04.960 --> 00:09:07.670 align:start position:0%
+the flywheel dyno test. And here, we're
+accelerating<00:09:05.600><c> the</c><00:09:05.680><c> motor</c><00:09:05.960><c> from</c><00:09:06.200><c> 6</c><00:09:06.800><c> to</c><00:09:07.040><c> 50%</c>
+
+00:09:07.670 --> 00:09:07.680 align:start position:0%
+accelerating the motor from 6 to 50%
+ 
+
+00:09:07.680 --> 00:09:10.390 align:start position:0%
+accelerating the motor from 6 to 50%
+throttle,<00:09:08.520><c> and</c><00:09:08.680><c> we</c><00:09:08.839><c> have</c><00:09:09.080><c> a</c><00:09:09.160><c> 100</c><00:09:09.600><c> kg</c><00:09:10.000><c> mm</c>
+
+00:09:10.390 --> 00:09:10.400 align:start position:0%
+throttle, and we have a 100 kg mm
+ 
+
+00:09:10.400 --> 00:09:12.790 align:start position:0%
+throttle, and we have a 100 kg mm
+squared<00:09:10.720><c> flywheel</c><00:09:11.160><c> attached</c><00:09:11.480><c> to</c><00:09:11.560><c> the</c><00:09:11.640><c> motor.</c>
+
+00:09:12.790 --> 00:09:12.800 align:start position:0%
+squared flywheel attached to the motor.
+ 
+
+00:09:12.800 --> 00:09:14.630 align:start position:0%
+squared flywheel attached to the motor.
+The<00:09:13.000><c> ESC</c><00:09:13.400><c> that's</c><00:09:13.640><c> able</c><00:09:13.880><c> to</c><00:09:14.040><c> accelerate</c><00:09:14.560><c> the</c>
+
+00:09:14.630 --> 00:09:14.640 align:start position:0%
+The ESC that's able to accelerate the
+ 
+
+00:09:14.640 --> 00:09:16.510 align:start position:0%
+The ESC that's able to accelerate the
+motor<00:09:15.120><c> more</c><00:09:15.360><c> quickly</c><00:09:15.760><c> with</c><00:09:15.960><c> the</c><00:09:16.040><c> flywheel</c>
+
+00:09:16.510 --> 00:09:16.520 align:start position:0%
+motor more quickly with the flywheel
+ 
+
+00:09:16.520 --> 00:09:18.990 align:start position:0%
+motor more quickly with the flywheel
+attached<00:09:17.200><c> is</c><00:09:17.440><c> able</c><00:09:17.680><c> to</c><00:09:17.800><c> generate</c><00:09:18.200><c> more</c><00:09:18.520><c> torque</c>
+
+00:09:18.990 --> 00:09:19.000 align:start position:0%
+attached is able to generate more torque
+ 
+
+00:09:19.000 --> 00:09:20.910 align:start position:0%
+attached is able to generate more torque
+out<00:09:19.120><c> of</c><00:09:19.200><c> the</c><00:09:19.280><c> same</c><00:09:19.520><c> motor,</c><00:09:20.160><c> and</c><00:09:20.280><c> therefore</c><00:09:20.720><c> is</c>
+
+00:09:20.910 --> 00:09:20.920 align:start position:0%
+out of the same motor, and therefore is
+ 
+
+00:09:20.920 --> 00:09:22.710 align:start position:0%
+out of the same motor, and therefore is
+providing<00:09:21.400><c> improved</c><00:09:21.839><c> performance,</c><00:09:22.600><c> and</c>
+
+00:09:22.710 --> 00:09:22.720 align:start position:0%
+providing improved performance, and
+ 
+
+00:09:22.720 --> 00:09:23.910 align:start position:0%
+providing improved performance, and
+that's<00:09:23.000><c> what</c><00:09:23.080><c> we're</c><00:09:23.160><c> going</c><00:09:23.280><c> to</c><00:09:23.320><c> be</c><00:09:23.400><c> looking</c><00:09:23.680><c> at</c>
+
+00:09:23.910 --> 00:09:23.920 align:start position:0%
+that's what we're going to be looking at
+ 
+
+00:09:23.920 --> 00:09:26.190 align:start position:0%
+that's what we're going to be looking at
+with<00:09:24.040><c> this</c><00:09:24.200><c> test.</c><00:09:25.080><c> This</c><00:09:25.280><c> flywheel</c><00:09:25.600><c> dyno</c><00:09:25.839><c> test</c>
+
+00:09:26.190 --> 00:09:26.200 align:start position:0%
+with this test. This flywheel dyno test
+ 
+
+00:09:26.200 --> 00:09:27.750 align:start position:0%
+with this test. This flywheel dyno test
+is<00:09:26.320><c> probably</c><00:09:26.640><c> the</c><00:09:26.720><c> most</c><00:09:26.960><c> challenging</c><00:09:27.480><c> test</c>
+
+00:09:27.750 --> 00:09:27.760 align:start position:0%
+is probably the most challenging test
+ 
+
+00:09:27.760 --> 00:09:29.829 align:start position:0%
+is probably the most challenging test
+for<00:09:27.880><c> any</c><00:09:28.080><c> ESC,</c><00:09:28.839><c> and</c><00:09:28.960><c> we</c><00:09:29.080><c> can</c><00:09:29.200><c> see</c><00:09:29.480><c> a</c><00:09:29.560><c> big</c>
+
+00:09:29.829 --> 00:09:29.839 align:start position:0%
+for any ESC, and we can see a big
+ 
+
+00:09:29.839 --> 00:09:31.590 align:start position:0%
+for any ESC, and we can see a big
+differences<00:09:30.320><c> in</c><00:09:30.440><c> performance</c><00:09:31.200><c> between</c><00:09:31.520><c> the</c>
+
+00:09:31.590 --> 00:09:31.600 align:start position:0%
+differences in performance between the
+ 
+
+00:09:31.600 --> 00:09:33.670 align:start position:0%
+differences in performance between the
+different<00:09:32.000><c> ESCs</c><00:09:32.440><c> that</c><00:09:32.560><c> we're</c><00:09:32.720><c> testing.</c>
+
+00:09:33.670 --> 00:09:33.680 align:start position:0%
+different ESCs that we're testing.
+ 
+
+00:09:33.680 --> 00:09:35.470 align:start position:0%
+different ESCs that we're testing.
+Again,<00:09:34.080><c> we're</c><00:09:34.240><c> looking</c><00:09:34.560><c> at</c><00:09:34.800><c> time</c><00:09:35.280><c> on</c><00:09:35.360><c> the</c>
+
+00:09:35.470 --> 00:09:35.480 align:start position:0%
+Again, we're looking at time on the
+ 
+
+00:09:35.480 --> 00:09:38.310 align:start position:0%
+Again, we're looking at time on the
+x-axis<00:09:36.120><c> in</c><00:09:36.280><c> milliseconds</c><00:09:37.240><c> and</c><00:09:37.640><c> rpm</c><00:09:38.160><c> of</c><00:09:38.240><c> the</c>
+
+00:09:38.310 --> 00:09:38.320 align:start position:0%
+x-axis in milliseconds and rpm of the
+ 
+
+00:09:38.320 --> 00:09:41.350 align:start position:0%
+x-axis in milliseconds and rpm of the
+motor<00:09:38.680><c> on</c><00:09:38.840><c> the</c><00:09:38.960><c> y</c><00:09:39.160><c> axis.</c><00:09:40.040><c> And</c><00:09:40.480><c> all</c><00:09:40.760><c> of</c><00:09:40.920><c> the</c>
+
+00:09:41.350 --> 00:09:41.360 align:start position:0%
+motor on the y axis. And all of the
+ 
+
+00:09:41.360 --> 00:09:43.430 align:start position:0%
+motor on the y axis. And all of the
+throttle<00:09:41.720><c> steps</c><00:09:42.160><c> are</c><00:09:42.320><c> starting</c><00:09:42.920><c> at</c><00:09:43.120><c> 0</c>
+
+00:09:43.430 --> 00:09:43.440 align:start position:0%
+throttle steps are starting at 0
+ 
+
+00:09:43.440 --> 00:09:45.510 align:start position:0%
+throttle steps are starting at 0
+milliseconds,<00:09:44.280><c> and</c><00:09:44.400><c> then</c><00:09:44.560><c> we're</c><00:09:44.760><c> watching</c>
+
+00:09:45.510 --> 00:09:45.520 align:start position:0%
+milliseconds, and then we're watching
+ 
+
+00:09:45.520 --> 00:09:47.710 align:start position:0%
+milliseconds, and then we're watching
+the<00:09:45.680><c> ESC</c><00:09:46.240><c> try</c><00:09:46.440><c> and</c><00:09:46.520><c> accelerate</c><00:09:47.080><c> that</c><00:09:47.280><c> motor</c>
+
+00:09:47.710 --> 00:09:47.720 align:start position:0%
+the ESC try and accelerate that motor
+ 
+
+00:09:47.720 --> 00:09:50.310 align:start position:0%
+the ESC try and accelerate that motor
+with<00:09:48.000><c> that</c><00:09:48.200><c> flywheel</c><00:09:48.640><c> attached</c><00:09:49.440><c> as</c><00:09:49.720><c> fast</c><00:09:50.160><c> as</c>
+
+00:09:50.310 --> 00:09:50.320 align:start position:0%
+with that flywheel attached as fast as
+ 
+
+00:09:50.320 --> 00:09:53.470 align:start position:0%
+with that flywheel attached as fast as
+possible.<00:09:51.280><c> We</c><00:09:51.360><c> can</c><00:09:51.560><c> see</c><00:09:51.760><c> that</c><00:09:52.120><c> the</c><00:09:52.400><c> BLHeli_32</c>
+
+00:09:53.470 --> 00:09:53.480 align:start position:0%
+possible. We can see that the BLHeli_32
+ 
+
+00:09:53.480 --> 00:09:57.390 align:start position:0%
+possible. We can see that the BLHeli_32
+ESC,<00:09:53.920><c> the</c><00:09:54.080><c> T-Motor</c><00:09:54.560><c> F55A,</c><00:09:55.840><c> is</c><00:09:56.360><c> the</c><00:09:56.520><c> slowest</c><00:09:57.280><c> to</c>
+
+00:09:57.390 --> 00:09:57.400 align:start position:0%
+ESC, the T-Motor F55A, is the slowest to
+ 
+
+00:09:57.400 --> 00:09:59.030 align:start position:0%
+ESC, the T-Motor F55A, is the slowest to
+accelerate<00:09:57.840><c> that</c><00:09:58.000><c> flywheel.</c><00:09:58.640><c> That</c><00:09:58.840><c> means</c>
+
+00:09:59.030 --> 00:09:59.040 align:start position:0%
+accelerate that flywheel. That means
+ 
+
+00:09:59.040 --> 00:10:01.670 align:start position:0%
+accelerate that flywheel. That means
+that<00:09:59.160><c> it's</c><00:09:59.320><c> generating</c><00:10:00.000><c> the</c><00:10:00.120><c> least</c><00:10:00.600><c> torque.</c>
+
+00:10:01.670 --> 00:10:01.680 align:start position:0%
+that it's generating the least torque.
+ 
+
+00:10:01.680 --> 00:10:05.470 align:start position:0%
+that it's generating the least torque.
+Then<00:10:02.000><c> we</c><00:10:02.200><c> have</c><00:10:02.440><c> the</c><00:10:02.640><c> Skystars</c><00:10:03.400><c> KM55A</c><00:10:04.760><c> AM32</c>
+
+00:10:05.470 --> 00:10:05.480 align:start position:0%
+Then we have the Skystars KM55A AM32
+ 
+
+00:10:05.480 --> 00:10:08.230 align:start position:0%
+Then we have the Skystars KM55A AM32
+ESC.<00:10:06.120><c> This</c><00:10:06.280><c> is</c><00:10:06.440><c> only</c><00:10:06.680><c> a</c><00:10:06.760><c> 20</c><00:10:07.120><c> by</c><00:10:07.240><c> 20</c><00:10:07.600><c> ESC,</c><00:10:08.080><c> so</c>
+
+00:10:08.230 --> 00:10:08.240 align:start position:0%
+ESC. This is only a 20 by 20 ESC, so
+ 
+
+00:10:08.240 --> 00:10:10.950 align:start position:0%
+ESC. This is only a 20 by 20 ESC, so
+it's<00:10:08.360><c> a</c><00:10:08.440><c> smaller</c><00:10:09.000><c> ESC,</c><00:10:09.960><c> and</c><00:10:10.080><c> it's</c><00:10:10.240><c> still</c><00:10:10.720><c> able</c>
+
+00:10:10.950 --> 00:10:10.960 align:start position:0%
+it's a smaller ESC, and it's still able
+ 
+
+00:10:10.960 --> 00:10:12.630 align:start position:0%
+it's a smaller ESC, and it's still able
+to<00:10:11.080><c> accelerate</c><00:10:11.480><c> that</c><00:10:11.680><c> flywheel</c><00:10:12.200><c> nice</c><00:10:12.520><c> and</c>
+
+00:10:12.630 --> 00:10:12.640 align:start position:0%
+to accelerate that flywheel nice and
+ 
+
+00:10:12.640 --> 00:10:13.870 align:start position:0%
+to accelerate that flywheel nice and
+quickly.
+
+00:10:13.870 --> 00:10:13.880 align:start position:0%
+quickly.
+ 
+
+00:10:13.880 --> 00:10:17.030 align:start position:0%
+quickly.
+Then<00:10:14.080><c> we</c><00:10:14.240><c> have</c><00:10:14.800><c> the</c><00:10:15.240><c> SpeedyBee</c><00:10:15.760><c> 55A</c><00:10:16.600><c> BlueJay</c>
+
+00:10:17.030 --> 00:10:17.040 align:start position:0%
+Then we have the SpeedyBee 55A BlueJay
+ 
+
+00:10:17.040 --> 00:10:21.430 align:start position:0%
+Then we have the SpeedyBee 55A BlueJay
+ESC<00:10:17.880><c> and</c><00:10:18.080><c> the</c><00:10:18.240><c> Mamba</c><00:10:18.760><c> F60</c><00:10:19.360><c> Pro</c><00:10:19.960><c> AM32</c><00:10:21.240><c> ESC.</c>
+
+00:10:21.430 --> 00:10:21.440 align:start position:0%
+ESC and the Mamba F60 Pro AM32 ESC.
+ 
+
+00:10:21.440 --> 00:10:24.030 align:start position:0%
+ESC and the Mamba F60 Pro AM32 ESC.
+These<00:10:21.720><c> are</c><00:10:21.880><c> 30</c><00:10:22.120><c> by</c><00:10:22.280><c> 30</c><00:10:22.560><c> ESCs,</c><00:10:23.160><c> and</c><00:10:23.720><c> they</c><00:10:23.920><c> are</c>
+
+00:10:24.030 --> 00:10:24.040 align:start position:0%
+These are 30 by 30 ESCs, and they are
+ 
+
+00:10:24.040 --> 00:10:25.830 align:start position:0%
+These are 30 by 30 ESCs, and they are
+generating<00:10:24.600><c> a</c><00:10:24.680><c> lot</c><00:10:24.840><c> of</c><00:10:24.960><c> torque,</c><00:10:25.560><c> and</c><00:10:25.680><c> they</c><00:10:25.760><c> are</c>
+
+00:10:25.830 --> 00:10:25.840 align:start position:0%
+generating a lot of torque, and they are
+ 
+
+00:10:25.840 --> 00:10:27.630 align:start position:0%
+generating a lot of torque, and they are
+accelerating<00:10:26.440><c> that</c><00:10:26.600><c> flywheel</c><00:10:27.280><c> really</c>
+
+00:10:27.630 --> 00:10:27.640 align:start position:0%
+accelerating that flywheel really
+ 
+
+00:10:27.640 --> 00:10:28.710 align:start position:0%
+accelerating that flywheel really
+quickly.
+
+00:10:28.710 --> 00:10:28.720 align:start position:0%
+quickly.
+ 
+
+00:10:28.720 --> 00:10:30.750 align:start position:0%
+quickly.
+But<00:10:29.120><c> again,</c><00:10:29.400><c> the</c><00:10:29.520><c> standout</c><00:10:30.000><c> performer</c><00:10:30.400><c> here</c>
+
+00:10:30.750 --> 00:10:30.760 align:start position:0%
+But again, the standout performer here
+ 
+
+00:10:30.760 --> 00:10:36.030 align:start position:0%
+But again, the standout performer here
+is<00:10:30.920><c> this</c><00:10:31.320><c> prototype</c><00:10:32.440><c> FETtec</c><00:10:33.120><c> 65A</c><00:10:34.280><c> SFOC</c><00:10:35.080><c> ESC.</c>
+
+00:10:36.030 --> 00:10:36.040 align:start position:0%
+is this prototype FETtec 65A SFOC ESC.
+ 
+
+00:10:36.040 --> 00:10:38.230 align:start position:0%
+is this prototype FETtec 65A SFOC ESC.
+It's<00:10:36.360><c> able</c><00:10:36.600><c> to</c><00:10:36.720><c> generate</c><00:10:37.200><c> significantly</c><00:10:38.000><c> more</c>
+
+00:10:38.230 --> 00:10:38.240 align:start position:0%
+It's able to generate significantly more
+ 
+
+00:10:38.240 --> 00:10:40.750 align:start position:0%
+It's able to generate significantly more
+torque<00:10:38.960><c> than</c><00:10:39.400><c> all</c><00:10:39.600><c> of</c><00:10:39.680><c> the</c><00:10:39.800><c> other</c><00:10:39.960><c> motors</c><00:10:40.640><c> and</c>
+
+00:10:40.750 --> 00:10:40.760 align:start position:0%
+torque than all of the other motors and
+ 
+
+00:10:40.760 --> 00:10:42.590 align:start position:0%
+torque than all of the other motors and
+accelerate<00:10:41.280><c> that</c><00:10:41.520><c> flywheel</c><00:10:42.160><c> that</c><00:10:42.400><c> much</c>
+
+00:10:42.590 --> 00:10:42.600 align:start position:0%
+accelerate that flywheel that much
+ 
+
+00:10:42.600 --> 00:10:43.750 align:start position:0%
+accelerate that flywheel that much
+faster.
+
+00:10:43.750 --> 00:10:43.760 align:start position:0%
+faster.
+ 
+
+00:10:43.760 --> 00:10:44.990 align:start position:0%
+faster.
+I<00:10:43.839><c> hope</c><00:10:44.040><c> you</c><00:10:44.120><c> found</c><00:10:44.320><c> those</c><00:10:44.520><c> test</c><00:10:44.720><c> results</c>
+
+00:10:44.990 --> 00:10:45.000 align:start position:0%
+I hope you found those test results
+ 
+
+00:10:45.000 --> 00:10:46.670 align:start position:0%
+I hope you found those test results
+interesting.<00:10:45.600><c> I</c><00:10:45.720><c> am</c><00:10:45.920><c> thrilled</c><00:10:46.400><c> that</c><00:10:46.520><c> we</c>
+
+00:10:46.670 --> 00:10:46.680 align:start position:0%
+interesting. I am thrilled that we
+ 
+
+00:10:46.680 --> 00:10:49.350 align:start position:0%
+interesting. I am thrilled that we
+finally<00:10:47.320><c> have</c><00:10:47.800><c> a</c><00:10:47.920><c> tool</c><00:10:48.600><c> that</c><00:10:48.720><c> allows</c><00:10:49.040><c> us</c><00:10:49.160><c> to</c>
+
+00:10:49.350 --> 00:10:49.360 align:start position:0%
+finally have a tool that allows us to
+ 
+
+00:10:49.360 --> 00:10:52.030 align:start position:0%
+finally have a tool that allows us to
+see<00:10:49.720><c> the</c><00:10:49.880><c> differences</c><00:10:50.600><c> between</c><00:10:51.000><c> these</c><00:10:51.240><c> ESCs</c>
+
+00:10:52.030 --> 00:10:52.040 align:start position:0%
+see the differences between these ESCs
+ 
+
+00:10:52.040 --> 00:10:53.910 align:start position:0%
+see the differences between these ESCs
+really,<00:10:52.320><c> really</c><00:10:52.520><c> clearly,</c><00:10:53.240><c> and</c><00:10:53.360><c> we</c><00:10:53.480><c> can</c><00:10:53.640><c> start</c>
+
+00:10:53.910 --> 00:10:53.920 align:start position:0%
+really, really clearly, and we can start
+ 
+
+00:10:53.920 --> 00:10:55.829 align:start position:0%
+really, really clearly, and we can start
+to<00:10:54.000><c> understand</c><00:10:54.600><c> which</c><00:10:54.839><c> ESCs</c><00:10:55.320><c> are</c><00:10:55.440><c> performing</c>
+
+00:10:55.829 --> 00:10:55.839 align:start position:0%
+to understand which ESCs are performing
+ 
+
+00:10:55.839 --> 00:10:57.790 align:start position:0%
+to understand which ESCs are performing
+better<00:10:56.120><c> and</c><00:10:56.240><c> which</c><00:10:56.440><c> are</c><00:10:56.520><c> performing</c><00:10:56.920><c> worse.</c>
+
+00:10:57.790 --> 00:10:57.800 align:start position:0%
+better and which are performing worse.
+ 
+
+00:10:57.800 --> 00:10:59.470 align:start position:0%
+better and which are performing worse.
+If<00:10:57.880><c> you're</c><00:10:58.040><c> interested</c><00:10:58.360><c> to</c><00:10:58.480><c> learn</c><00:10:58.760><c> more</c><00:10:59.120><c> about</c>
+
+00:10:59.470 --> 00:10:59.480 align:start position:0%
+If you're interested to learn more about
+ 
+
+00:10:59.480 --> 00:11:03.950 align:start position:0%
+If you're interested to learn more about
+the<00:10:59.720><c> FETtec</c><00:11:00.400><c> SFOC</c><00:11:01.280><c> ESC</c><00:11:02.120><c> and</c><00:11:02.320><c> the</c><00:11:02.520><c> totally</c><00:11:03.360><c> new</c>
+
+00:11:03.950 --> 00:11:03.960 align:start position:0%
+the FETtec SFOC ESC and the totally new
+ 
+
+00:11:03.960 --> 00:11:06.110 align:start position:0%
+the FETtec SFOC ESC and the totally new
+and<00:11:04.120><c> unique</c><00:11:04.400><c> approach</c><00:11:04.839><c> that</c><00:11:04.960><c> they</c><00:11:05.120><c> are</c><00:11:05.280><c> using</c>
+
+00:11:06.110 --> 00:11:06.120 align:start position:0%
+and unique approach that they are using
+ 
+
+00:11:06.120 --> 00:11:08.550 align:start position:0%
+and unique approach that they are using
+to<00:11:06.480><c> control</c><00:11:07.080><c> the</c><00:11:07.200><c> motor,</c><00:11:07.880><c> then</c><00:11:08.240><c> make</c><00:11:08.400><c> sure</c>
+
+00:11:08.550 --> 00:11:08.560 align:start position:0%
+to control the motor, then make sure
+ 
+
+00:11:08.560 --> 00:11:09.710 align:start position:0%
+to control the motor, then make sure
+you're<00:11:08.640><c> subscribed</c><00:11:09.160><c> because</c><00:11:09.440><c> I'm</c><00:11:09.560><c> going</c><00:11:09.680><c> to</c>
+
+00:11:09.710 --> 00:11:09.720 align:start position:0%
+you're subscribed because I'm going to
+ 
+
+00:11:09.720 --> 00:11:11.390 align:start position:0%
+you're subscribed because I'm going to
+be<00:11:09.800><c> doing</c><00:11:10.040><c> a</c><00:11:10.120><c> video</c><00:11:10.440><c> on</c><00:11:10.560><c> that</c><00:11:10.880><c> very,</c><00:11:11.160><c> very</c>
+
+00:11:11.390 --> 00:11:11.400 align:start position:0%
+be doing a video on that very, very
+ 
+
+00:11:11.400 --> 00:11:13.070 align:start position:0%
+be doing a video on that very, very
+soon.<00:11:11.800><c> We're</c><00:11:11.920><c> going</c><00:11:12.040><c> to</c><00:11:12.120><c> be</c><00:11:12.240><c> deep</c><00:11:12.560><c> diving</c><00:11:12.960><c> on</c>
+
+00:11:13.070 --> 00:11:13.080 align:start position:0%
+soon. We're going to be deep diving on
+ 
+
+00:11:13.080 --> 00:11:16.110 align:start position:0%
+soon. We're going to be deep diving on
+the<00:11:13.200><c> technical</c><00:11:13.640><c> detail</c><00:11:14.280><c> behind</c><00:11:15.040><c> their</c><00:11:15.680><c> simple</c>
+
+00:11:16.110 --> 00:11:16.120 align:start position:0%
+the technical detail behind their simple
+ 
+
+00:11:16.120 --> 00:11:17.750 align:start position:0%
+the technical detail behind their simple
+field<00:11:16.480><c> orientated</c><00:11:17.040><c> control</c><00:11:17.520><c> that</c><00:11:17.640><c> they're</c>
+
+00:11:17.750 --> 00:11:17.760 align:start position:0%
+field orientated control that they're
+ 
+
+00:11:17.760 --> 00:11:20.190 align:start position:0%
+field orientated control that they're
+using<00:11:18.360><c> to</c><00:11:18.480><c> drive</c><00:11:18.800><c> these</c><00:11:19.000><c> motors.</c>
+
+00:11:20.190 --> 00:11:20.200 align:start position:0%
+using to drive these motors.
+ 
+
+00:11:20.200 --> 00:11:21.750 align:start position:0%
+using to drive these motors.
+That's<00:11:20.400><c> all</c><00:11:20.520><c> I</c><00:11:20.560><c> have</c><00:11:20.760><c> for</c><00:11:20.839><c> you</c><00:11:20.920><c> for</c><00:11:21.000><c> today.</c><00:11:21.480><c> So,</c>
+
+00:11:21.750 --> 00:11:21.760 align:start position:0%
+That's all I have for you for today. So,
+ 
+
+00:11:21.760 --> 00:11:23.630 align:start position:0%
+That's all I have for you for today. So,
+until<00:11:22.080><c> next</c><00:11:22.320><c> time,</c><00:11:22.600><c> I</c><00:11:22.680><c> wish</c><00:11:22.880><c> you</c><00:11:23.000><c> all</c><00:11:23.280><c> very,</c>
+
+00:11:23.630 --> 00:11:23.640 align:start position:0%
+until next time, I wish you all very,
+ 
+
+00:11:23.640 --> 00:11:25.350 align:start position:0%
+until next time, I wish you all very,
+very<00:11:23.839><c> happy</c><00:11:24.120><c> flying,</c><00:11:24.760><c> and</c><00:11:24.960><c> I'll</c><00:11:25.040><c> see</c><00:11:25.200><c> you</c><00:11:25.280><c> in</c>
+
+00:11:25.350 --> 00:11:25.360 align:start position:0%
+very happy flying, and I'll see you in
+ 
+
+00:11:25.360 --> 00:11:36.030 align:start position:0%
+very happy flying, and I'll see you in
+the<00:11:25.400><c> next</c><00:11:25.640><c> one.</c>
+
+00:11:36.030 --> 00:11:36.040 align:start position:0%
+ 
+ 
+
+00:11:36.040 --> 00:11:38.120 align:start position:0%
+ 
+Hey.
+

@@ -28,6 +28,19 @@ This document provides an architectural and functional comparison between all mo
 
 ---
 
+## 3. Independent Bench-Test Findings (Firmware-Level, Hardware Held Constant)
+
+Testing that held motor/prop/PCB hardware constant and varied only firmware found real firmware-level performance differences, distinct from ordinary board-to-board hardware variance:
+
+* **Torque-curve shape:** on identical PCB hardware, BLHeli_32 firmware produced a torque curve peaking later (higher RPM) and higher in magnitude than AM32 firmware on the same board. Sourced (Chris Rosser, [pH4K3ErugW4](https://youtu.be/pH4K3ErugW4), [mdM4jEWOqx4](https://youtu.be/mdM4jEWOqx4)).
+* **Low-throttle efficiency:** BLHeli_32 measured less efficient than AM32 at low throttle in the same test batch, but comparable to or better than AM32 at full throttle, where efficiency is dominated by FET on-resistance rather than firmware. Sourced (Chris Rosser, [mdM4jEWOqx4](https://youtu.be/mdM4jEWOqx4)).
+* **Step-response latency:** in one bench comparison, a BLHeli_32 unit reached 90% of a commanded throttle step slower than the AM32 and Bluejay units in the same batch (on the order of 10ms slower). Sourced (Chris Rosser, [QENbsI3swCI](https://youtu.be/QENbsI3swCI)) — see [foc-vs-trapezoidal.md §4](foc-vs-trapezoidal.md) for the same test batch's FETtec SFOC prototype comparison.
+* **Current rating alone is not a reliable predictor of thermal resilience** — PCB copper thickness and the presence of an aluminum heat spreader across the MOSFETs correlated better with time-to-overheat than the ESC's advertised amp rating, across boards from multiple manufacturers. Sourced (Chris Rosser, [pH4K3ErugW4](https://youtu.be/pH4K3ErugW4), [mdM4jEWOqx4](https://youtu.be/mdM4jEWOqx4)).
+
+These results come from specific tested units, not a survey of every ESC on the market — treat as firmware/design-level tendencies, not a guarantee for any specific board.
+
+---
+
 *Related Documentation:*
 * [Desyncs & Commutation Troubleshooting](desyncs.md)
 * [BLHeli_32 Guide](blheli32.md)

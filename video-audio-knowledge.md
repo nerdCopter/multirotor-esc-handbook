@@ -4,7 +4,7 @@
 >
 > Video transcripts aren't the only primary source used in this KB — where a video claim couldn't be confirmed or contradicted one way, project GitHub history (issues, PRs, release notes, official wikis) was checked directly. The clearest example: the "avoid 96kHz on whoops" question wasn't actually resolved by any video — it was resolved by reading Bluejay's own GitHub issue tracker, which turned up the real maintainer reasoning. See [bluejay.md §PWM Switching Frequency Breakdown](bluejay.md#pwm-switching-frequency-breakdown) and video 4 below.
 
-**Coverage:** all 10 individually-cited videos have now been transcribed. The last 2 (`3SHzyUaypFw`, `6gv0_jTEYZM`) hit YouTube rate-limiting for several days before finally succeeding. The two cited playlists (Bardwell/Harrell BLHeli_32 series, High Energy Failures AM32 series) were verified to exist and be topically relevant but not individually transcribed video-by-video.
+**Coverage:** all 16 individually-cited videos have now been transcribed — the original 10, plus 6 further Chris Rosser videos covering capacitor/TVS testing, independent ESC bench comparisons, and the FETtec SFOC prototype. Two of the original 10 (`3SHzyUaypFw`, `6gv0_jTEYZM`) hit YouTube rate-limiting for several days before finally succeeding. The two cited playlists (Bardwell/Harrell BLHeli_32 series, High Energy Failures AM32 series) were verified to exist and be topically relevant but not individually transcribed video-by-video.
 
 ---
 
@@ -118,9 +118,72 @@ A rigorous thrust-stand comparison — the most direct tested source in this rep
 
 ---
 
+## 11. Chris Rosser — "Testing FETTECs new PROTOTYPE ESC against BLHeli_32 AM_32 and BlueJay"
+[youtu.be/QENbsI3swCI](https://youtu.be/QENbsI3swCI)
+
+* **New bench methodology using bidirectional DShot logged via an F7 flight controller at 8kHz**, rather than a thrust-stand alone (previously capped around 180Hz sampling) — a real methodology upgrade, not just a claim.
+* **Firmware-level responsiveness result:** a BLHeli_32 unit (v32.10) took ~52ms to reach 90% of a commanded 10%→50% throttle step; AM32 (v1.99) and Bluejay (v0.19.2) units in the same batch both took ~44ms; a FETtec SFOC prototype (firmware v1.01) took ~40ms. Deceleration showed no meaningful difference across any unit tested. Used in [foc-vs-trapezoidal.md §4](foc-vs-trapezoidal.md) and [firmware-comparison.md §3](firmware-comparison.md).
+* **Flywheel torque test:** the same FETtec SFOC prototype generated significantly more torque than any BLHeli_32, AM32, or Bluejay unit tested. Framed by the creator explicitly as prototype hardware/firmware, not a shipping product.
+* **Full-throttle RPM spread across firmware/hardware was small (~3%)** on this test batch; the one 8-bit Bluejay ESC tested showed a stepped/coarser throttle response at the very top of the throttle range, plausibly attributable to 8-bit vs. 32-bit resolution rather than Bluejay firmware logic specifically — noted as a plausible explanation by the creator, not confirmed.
+* **[inferred]** Individual ESC/board brand names and rankings from this video are not carried into this KB — see [AGENTS.md](AGENTS.md) on avoiding ESC brand promotion; only the firmware-level and methodology findings above are retained.
+
+---
+
+## 12. Chris Rosser — "Motor Commutation Explained: Featuring FETTECs new SFOC approach"
+[youtu.be/M4NOIwdSBOc](https://youtu.be/M4NOIwdSBOc)
+
+* **Block, sinusoidal, and Space Vector Modulation (SVM) commutation explained and compared directly**, including real back-EMF/phase-current measurement graphs credited to FETtec's Felix on a T-Motor F40 Pro. Used in [foc-vs-trapezoidal.md §3](foc-vs-trapezoidal.md).
+* **FETtec's SFOC prototype uses two shunt resistors per motor** (vs. the single ESC-wide battery-lead shunt typical elsewhere) to continuously calculate back-EMF from measured phase current and voltage, removing the zero-drive sensing window required by block/sinusoidal/SVM drive. Used in [foc-vs-trapezoidal.md §4](foc-vs-trapezoidal.md).
+* Explicitly framed as a hardware-dependent approach: requires per-phase current-sense shunts most existing FPV ESC hardware doesn't have, so it isn't a drop-in firmware update for existing boards.
+
+---
+
+## 13. Chris Rosser — "Protect Yourself from ESC Voltage Spikes: Testing Capacitors and TVS Diodes"
+[youtu.be/VgHOHcWu7-U](https://youtu.be/VgHOHcWu7-U)
+
+* **Directly measured voltage spikes on an uncapacitated ESC**, scaling with RPM and worse under active braking than while running: up to ~30V battery-lead / ~35V motor-phase spikes on 4S (16.2V average), and up to ~44.5V battery-lead spikes on 6S (23.8V average). Used in [theory-operation-hardware.md §4](theory-operation-hardware.md).
+* **A 470µF capacitor soldered directly to the battery pads brought battery-lead spikes down to roughly battery voltage + 1-2V**; motor-phase spikes were reduced but still ran meaningfully above battery voltage even with the capacitor fitted. No measurable improvement was found moving from 470µF to 1000µF on this single-motor test rig.
+* **Capacitor lead length tested directly:** extending leads from as-short-as-possible to 20mm added roughly 0.5-1V to spike size — a real but modest effect, not the dominant factor.
+* **TVS diode alone (no capacitor) reduced spikes far less than a capacitor did** — clamped 6S battery-lead spikes to ~30-32V vs. a capacitor's ~battery voltage+2V. Recommended as a backup to a capacitor, not a replacement for one; also recommended across motor phases (never a capacitor there) on extreme builds where motor-phase spikes might exceed FET ratings. Used in [theory-operation-hardware.md §4](theory-operation-hardware.md).
+
+---
+
+## 14. Chris Rosser — "Don't buy another ESC Until You See These 150°C Torture Test Results"
+[youtu.be/mdM4jEWOqx4](https://youtu.be/mdM4jEWOqx4)
+
+* **Firmware-controlled comparison:** one BLHeli_32 unit tested alongside several AM32 units on different hardware. The BLHeli_32 unit's torque curve peaked later (higher RPM) and higher than the AM32 units'; BLHeli_32 measured less efficient at low throttle but competitive at full throttle. Used in [firmware-comparison.md §3](firmware-comparison.md).
+* **Current (amp) rating did not reliably predict thermal resilience** in a 10%-step throttle ramp to 150°C MOSFET temperature — PCB thickness/copper mass and the presence of an aluminum heat spreader correlated better with time-to-overheat than the advertised amp rating. Used in [firmware-comparison.md §3](firmware-comparison.md).
+* Test methodology: Tytto Robotics Flight Stand 15 Pro (1000Hz sampling), thermal-camera MOSFET temperature logging, stopped at 150°C FET temperature.
+* **[inferred]** Specific ESC brand/model rankings from this video are not carried into this KB, per the same brand-promotion boundary noted in entry 11.
+
+---
+
+## 15. Chris Rosser — "Stop Killing ESCs: The Ultimate Capacitor Buying Guide"
+[youtu.be/ANq7a2S0Gik](https://youtu.be/ANq7a2S0Gik)
+
+* **Capacitor lead material identified as a real, previously-undocumented failure mode in this KB:** most capacitor leads are copper-clad steel (not solid copper), graded by IACS conductivity rating; low-grade (~20% IACS) leads heat resistively at ESC switching currents and can melt off the capacitor body in a thermal-runaway loop, destroying filtering and creating a spike large enough to damage FETs/TVS/regulator. Used in [theory-operation-hardware.md §4](theory-operation-hardware.md).
+* **Wet electrolytic vs. solid polymer vs. hybrid polymer construction and tradeoffs explained in detail**, including the 20-50% capacitance loss wet electrolytics show at 24-48kHz switching frequency (vs. their 120Hz rated frequency) due to ion mobility limits, and solid polymer's inability to self-heal from an overvoltage event. Used in [theory-operation-hardware.md §4](theory-operation-hardware.md).
+* **Sizing guidance given as voltage rating 1.5-2x max pack voltage, and capacitance scaled to prop size** (220µF at ≤2.5", up to 3000µF+ over 10"), plus a recommendation to parallel multiple smaller capacitors on large builds rather than use one large one. Used in [theory-operation-hardware.md §4](theory-operation-hardware.md).
+* **Named brand/series recommendations:** Panasonic FR/FM, Rubycon ZLH/ZLJ (wet electrolytic); Nichicon UPL (solid polymer, stock on some iFlight ESCs); Panasonic/Rubycon/Nichicon hybrid-polymer ranges. Named brands to avoid: cheap/unbranded "low ESR" capacitors using low-grade IACS leads. Used in [theory-operation-hardware.md §4](theory-operation-hardware.md). **[inferred]** auto-caption rendered one brand name as "Unicorn"/"Unicon" — cross-checked against real capacitor manufacturer part numbers (Nichicon UPL is a real, verifiable product line) and corrected here; this is the one proper-noun correction made to this transcript's content.
+
+---
+
+## 16. Chris Rosser — "Stop Buying these ESCs: 30+ ESCs Torture-Tested"
+[youtu.be/pH4K3ErugW4](https://youtu.be/pH4K3ErugW4)
+
+* **Same-hardware, firmware-only comparison:** one board tested under both BLHeli_32 and AM32 firmware showed dramatically different flywheel-torque results purely from the firmware/settings difference — direct evidence that firmware materially affects torque output independent of hardware. Used in [firmware-comparison.md §3](firmware-comparison.md).
+* **A FETtec SFOC unit in this batch disarmed and refused to complete both the step-response and flywheel torque tests**, producing no usable data in either — contradicts the strongly positive result for a different FETtec SFOC prototype in the 2024-03 batch (entry 11 above). Used in [foc-vs-trapezoidal.md §4](foc-vs-trapezoidal.md), presented there as an open tension rather than resolved either way.
+* **Current (amp) rating did not reliably predict thermal-torture-test resilience** — smaller MOSFETs (higher R_on) correlated with worse torque and thermal performance more than the board's advertised current rating did. Used in [firmware-comparison.md §3](firmware-comparison.md).
+* Test methodology: step-response test (10%→50% throttle), flywheel torque test (200kg·cm flywheel), and a 10%-step thermal-ramp torture test to MOSFET failure/150°C, scored as a percentage of the batch average per category.
+* **[inferred]** Individual ESC brand/model rankings and comparative brand claims from this video are not carried into this KB, consistent with the brand-promotion boundary noted in entry 11 — only the firmware-level and hardware-design (FET size, current rating vs. thermal performance) findings are retained.
+
+---
+
 *Related Documentation:*
 * [Desyncs & Commutation Troubleshooting](desyncs.md)
 * [BLHeli_32 Guide](blheli32.md) | [Bluejay Guide](bluejay.md) | [AM32 Guide](am32.md)
 * [PWM Frequency & Switching Guide](pwm-frequency-heat.md)
 * [Theory of Operation & Hardware](theory-operation-hardware.md)
+* [FOC vs. Trapezoidal Commutation](foc-vs-trapezoidal.md)
+* [Firmware Comparison Matrix](firmware-comparison.md)
 * [Back to Knowledge Base Index](README.md)

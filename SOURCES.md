@@ -6,9 +6,9 @@ Every URL that backs a claim anywhere in this knowledge base, plus additional so
 
 ## 1. Video Sources (YouTube)
 
-Real captions were downloaded and read in full for all 10 of these. Raw transcripts are tracked under [research/transcripts/](research/transcripts/) — see [TAKEDOWN.md](TAKEDOWN.md) for the removal policy.
+Real captions were downloaded and read in full for all 16 of these. Raw transcripts are tracked under [research/transcripts/](research/transcripts/) — see [TAKEDOWN.md](TAKEDOWN.md) for the removal policy.
 
-**On recency:** publish dates below are verified directly from YouTube (`yt-dlp --print upload_date`), not assumed. Three sources — all Chris Rosser, all mid-2024 — are 2 to 4 years newer than everything else cited. Where an older and newer source appear to disagree, the newer one is not automatically correct, but it reflects testing done against more recent firmware and should be weighted accordingly rather than treated as equally-aged with the rest.
+**On recency:** publish dates below are verified directly from YouTube (`yt-dlp --print upload_date`), not assumed. The original 10-video set spans 2020-2024; a further 6 Chris Rosser videos (capacitor/TVS testing, ESC bench comparisons, FETtec SFOC) span 2024-03 to 2026-03 and are the newest sources in the KB. Where an older and newer source appear to disagree, the newer one is not automatically correct, but it reflects testing done against more recent firmware/hardware and should be weighted accordingly rather than treated as equally-aged with the rest.
 
 | Video | Creator | Published | Status | Cited in |
 | :--- | :--- | :--- | :--- | :--- |
@@ -22,6 +22,12 @@ Real captions were downloaded and read in full for all 10 of these. Raw transcri
 | [youtu.be/6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM) — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones" | Chris Rosser | **2024-05-31** | Transcribed (took several days of retries past YouTube rate-limiting) | blheli32.md, desyncs.md, README.md, video-audio-knowledge.md |
 | [youtu.be/3SHzyUaypFw](https://youtu.be/3SHzyUaypFw) — "Tuning AM32 ESCs for Ultimate Performance" | Chris Rosser | **2024-07-12** | Transcribed (took several days of retries past YouTube rate-limiting) | am32.md, desyncs.md, video-audio-knowledge.md |
 | [youtu.be/EhYKeZfSQIw](https://youtu.be/EhYKeZfSQIw) — "ULTIMATE ESC Settings for Tiny Whoops!" | Chris Rosser | **2024-08-02** | Transcribed | bluejay.md, desyncs.md, video-audio-knowledge.md |
+| [youtu.be/QENbsI3swCI](https://youtu.be/QENbsI3swCI) — "Testing FETTECs new PROTOTYPE ESC against BLHeli_32 AM_32 and BlueJay" | Chris Rosser | 2024-03-08 | Transcribed | foc-vs-trapezoidal.md, firmware-comparison.md, video-audio-knowledge.md |
+| [youtu.be/M4NOIwdSBOc](https://youtu.be/M4NOIwdSBOc) — "Motor Commutation Explained: Featuring FETTECs new SFOC approach" | Chris Rosser | 2024-03-13 | Transcribed | foc-vs-trapezoidal.md, video-audio-knowledge.md |
+| [youtu.be/VgHOHcWu7-U](https://youtu.be/VgHOHcWu7-U) — "Protect Yourself from ESC Voltage Spikes: Testing Capacitors and TVS Diodes" | Chris Rosser | 2025-06-06 | Transcribed | theory-operation-hardware.md, video-audio-knowledge.md |
+| [youtu.be/mdM4jEWOqx4](https://youtu.be/mdM4jEWOqx4) — "Don't buy another ESC Until You See These 150°C Torture Test Results" | Chris Rosser | **2026-01-24** | Transcribed | firmware-comparison.md, video-audio-knowledge.md |
+| [youtu.be/ANq7a2S0Gik](https://youtu.be/ANq7a2S0Gik) — "Stop Killing ESCs: The Ultimate Capacitor Buying Guide" | Chris Rosser | **2026-03-10** | Transcribed | theory-operation-hardware.md, video-audio-knowledge.md |
+| [youtu.be/pH4K3ErugW4](https://youtu.be/pH4K3ErugW4) — "Stop Buying these ESCs: 30+ ESCs Torture-Tested" | Chris Rosser | **2026-03-20** | Transcribed | firmware-comparison.md, video-audio-knowledge.md |
 
 **Playlists** (verified to exist and be topically relevant; not transcribed video-by-video):
 * [Bardwell/Harrell BLHeli_32 series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8kXOyPdBog1wtRcxnXMasUb)

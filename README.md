@@ -25,11 +25,12 @@ This is a living document, not a finished spec: firmware behavior changes, commu
 2. **[Theory of Operation & Hardware Architecture](theory-operation-hardware.md)**
    * Inverter bridge anatomy (6 N-FETs, half-bridges, high-side charge pumps, current shunt resistors).
    * Sensorless 6-step trapezoidal commutation and Back-EMF Zero-Crossing Detection (ZCD).
-   * Active Braking (Damped Light) physics and power filtering (Low-ESR capacitors & TVS diodes).
+   * Active Braking (Damped Light) physics and power filtering: capacitor construction (wet electrolytic vs. solid/hybrid polymer), lead-material failure modes, TVS diode effectiveness, and sourced sizing/brand guidance by prop size.
 
 3. **[Field Oriented Control (FOC) vs 6-Step Trapezoidal Commutation](foc-vs-trapezoidal.md)**
-   * Theoretical and architectural differences: Block commutation vs vector space modulation.
+   * Theoretical and architectural differences between 6-step trapezoidal and FOC/sinusoidal commutation.
    * Why trapezoidal commutation dominates multirotor flight (transient acceleration & low latency).
+   * Block, sinusoidal, and Space Vector Modulation (SVM) drive-voltage strategies compared directly.
    * Hybrid approaches: Sinusoidal startup (FOC-lite) in AM32.
 
 4. **[Communication Protocols, DShot & Telemetry](protocols-telemetry.md)**
@@ -60,6 +61,7 @@ This is a living document, not a finished spec: firmware behavior changes, commu
 9. **[ESC Firmware Comparison Matrix](firmware-comparison.md)**
    * 8-bit vs 32-bit architectural breakdown (ARM Cortex-M0/M4, Silabs EFM8BB21, RISC-V).
    * Cross-comparison across BLHeli_32, Bluejay, AM32, and ESCape32.
+   * Independent bench-test findings on firmware-level torque, efficiency, and thermal-resilience differences (hardware held constant).
 
 10. **[BLHeli_32 Technical Reference Guide](blheli32.md)**
     * Parameter tuning (Timing, Demag, Variable PWM, Rampup Power).
@@ -85,7 +87,7 @@ This is a living document, not a finished spec: firmware behavior changes, commu
     * Hardware target mapping (gate drivers, current sense shunts, phase sense comparators).
 
 15. **[Video & Audio Source Transcripts](video-audio-knowledge.md)**
-    * Per-video, timestamped claims extracted from real downloaded captions (8 of 10 cited videos; 2 pending due to rate-limiting) — Joshua Bardwell, Ryan Harrell, Pawel Spychalski, KababFPV, Chris Rosser.
+    * Per-video, timestamped claims extracted from real downloaded captions (all 16 cited videos transcribed) — Joshua Bardwell, Ryan Harrell, Pawel Spychalski, KababFPV, Chris Rosser.
     * Cross-references specific claims elsewhere in this repository against what each cited video actually says.
 
 16. **[Sources](SOURCES.md)**
