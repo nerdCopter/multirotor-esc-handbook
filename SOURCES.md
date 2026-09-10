@@ -8,18 +8,20 @@ Every URL that backs a claim anywhere in this knowledge base, plus additional so
 
 Real captions were downloaded and read in full for all 10 of these. Raw transcripts are tracked under [research/transcripts/](research/transcripts/) — see [TAKEDOWN.md](TAKEDOWN.md) for the removal policy.
 
-| Video | Creator | Status | Cited in |
-| :--- | :--- | :--- | :--- |
-| [youtu.be/yOeVj6P9PSU](https://youtu.be/yOeVj6P9PSU) — "Open source firmware for BLHeli32 ESC \| AM32 is here" | Joshua Bardwell | Transcribed | am32.md, pwm-frequency-heat.md, video-audio-knowledge.md |
-| [youtu.be/yEDhnBUFQNI](https://youtu.be/yEDhnBUFQNI) — "I'm flashing BlueJay to all my BLHeli S ESC's..." | Joshua Bardwell | Transcribed | bluejay.md, desyncs.md, video-audio-knowledge.md |
-| [youtu.be/xuQeJA4EGr8](https://youtu.be/xuQeJA4EGr8) — "BLHeli32 ESC's just got a BIG performance upgrade..." | Joshua Bardwell | Transcribed | blheli32.md, pwm-frequency-heat.md, video-audio-knowledge.md |
-| [youtu.be/EhYKeZfSQIw](https://youtu.be/EhYKeZfSQIw) — "ULTIMATE ESC Settings for Tiny Whoops!" | Chris Rosser | Transcribed | bluejay.md, desyncs.md, video-audio-knowledge.md |
-| [youtu.be/obObn1oGWmU](https://youtu.be/obObn1oGWmU) — "Tune weird quads - Ramp Up power" | KababFPV | Transcribed | bluejay.md, video-audio-knowledge.md |
-| [youtu.be/oKcyXR7Yx64](https://youtu.be/oKcyXR7Yx64) — "Stop desyncs on your 160 mph 6S 2700kv quad" | Joshua Bardwell w/ Ryan Harrell | Transcribed | desyncs.md, blheli32.md, theory-operation-hardware.md, video-audio-knowledge.md |
-| [youtu.be/c94e9TCCP8Y](https://youtu.be/c94e9TCCP8Y) — "Demag Compensation Explained - BLHeli_32 ESC" | Pawel Spychalski (channel: FPV University) | Transcribed | desyncs.md, blheli32.md, video-audio-knowledge.md |
-| [youtu.be/7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE) — "Tuning your ESC (BLHeli_32) to stop desyncs..." | Chris Rosser | Transcribed | desyncs.md, blheli32.md, video-audio-knowledge.md |
-| [youtu.be/3SHzyUaypFw](https://youtu.be/3SHzyUaypFw) — "Tuning AM32 ESCs for Ultimate Performance" | Chris Rosser | Transcribed (took several days of retries past YouTube rate-limiting) | am32.md, desyncs.md, video-audio-knowledge.md |
-| [youtu.be/6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM) — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones" | Chris Rosser | Transcribed (took several days of retries past YouTube rate-limiting) | blheli32.md, desyncs.md, README.md, video-audio-knowledge.md |
+**On recency:** publish dates below are verified directly from YouTube (`yt-dlp --print upload_date`), not assumed. Three sources — all Chris Rosser, all mid-2024 — are 2 to 4 years newer than everything else cited. Where an older and newer source appear to disagree, the newer one is not automatically correct, but it reflects testing done against more recent firmware and should be weighted accordingly rather than treated as equally-aged with the rest.
+
+| Video | Creator | Published | Status | Cited in |
+| :--- | :--- | :--- | :--- | :--- |
+| [youtu.be/oKcyXR7Yx64](https://youtu.be/oKcyXR7Yx64) — "Stop desyncs on your 160 mph 6S 2700kv quad" | Joshua Bardwell w/ Ryan Harrell | 2020-06-15 | Transcribed | desyncs.md, blheli32.md, theory-operation-hardware.md, video-audio-knowledge.md |
+| [youtu.be/c94e9TCCP8Y](https://youtu.be/c94e9TCCP8Y) — "Demag Compensation Explained - BLHeli_32 ESC" | Pawel Spychalski (channel: FPV University) | 2020-10-05 | Transcribed | desyncs.md, blheli32.md, video-audio-knowledge.md |
+| [youtu.be/yOeVj6P9PSU](https://youtu.be/yOeVj6P9PSU) — "Open source firmware for BLHeli32 ESC \| AM32 is here" | Joshua Bardwell | 2021-03-13 | Transcribed | am32.md, pwm-frequency-heat.md, video-audio-knowledge.md |
+| [youtu.be/obObn1oGWmU](https://youtu.be/obObn1oGWmU) — "Tune weird quads - Ramp Up power" | KababFPV | 2021-03-27 | Transcribed | bluejay.md, video-audio-knowledge.md |
+| [youtu.be/7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE) — "Tuning your ESC (BLHeli_32) to stop desyncs..." | Chris Rosser | 2021-08-06 | Transcribed | desyncs.md, blheli32.md, video-audio-knowledge.md |
+| [youtu.be/yEDhnBUFQNI](https://youtu.be/yEDhnBUFQNI) — "I'm flashing BlueJay to all my BLHeli S ESC's..." | Joshua Bardwell | 2022-01-10 | Transcribed | bluejay.md, desyncs.md, video-audio-knowledge.md |
+| [youtu.be/xuQeJA4EGr8](https://youtu.be/xuQeJA4EGr8) — "BLHeli32 ESC's just got a BIG performance upgrade..." | Joshua Bardwell | 2022-02-16 | Transcribed | blheli32.md, pwm-frequency-heat.md, video-audio-knowledge.md |
+| [youtu.be/6gv0_jTEYZM](https://youtu.be/6gv0_jTEYZM) — "Testing to find the ULTIMATE BLHeli_32 Settings for 3\" and 5\" drones" | Chris Rosser | **2024-05-31** | Transcribed (took several days of retries past YouTube rate-limiting) | blheli32.md, desyncs.md, README.md, video-audio-knowledge.md |
+| [youtu.be/3SHzyUaypFw](https://youtu.be/3SHzyUaypFw) — "Tuning AM32 ESCs for Ultimate Performance" | Chris Rosser | **2024-07-12** | Transcribed (took several days of retries past YouTube rate-limiting) | am32.md, desyncs.md, video-audio-knowledge.md |
+| [youtu.be/EhYKeZfSQIw](https://youtu.be/EhYKeZfSQIw) — "ULTIMATE ESC Settings for Tiny Whoops!" | Chris Rosser | **2024-08-02** | Transcribed | bluejay.md, desyncs.md, video-audio-knowledge.md |
 
 **Playlists** (verified to exist and be topically relevant; not transcribed video-by-video):
 * [Bardwell/Harrell BLHeli_32 series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8kXOyPdBog1wtRcxnXMasUb)

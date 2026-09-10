@@ -6,6 +6,15 @@ Instructions for any AI assistant reading, editing, or extending this repository
 
 A fact-checked technical reference for FPV multirotor ESC (Electronic Speed Controller) firmware, tuning, and troubleshooting, covering BLHeli_32, Bluejay, AM32, and ESCape32. It was rebuilt after an earlier version was found to contain fabricated video citations and unsourced numbers presented as fact. Every convention below exists because it was violated once and caught.
 
+## Never assume — verify, every time, no exceptions
+
+This is the single most important rule in this file. This is a knowledgebase, not a writing exercise — a plausible-sounding number is not the same thing as a correct one, and "it's probably the same on both firmwares" is exactly the kind of sentence that has produced a real, published error in this repository more than once.
+
+- Never carry a confirmed fact from one firmware, one video, one class of hardware, or one context to another without independently checking it applies there too. A concrete example of exactly this mistake happening in this repository: AM32's By-RPM PWM range (24-48kHz) is directly sourced from the AM32 creator's own words. That number was then copied onto BLHeli_32's Variable/By-RPM mode in several places without checking — but BLHeli_32's own Variable PWM explicitly extends to 128kHz, and BLHeli_32's By-RPM range has no confirmed source at all. The fix was not to soften the wording; it was to check the actual source for each firmware separately and state only what each one actually supports.
+- If a query would need one more lookup to confirm — a video re-checked, a wiki page re-read, a UI dump re-scanned — do that lookup before writing the claim. Do not write the plausible version first and caveat it later.
+- "Probably," "likely the same as," "should also apply to," and "consistent with" are phrases that belong after verification, not instead of it. If verification wasn't actually done, say so explicitly rather than writing a confident-sounding sentence.
+- A false claim in a knowledgebase is worse than an admitted gap. "Not independently confirmed" is an acceptable thing to write. A wrong number stated as fact is not.
+
 ## Sourcing standard — non-negotiable
 
 - Every concrete technical claim (a parameter range, a recommended value, a mechanism explanation, an attributed quote) must trace to one of: a real downloaded video transcript, an official firmware wiki or repository, a specific GitHub issue/PR, or an independently verifiable external reference (manufacturer docs, cross-checked community articles).
@@ -13,6 +22,7 @@ A fact-checked technical reference for FPV multirotor ESC (Electronic Speed Cont
 - Verify a source's actual content before citing it. Do not infer what a video or article probably says from its title, from general knowledge of the topic, or from what a plausible-sounding citation would imply. Read/watch/fetch it, or don't cite it.
 - When a real citation is found to be wrong (wrong video, wrong timestamp, wrong number, misattributed creator), correct it — don't just soften the wording around a bad citation.
 - Update `SOURCES.md` whenever a new source is added or an existing citation changes, so it stays an accurate index of what's cited where.
+- Check a video's actual publish date (`yt-dlp --print upload_date`, not a guess) before treating it as current — firmware and community consensus both move over 2-4 years, and a newer source disagreeing with an older one is a real signal worth weighing, not noise to average away. `SOURCES.md` tracks verified publish dates for this reason.
 
 ## Firmware-specific accuracy
 
