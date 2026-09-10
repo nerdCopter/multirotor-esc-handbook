@@ -22,11 +22,12 @@ BLHeli_32 is a third-generation, 32-bit closed-source ESC firmware designed for 
   * **Static 15°–18°:** Essential for large, high-inductance stators (2806.5 to 3115 on 7"–10" builds) to avoid magnetic core saturation.
 
 ### Demagnetization Compensation (Demag)
-* **Parameter Range:** `Off`, `Low`, `High`.
+* **Parameter Range:** `Off`, `Low`, `Medium`, `High` — four levels (verified against the BLHeli_32 Suite configurator's own option list, cross-checked against multiple independent community references).
 * **Physics:** When a phase is turned off, its magnetic field collapses, driving inductive flyback current. Demag compensation delays energizing the subsequent phase until this current decays below a safe threshold.
 * **Tuning Recommendations (sourced, see [desyncs.md](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)):**
-  * **Start at Low (default) and only step up toward High if you're actually experiencing desyncs.** This is the creators' own stated approach (Pawel Spychalski, [c94e9TCCP8Y](https://youtu.be/c94e9TCCP8Y) @09:33; Chris Rosser, [7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE) @29:09) — not "default to High."
-  * **High:** The real sourced fix for an actual punchout/high-RPM desync (Ryan Harrell, [oKcyXR7Yx64](https://youtu.be/oKcyXR7Yx64) @19:58 — his #1 recommendation, trading efficiency for stability), not just for "motors prone to desyncing" in the abstract.
+  * **Start at Low (default) and only step up (Low → Medium → High) if you're actually experiencing desyncs** (Pawel Spychalski, [c94e9TCCP8Y](https://youtu.be/c94e9TCCP8Y) @09:33; Chris Rosser, [7WeHTb7aBrE](https://youtu.be/7WeHTb7aBrE) @29:09) — not "default to High," and not skipping Medium.
+  * **Medium:** community guidance (not from this KB's own transcribed videos, which only discuss Low/High explicitly) suggests Medium is sufficient for most builds that need more than Low but aren't in the extreme punchout/high-RPM-desync scenario below — try it before jumping to High.
+  * **High:** The real sourced fix for an actual punchout/high-RPM desync (Ryan Harrell, [oKcyXR7Yx64](https://youtu.be/oKcyXR7Yx64) @19:58 — his #1 recommendation, trading efficiency for stability), not just for "motors prone to desyncing" in the abstract. Community guidance also notes High can cost roughly 5-10% peak power — a reasonable trade on a heavy cinewhoop/long-range build, less so on a competition racer.
   * **Off / Low (Racing RPM gain):** attributed in the original community resource this KB was built from to a named contributor: *"Demag compensation low saves roughly 7K RPM (20%) on high kv motors... off versus low has minimal effect, some prefer OFF. Thanks to @FreedomDuck for this information. (Ultralight 6S 2100kv to 2150kv.)"* This is a specific, attributed community report — not from any of the cited videos, and not independently re-tested here. It's also in tension with Harrell's High-for-desync guidance above: only try this on a clean, non-desyncing racing build, and don't use it as a desync fix.
 
 ### PWM Switching Frequency & Variable PWM

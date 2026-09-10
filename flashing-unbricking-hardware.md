@@ -39,12 +39,12 @@ STM32_Programmer_CLI -c port=SWD -rdu
 STM32_Programmer_CLI -c port=SWD -w AM32_TARGET_NAME.hex -v -rst
 ```
 
-> An earlier version of this command included a `mode=UR` parameter — that's not a real option for `-c port=SWD`; it has been removed above.
+> `mode=UR` is not a real option for `-c port=SWD` — do not include it.
 
 ```bash
 # Using OpenOCD — RDP is an OPTION BYTE, not the same thing as flash write-protection.
 # The generic "<driver> lock / unlock" commands only touch FLASH_CR write-protection and
-# will NOT remove RDP — this was a real error in an earlier version of this guide, corrected below.
+# will NOT remove RDP.
 # Command pattern sourced from ST's own community thread on this exact STM32G0x + OpenOCD problem
 # (community.st.com "OpenOCD and RDP protection [STM32g0x]"); the stm32l4x driver also covers G0/G4.
 openocd -f interface/stlink.cfg -f target/stm32g0x.cfg \

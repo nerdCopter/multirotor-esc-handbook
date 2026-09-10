@@ -86,7 +86,7 @@ This is a living document, not a finished spec: firmware behavior changes, commu
 
 15. **[Video & Audio Source Transcripts](video-audio-knowledge.md)**
     * Per-video, timestamped claims extracted from real downloaded captions (8 of 10 cited videos; 2 pending due to rate-limiting) — Joshua Bardwell, Ryan Harrell, Pawel Spychalski, KababFPV, Chris Rosser.
-    * Documents several places earlier drafts of this KB misattributed or fabricated claims against these same sources — see that file for the corrections.
+    * Cross-references specific claims elsewhere in this repository against what each cited video actually says.
 
 16. **[Sources](SOURCES.md)**
     * Every real URL behind this KB's claims: videos, official firmware repos/wikis, specific GitHub issues/PRs, editorial sources, and Discord servers — organized by category, with what's cited where.
@@ -96,15 +96,19 @@ This is a living document, not a finished spec: firmware behavior changes, commu
 
 ## 🚀 Quick Reference: Recommended Baseline Settings
 
-Demag is listed as "Step up if desyncing (Off→Low→High, one level at a time — not straight to High)" for every class: sourced creator guidance ([desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) is to start at default/Low and only step up if you're actually experiencing desyncs — not to default to High. PWM frequency for whoops depends on your ESC's dead time (higher dead time = 96kHz loses more resolution) — see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown) for the real, GitHub-sourced history behind this.
+**Firmware column shows common/typical pairings for that class, not exclusivity** — Bluejay, AM32, BLHeli_32, and ESCape32 can all technically run on any airframe size; these are what's commonly used, not a hard rule.
 
-| Class | Prop / Stator | LiPo | Firmware | PWM Freq | Timing | Demag | Betaflight Idle |
+**Demag Compensation is not one universal scale across firmware:** BLHeli_32 has 4 levels (`Off`/`Low`/`Medium`/`High`), Bluejay has 3 (`Off`/`Low`/`High`), and **AM32 has no Demag Compensation setting at all** (verified directly against the real AM32 configurator UI — see [am32.md](am32.md#commutation-timing--am32-has-no-demag-compensation-setting)). The "Demag" column below applies to BLHeli_32/Bluejay only: sourced creator guidance ([desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) is to start at default/Low and only step up one level at a time if you're actually experiencing desyncs — not to default to High, and not to skip Medium on BLHeli_32. **On AM32, check Motor KV and Motor poles are set to your actual motor instead.**
+
+PWM frequency for whoops depends on your ESC's dead time (higher dead time = 96kHz loses more resolution) — see [bluejay.md](bluejay.md#pwm-switching-frequency-breakdown). Fixed 24kHz, fixed 48kHz, and Variable/By-RPM are all configurable on **both** AM32 and BLHeli_32 — where a cell below names one mode for one firmware, that's the sourced *recommendation* from a specific test, not a claim the other modes aren't available.
+
+| Class | Prop / Stator | LiPo | Firmware | PWM Freq | Timing | Demag (BLHeli_32/Bluejay — AM32: n/a, see above) | Betaflight Idle |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **TinyWhoop** | 31–40mm / 0702–1002 | 1S–2S | [Bluejay](bluejay.md) / [AM32](am32.md) | 48kHz (safe default) or 96kHz (more flight time, less PWM resolution — check ESC dead time first) | 15°–22.5° | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | Use official [Bluejay Motor Idle table](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) (8%–16%) |
-| **Micro / 3.5"** | 2.5"–3.5" / 1404–1507 | 4S–6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz** / Variable | 20°–22.5° | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | 5.5%–7% (unverified community range, or 3500 RPM) |
-| **5" Freestyle** | 5"–5.1" / 2207–2306 | 6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **BLHeli_32:** 24kHz (tested-best, [see desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) or 48kHz (more common real-world default, non-race) — pick by goal. **AM32:** 24-48kHz Variable/By-RPM (sourced) | 22°–23° (sourced) | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | 5.5%–6.5% (unverified community range, or 3200 RPM) |
-| **5" Racing** | 5" / 2207–2208 High Kv | 6S | [BLHeli_32](blheli32.md) / [AM32](am32.md) | **24kHz** | 22°–23°+ | Low/Off *only if not desyncing* — see [desyncs.md, §4 "5-Inch Racing Optimization"](desyncs.md) for the `@FreedomDuck`-attributed RPM-gain claim and its caveats | 5.5%–6.5% (unverified community range, or 3500 RPM) |
-| **7"–10" Macro** | 7"–10" / 2806.5–3115 | 6S–12S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority) | 15°–18° | Step up if desyncing (Off→Low→High, one level at a time — not straight to High) | 6%–8% (unverified community range, or 2500 RPM) |
+| **TinyWhoop** | 31–40mm / 0702–1002 | 1S–2S | [Bluejay](bluejay.md) / [AM32](am32.md) | 48kHz (safe default) or 96kHz (more flight time, less PWM resolution — check ESC dead time first) | 15°–22.5° | Step up if desyncing (one level at a time — not straight to High) | Use official [Bluejay Motor Idle table](bluejay.md#startup-power-motor-idle--rpm-power-protection-official-wiki-data) (8%–16%) |
+| **Micro / 3.5"** | 2.5"–3.5" / 1404–1507 | 4S–6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **48kHz** static, or Variable/By-RPM on either firmware | 20°–22.5° | Step up if desyncing (one level at a time — not straight to High) | 5.5%–7% (unverified community range, or 3500 RPM) |
+| **5" Freestyle** | 5"–5.1" / 2207–2306 | 6S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | 24kHz (tested-best on BLHeli_32, [see desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares)) or 48kHz (common real-world default, non-race) — both available on both firmwares; AM32's own tested recommendation leans Variable/By-RPM, also available on BLHeli_32 | 22°–23° (sourced) | Step up if desyncing (one level at a time — not straight to High) | 5.5%–6.5% (unverified community range, or 3200 RPM) |
+| **5" Racing** | 5" / 2207–2208 High Kv | 6S | [BLHeli_32](blheli32.md) / [AM32](am32.md) | **24kHz** | 22°–23°+ | (BLHeli_32 only) Low/Off *only if not desyncing* — see [desyncs.md, §4 "5-Inch Racing Optimization"](desyncs.md) for the `@FreedomDuck`-attributed RPM-gain claim and its caveats | 5.5%–6.5% (unverified community range, or 3500 RPM) |
+| **7"–10" Macro** | 7"–10" / 2806.5–3115 | 6S–12S | [AM32](am32.md) / [BLHeli_32](blheli32.md) | **24kHz** (braking-torque priority) on either firmware — Variable/By-RPM a reasonable alternative | 15°–18° | Step up if desyncing (one level at a time — not straight to High) | 6%–8% (unverified community range, or 2500 RPM) |
 
 ---
 

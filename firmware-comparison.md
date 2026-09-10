@@ -23,7 +23,7 @@ This document provides an architectural and functional comparison between all mo
 
 * **For 1S/2S TinyWhoops:** [Bluejay](bluejay.md) at **48kHz** (or [AM32](am32.md) if board has 32-bit MCU).
 * **For 5" Freestyle & Racing:** [AM32](am32.md) or [BLHeli_32](blheli32.md) with static timing (22°–23°) and PWM at 24kHz–48kHz.
-* **For 7"–10"+ Long Range & Heavy Lifters:** [AM32](am32.md) / [BLHeli_32](blheli32.md) with low timing (15°–18°), high demag compensation, and 24kHz PWM.
+* **For 7"–10"+ Long Range & Heavy Lifters:** [AM32](am32.md) / [BLHeli_32](blheli32.md) with low timing (15°–18°) and 24kHz PWM. On BLHeli_32, step Demag toward High if experiencing desyncs — AM32 has no Demag Compensation setting; verify Motor KV/Motor poles instead.
 * **For Micro Crawlers & Low-Speed Robotics:** [AM32](am32.md) with Sinusoidal Startup enabled.
 
 ---

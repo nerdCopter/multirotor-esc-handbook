@@ -60,7 +60,7 @@ A real Betaflight blackbox render matching this exact signature (community-share
 
 | Blackbox Symptom | Root Cause | Solution |
 | :--- | :--- | :--- |
-| Single motor trace at 100% while its DShot RPM collapses to 0 during punchout. | **Motor Desync** (Commutation slip). | Step Demag up one level (Off→Low→High — don't jump straight to High), set static Motor Timing to `22°–23°`, check Rampup Power against the sourced per-size figures in [desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares). |
+| Single motor trace at 100% while its DShot RPM collapses to 0 during punchout. | **Motor Desync** (Commutation slip). | **BLHeli_32/Bluejay:** step Demag up one level at a time (BLHeli_32: Off→Low→Medium→High; Bluejay: Off→Low→High — don't skip levels or jump straight to High). **AM32 has no Demag setting** — check Motor KV/Motor poles instead. All firmwares: set static Motor Timing to `22°–23°`, check Rampup Power against the sourced per-size figures in [desyncs.md §3](desyncs.md#3-master-settings-matrix-across-all-esc-firmwares). |
 | All 4 motors show high-frequency sinusoidal ripple (150Hz–300Hz) correlated with gyro noise. | **D-Term Resonance / Noisy Gyro**. | Lower D-gain, verify dynamic RPM notch filters are tracking motor harmonics. |
 | `dshot_err` climbs above 0.1%–1.0% in flight. | **Electrical Signal Noise / Inductive Ground Bounce**. | Add Low-ESR capacitor across battery pads, ensure signal ground wire is twisted with signal wire. |
 | Motor RPM drops to zero during inverted zero-throttle freefall. | **Idle RPM Dropped Below Commutation Threshold**. | Raise `dyn_idle_min_rpm` in Betaflight Dynamic Idle. |
